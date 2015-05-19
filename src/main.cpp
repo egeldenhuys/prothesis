@@ -19,6 +19,15 @@ Example:
 class User
 {
     public:
+
+        // User info
+        string name;
+        string surname;
+        string mbti;
+        string lifeKey1;
+        string lifeKey2;
+        string lifeKey3;
+
         vector<string> roles; // The names of the checked roles
         vector<string> skills;
 
