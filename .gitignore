@@ -26,3 +26,6 @@
 *.exe
 *.out
 *.app
+
+# Prothesis Files
+User_Data.dat
