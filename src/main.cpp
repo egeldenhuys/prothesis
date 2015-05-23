@@ -1,26 +1,13 @@
 #include <iostream>
 #include "user.h"
+#include "tests.h"
+#include "globals.h"
 
 using namespace std;
 
-
-
-/*
-print_vector(vector<string> vecToPrint)
-============
-Description:
-    Print the given vector to cout
-*/
-void print_vector(vector<string> vecToPrint)
-{
-    for (unsigned int i = 0; i < vecToPrint.size(); i++)
-        cout << "[" << i << "]: " << vecToPrint[i] << endl;
-}
-
-User UserData;
-
 int main()
 {
+    run_tests();
 
     return 0;
 }

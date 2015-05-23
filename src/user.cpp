@@ -194,7 +194,7 @@ int User::_addToVar(std::string varName, std::string value)
         peopleSummary = value;
     else if (varName == "[spokenWords]")
         spokenWords = value;
-    else if (varName == "[spokenSummary ]")
+    else if (varName == "[spokenSummary]")
         spokenSummary = value;
     else if (varName == "[people]")
         people.push_back(value);
