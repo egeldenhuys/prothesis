@@ -110,9 +110,90 @@ int User::save()
     }
 
     outf << "[name]" << endl;
-    outf << UserData.name << endl;
+    outf << name << endl;
     outf << "[surname]" << endl;
-    outf << UserData.surname << endl;
+    outf << surname << endl;
+    outf << "[mbti]" << endl;
+    outf << mbti << endl;
+
+    outf << "[lifeKeys]" << endl;
+    for (unsigned int i = 0; i < lifeKeys.size(); i++)
+        outf << lifeKeys[i] << endl;
+
+    outf << "[roles]" << endl;
+        for (unsigned int i = 0; i < roles.size(); i++)
+        outf << roles[i] << endl;
+
+    outf << "[skills]" << endl;
+    for (unsigned int i = 0; i < skills.size(); i++)
+        outf << skills[i] << endl;
+
+    // Passions
+    // ========
+    outf << "[passionsMovie]" << endl;
+    outf << passionsMovie << endl;
+    outf << "[passionsChange]" << endl;
+    outf << passionsChange << endl;
+    outf << "[passionsAlive]" << endl;
+    outf << passionsAlive << endl;
+    outf << "[passionsGiveUp]" << endl;
+    outf << passionsGiveUp << endl;
+    outf << "[passionsSummary]" << endl;
+    outf << passionsSummary << endl;
+
+    // Dreams
+    // ======
+    outf << "[dreamsPasttime]" << endl;
+    outf << dreamsPasttime << endl;
+    outf << "[dreamsChildDreams]" << endl;
+    outf << dreamsChildDreams << endl;
+    outf << "[dreamsCurrentDreams]" << endl;
+    outf << dreamsCurrentDreams << endl;
+    outf << "[dreamsSummary]" << endl;
+    outf << dreamsSummary << endl;
+
+    // People
+    // ======
+    outf << "[peopleHero]" << endl;
+    outf << peopleHero << endl;
+    outf << "[peopleInfluence]" << endl;
+    outf << peopleInfluence << endl;
+    outf << "[peopleIdentify]" << endl;
+    outf << peopleIdentify << endl;
+    outf << "[peopleCharacter]" << endl;
+    outf << peopleCharacter << endl;
+    outf << "[peopleSummary]" << endl;
+    outf << peopleSummary << endl;
+
+
+    // Spoken Words
+    // ============
+    outf << "[spokenWords]" << endl;
+    outf << spokenWords << endl;
+    outf << "[spokenSummary]" << endl;
+    outf << spokenSummary << endl;
+
+    // Career
+    // ======
+    outf << "[people]" << endl;
+    for (unsigned int i = 0; i < people.size(); i++)
+        outf << people[i] << endl;
+
+    outf << "[priorities]" << endl;
+    for (unsigned int i = 0; i < priorities.size(); i++)
+        outf << priorities[i] << endl;
+
+    outf << "[workIdeal]" << endl;
+    outf << workIdeal << endl;
+    outf << "[workCreative]" << endl;
+    outf << workCreative << endl;
+    outf << "[workStructure]" << endl;
+    outf << workStructure << endl;
+    outf << "[workUndefined]" << endl;
+    outf << workUndefined << endl;
+    outf << "[workSummary]" << endl;
+    outf << workSummary << endl;
+
 
     outf.close();
 
@@ -360,30 +441,6 @@ void print_vector(vector<string> vecToPrint)
 
 int main()
 {
-
-    //UserData.name = "John";
-    //UserData.surname = "Bool";
-
-    //cout << "Saving data..." << endl;
-    //UserData.save();
-    //cout << "Data has been saved" << endl;
-
-    //UserData.name = "FAIL";
-
-    /*
-    UserData.surname = "FAIL";
-
-    cout << "Loading user data..." << endl;
-    UserData.load();
-
-    cout << UserData.name << endl;
-    cout << UserData.surname << endl;
-
-    cout << "Terminating program!" << endl;
-
-*/
-
-    cout << UserData._matchesVar("[name]");
 
     return 0;
 }
