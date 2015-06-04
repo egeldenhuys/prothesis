@@ -114,25 +114,25 @@ User set_user_data()
 {
     User UserData;
 
-    UserData.name="John";
-    UserData.surname="Bool";
-    UserData.mbti="ISTJ";
+    UserData.name="Jo[hn]";
+    UserData.surname="[[[Bool[";
+    UserData.mbti="IS]T[J";
     UserData.lifeKeys.push_back("Life Key 1");
     UserData.lifeKeys.push_back("Life Key 2");
     UserData.lifeKeys.push_back("Life Key 3");
-    UserData.roles.push_back("Roles 1");
+    UserData.roles.push_back("Rol]es 1");
     UserData.roles.push_back("Roles 2");
     UserData.roles.push_back("Roles 3");
     UserData.roles.push_back("Roles 4");
-    UserData.roles.push_back("Roles 5");
-    UserData.roles.push_back("Roles 6");
+    UserData.roles.push_back("Roles 5[");
+    UserData.roles.push_back("]Ro[]les 6");
     UserData.roles.push_back("Roles 7");
 
-    UserData.skills.push_back("skills 1");
-    UserData.skills.push_back("skills 2");
+    UserData.skills.push_back("[][]]][");
+    UserData.skills.push_back("ski[names]lls 2");
     UserData.skills.push_back("skills 3");
     UserData.skills.push_back("skills 4");
-    UserData.skills.push_back("skills 5");
+    UserData.skills.push_back("ski[skills]lls 5");
     UserData.skills.push_back("skills 6");
     UserData.skills.push_back("skills 7");
 
@@ -141,10 +141,10 @@ User set_user_data()
     UserData.passionsAlive="Passions Alive";
     UserData.passionsGiveUp="Passions Give Up";
     UserData.passionsSummary="Passions Summary";
-    UserData.dreamsPasttime="Pastime";
+    UserData.dreamsPasttime="Pasti[me";
     UserData.dreamsChildDreams="Child dreams";
     UserData.dreamsCurrentDreams="curr dreams";
-    UserData.dreamsSummary="dreams summary";
+    UserData.dreamsSummary="dreams[ ] ] [ ] ][] summ[]ary";
     UserData.peopleHero="people hero";
     UserData.peopleInfluence="people influence";
     UserData.peopleIdentify="people identify";
@@ -154,19 +154,19 @@ User set_user_data()
     UserData.spokenSummary="Spoken summary";
 
     UserData.people.push_back("KIds");
-    UserData.people.push_back("Dogs");
-    UserData.people.push_back("Cars");
-    UserData.people.push_back("Cats");
+    UserData.people.push_back("Do]]gs");
+    UserData.people.push_back("Ca][[[]rs");
+    UserData.people.push_back("Ca]ts");
     UserData.people.push_back("Me");
 
     UserData.priorities.push_back("Money");
-    UserData.priorities.push_back("Animals");
+    UserData.priorities.push_back("A[nimals");
 
     UserData.workIdeal="Ideal work";
-    UserData.workCreative="work creative";
+    UserData.workCreative="work cr][eative";
     UserData.workStructure="work struct";
-    UserData.workUndefined="work undefined";
-    UserData.workSummary="work summary";
+    UserData.workUndefined="work und]efined";
+    UserData.workSummary="work summa][ry";
 
     return UserData;
 }
@@ -185,45 +185,60 @@ Example:
     cout << compare(UserA, UserB);
 
 Returns:
-    The amount of failed comparrisons
+    0 - both User objects hold the same data
+    1 - Not all data matches
 */
 int compare(User a, User b)
 {
+    std::cout << "compare()..." << "\n";
+
     int failed = 0;
 
-    std::vector<std::string> aStrings;
+    // Extract the string variables from both objects
+    // and place them into vectors
+    std::vector<std::string> aStrings, bStrings;
     aStrings = get_strings(a);
-
-    std::vector<std::string> bStrings;
     bStrings = get_strings(b);
 
+    // If they are not the same length there is an error
+    // Disabled to give more information
+    /*
     if (aStrings.size() != bStrings.size())
         return 1;
+    */
 
+    // Loop through all the string elements in the vector
     for (unsigned int i = 0; i < aStrings.size(); i++)
     {
         if (aStrings[i] != bStrings[i])
         {
-            std::cout << i << ": " << aStrings[i] << " != " << bStrings[i] << std::endl;
-            failed++;
+            std::cout << "| - " << i << ": " << aStrings[i] << " != " << bStrings[i] << std::endl;
+            failed = 1;
         }
     }
 
+    // Extract the vectors from both objects and place them
+    // into a vector
     std::vector<std::vector<std::string> > aVectors, bVectors;
     aVectors = get_vectors(a);
     bVectors = get_vectors(b);
 
+    // Disabled to give more information on which fields do not match
+    /*
     if (aVectors.size() != bVectors.size())
         return 1;
+    */
 
+    // Loop through all the elements in the vector
     for (unsigned int i = 0; i < aVectors.size(); i++)
     {
+        // Loop through all the elements in the selected vector i
         for (unsigned int j = 0; j < aVectors[i].size(); j++)
         {
             if (aVectors[i][j] != bVectors[i][j])
             {
-                std::cout << aVectors[i][j] << " != " << bVectors[i][j] << std::endl;
-                failed++;
+                std::cout << "| - " << i << "," << j << ": " << aVectors[i][j] << " != " << bVectors[i][j] << std::endl;
+                failed = 1;
             }
         }
     }
@@ -231,6 +246,21 @@ int compare(User a, User b)
     return failed;
 
 }
+
+/*
+save_and_load
+=============
+Description:
+    Test the save and load functions of the User class
+Method:
+    - Set the User variables to a known value in User object A
+    - Call the Save function on User object A
+    - Create a new User object B
+    - Call the load function on User object B
+    - Compare the variables from User object A against User object B
+
+    - This will test if variables are the save after being saved and loaded.
+*/
 
 /*
 int save_and_load()
@@ -248,14 +278,19 @@ int save_and_load()
 {
     int failed = 0;
 
+
+    // Generate data and save it
     User UserDataSave;
 
     UserDataSave = set_user_data();
     UserDataSave.save();
 
+    // Load the generated data
     User UserDataLoad;
     UserDataLoad.load();
 
+    // Compare if both sets still hold the same data
+    // after being saved and loaded
     failed = compare(UserDataSave, UserDataLoad);
 
     return failed;
@@ -275,8 +310,10 @@ int run_tests()
 {
     int failed = 0;
 
-    failed = failed + save_and_load();
-    std::cout << "save_and_load(): Fails: " << failed << std::endl;
+    if (save_and_load() == 1)
+        std::cout << "save_and_load(): FAIL\n";
+    else
+        std::cout << "save_and_load(): PASS\n";
 
     return failed;
 }

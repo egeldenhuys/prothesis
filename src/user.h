@@ -83,6 +83,9 @@ class User
         bool _matchesVar(std::string VarName);
         int _addToVar(std::string varName, std::string value);
         int _remove_by_name(std::vector<std::string> &vecToSearch, std::string itemText);
+        int vector_contains(std::vector<char> vec, char findChar);
+        std::string encode(std::string text);
+        std::string decode(std::string text);
 
 };
 
