@@ -32,7 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="globals.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="tests.cpp" />
+		<Unit filename="tests.h" />
+		<Unit filename="user.cpp" />
+		<Unit filename="user.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
