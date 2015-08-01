@@ -78,6 +78,7 @@ class User
         std::string path; // The path for storting user data
         bool dirtyData; // Flag indicating if the data has changed and needs to be saved
 
+
         int save();
         int load();
         bool _matchesVar(std::string VarName);

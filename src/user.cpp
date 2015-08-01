@@ -3,6 +3,7 @@
 #define LIFE_KEYS_MAX 7
 #define ROLES_MAX 7
 
+
 /*
 #define SKILLS_MAX -1
 #define PEOPLE_MAX -1
