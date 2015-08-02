@@ -17,26 +17,52 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
-    // Save Data
    SaveUserData();
-    delete ui;
+
+   delete ui;
 }
 
+/* MainWindow::LoadUserData()
+ * ==========================
+ *
+ * Description:
+ *      This function loads the user data from the data file
+ *      and displays it on the GUI
+ *
+*/
 void MainWindow::LoadUserData() {
-    // Load Data
+
     UserData.load();
 
-    // Display Data
+    // ======================
+    // Name And Surname START
+    // ======================
 
-    // Name and Surname
     ui->txtName->setText(QString::fromStdString(UserData.name));
     ui->txtSurname->setText(QString::fromStdString(UserData.surname));
 
-    // TODO
-    // MBTI
-    //if (UserData.mbti != std::string::)
-    //    ui->cmbMBTI1->highlighted(1);
-    // Life Keys
+    // ======================
+    // MBTI START
+    // ======================
+
+    // If the length is less than 4, it has not been loaded
+    if (UserData.mbti.length() == 4) {
+
+        // Need to convert to QString to be able to easily manipulate
+        QString mbti;
+        mbti = QString::fromStdString(UserData.mbti);
+
+        // Set combo boxes
+        ui->cmbMBTI1->setCurrentText(mbti.at(0));
+        ui->cmbMBTI2->setCurrentText(mbti.at(1));
+        ui->cmbMBTI3->setCurrentText(mbti.at(2));
+        ui->cmbMBTI4->setCurrentText(mbti.at(3));
+    }
+
+    // ======================
+    // Life Keys START
+    // ======================
+
    if (UserData.lifeKeys.size() >= 1)
         ui->txtLifeKey1->setText(QString::fromStdString(UserData.lifeKeys[0]));
 
@@ -48,22 +74,51 @@ void MainWindow::LoadUserData() {
 
 }
 
-
+/* MainWindow::SaveUserData()
+ * ==========================
+ *
+ * Description:
+ *      This function saves the user data that has been
+ *      set on the GUI to the data file
+ *
+ * Notes:
+ *      Overwrites the existing data
+*/
 void MainWindow::SaveUserData() {
-    // Name and Surname
+
+    // ======================
+    // Name And Surname START
+    // ======================
+
     UserData.name = ui->txtName->text().toStdString();
     UserData.surname = ui->txtSurname->text().toStdString();
 
-    // Life Keys
 
-    // We need to clear the vector because we cannot assign a value
-    // to a vector element that does not exist
-    // So we start it from scratch
+    // ======================
+    // MBTI START
+    // ======================
+
+    QString mbti;
+
+    mbti.append(ui->cmbMBTI1->currentText());
+    mbti.append(ui->cmbMBTI2->currentText());
+    mbti.append(ui->cmbMBTI3->currentText());
+    mbti.append(ui->cmbMBTI4->currentText());
+
+    UserData.mbti = mbti.toStdString();
+
+    // ======================
+    // Life Keys START
+    // ======================
+
+    // Clear the current life keys
     UserData.lifeKeys.clear();
 
+    // Assign the new new life keys
     UserData.lifeKeys.push_back(ui->txtLifeKey1->text().toStdString());
     UserData.lifeKeys.push_back(ui->txtLifeKey2->text().toStdString());
     UserData.lifeKeys.push_back(ui->txtLifeKey3->text().toStdString());
+
 
     UserData.save();
 }
