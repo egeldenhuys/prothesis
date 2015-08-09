@@ -97,6 +97,25 @@ void MainWindow::LoadUserData() {
     if (UserData.interestsPerc.size() == 4)
          ui->spnbInternest4->setValue(QString::fromStdString(UserData.interestsPerc[3]).toInt());
 
+    // ======================
+    // Sub Interests START
+    // ======================
+    if (UserData.subInterests.size() >= 1)
+         ui->txtSubInterest1->setText(QString::fromStdString(UserData.subInterests[0]));
+    if (UserData.subInterests.size() >= 2)
+         ui->txtSubInterest2->setText(QString::fromStdString(UserData.subInterests[1]));
+    if (UserData.subInterests.size() >= 3)
+         ui->txtSubInterest3->setText(QString::fromStdString(UserData.subInterests[2]));
+
+    // =======================
+    // Sub Interests Perc START
+    // =======================
+    if (UserData.subInterestsPerc.size() >= 1)
+         ui->spnbSubIntertest1->setValue(QString::fromStdString(UserData.subInterestsPerc[0]).toInt());
+    if (UserData.subInterestsPerc.size() >= 2)
+         ui->spnbSubIntertest2->setValue(QString::fromStdString(UserData.subInterestsPerc[1]).toInt());
+    if (UserData.subInterestsPerc.size() >= 3)
+         ui->spnbSubIntertest3->setValue(QString::fromStdString(UserData.subInterestsPerc[2]).toInt());
 }
 
 /* MainWindow::SaveUserData()
@@ -167,8 +186,33 @@ void MainWindow::SaveUserData() {
     UserData.interestsPerc.push_back(std::to_string(ui->spnbInternest1->value()));
     UserData.interestsPerc.push_back(std::to_string(ui->spnbInternest2->value()));
     UserData.interestsPerc.push_back(std::to_string(ui->spnbInternest3->value()));
-    UserData.interestsPerc.push_back(std::to_string(ui->spnbInternest4->value()));
 
+
+    // ======================
+    // Sub Interests START
+    // ======================
+
+    // Clear the current vector
+    UserData.subInterests.clear();
+
+    UserData.subInterests.push_back(ui->txtSubInterest1->text().toStdString());
+    UserData.subInterests.push_back(ui->txtSubInterest2->text().toStdString());
+    UserData.subInterests.push_back(ui->txtSubInterest3->text().toStdString());
+
+    // ======================
+    // Sub Interests Perc START
+    // ======================
+
+    // Clear the current vector
+    UserData.subInterestsPerc.clear();
+
+    UserData.subInterestsPerc.push_back(std::to_string(ui->spnbSubIntertest1->value()));
+    UserData.subInterestsPerc.push_back(std::to_string(ui->spnbSubIntertest2->value()));
+    UserData.subInterestsPerc.push_back(std::to_string(ui->spnbSubIntertest3->value()));
+
+    // ====================
+    // END
+    // ====================
 
     UserData.save();
 }
