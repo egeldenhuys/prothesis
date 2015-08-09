@@ -49,6 +49,11 @@ build-*-Debug
 
 *.autosave
 
-#QtCtreator Qml
+# QtCtreator Qml
 *.qmlproject.user
 *.qmlproject.user.*
+
+# Code::Blocks
+bin/
+*.layout
+*.depend
