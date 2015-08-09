@@ -34,6 +34,10 @@ std::vector<std::vector<std::string> > get_vectors(User UserData)
 {
     std::vector<std::vector<std::string> > UserDataVectors;
     UserDataVectors.push_back(UserData.lifeKeys);
+    UserDataVectors.push_back(UserData.interests);
+    UserDataVectors.push_back(UserData.interestsPerc);
+    UserDataVectors.push_back(UserData.subInterests);
+    UserDataVectors.push_back(UserData.subInterestsPerc);
     UserDataVectors.push_back(UserData.roles);
     UserDataVectors.push_back(UserData.skills);
     UserDataVectors.push_back(UserData.people);
@@ -120,6 +124,22 @@ User set_user_data()
     UserData.lifeKeys.push_back("Life Key 1");
     UserData.lifeKeys.push_back("Life Key 2");
     UserData.lifeKeys.push_back("Life Key 3");
+    UserData.interests.push_back("Interest 1");
+    UserData.interests.push_back("Interest 2");
+    UserData.interests.push_back("Interest 3");
+    UserData.interests.push_back("Interest 4");
+    UserData.interests.push_back("Interest 5");
+    UserData.interestsPerc.push_back("10");
+    UserData.interestsPerc.push_back("20");
+    UserData.interestsPerc.push_back("30");
+    UserData.interestsPerc.push_back("40");
+    UserData.interestsPerc.push_back("50");
+    UserData.subInterests.push_back("Sub Interest 1");
+    UserData.subInterests.push_back("Sub Interest 2");
+    UserData.subInterests.push_back("Sub Interest 3");
+    UserData.subInterestsPerc.push_back("60");
+    UserData.subInterestsPerc.push_back("70");
+    UserData.subInterestsPerc.push_back("80");
     UserData.roles.push_back("Rol]es 1");
     UserData.roles.push_back("Roles 2");
     UserData.roles.push_back("Roles 3");
@@ -171,6 +191,15 @@ User set_user_data()
     return UserData;
 }
 
+void compareSafe(User a, User b){
+
+    std::cout << a.lifeKeys[0] << "\n";
+    std::cout << b.lifeKeys[0] << "\n";
+
+    if (a.lifeKeys[0] != b.lifeKeys[0])
+        std::cout << a.lifeKeys[0] << " != " << b.lifeKeys[0] << "\n";
+
+}
 /*
 int compare(User a, User b)
 ===========
@@ -200,6 +229,7 @@ int compare(User a, User b)
     aStrings = get_strings(a);
     bStrings = get_strings(b);
 
+    std::cout << aStrings.size() << std::endl;
     // If they are not the same length there is an error
     // Disabled to give more information
     /*
@@ -207,9 +237,12 @@ int compare(User a, User b)
         return 1;
     */
 
+    std::cout << "Strings size: " << aStrings.size() << "," << bStrings.size() << std::endl;
+
     // Loop through all the string elements in the vector
     for (unsigned int i = 0; i < aStrings.size(); i++)
     {
+        std::cout << "String | - " << i << ": " << aStrings[i] << " = " << bStrings[i] << std::endl;
         if (aStrings[i] != bStrings[i])
         {
             std::cout << "| - " << i << ": " << aStrings[i] << " != " << bStrings[i] << std::endl;
@@ -229,17 +262,41 @@ int compare(User a, User b)
         return 1;
     */
 
+    std::cout << "Vectors size= " << aVectors.size() << "," << bVectors.size() << std::endl;
+
+
     // Loop through all the elements in the vector
     for (unsigned int i = 0; i < aVectors.size(); i++)
     {
         // Loop through all the elements in the selected vector i
         for (unsigned int j = 0; j < aVectors[i].size(); j++)
         {
-            if (aVectors[i][j] != bVectors[i][j])
-            {
-                std::cout << "| - " << i << "," << j << ": " << aVectors[i][j] << " != " << bVectors[i][j] << std::endl;
-                failed = 1;
+            std::cout << aVectors.size() << "," << bVectors.size() << "\n";
+            std::cout << aVectors[i].size() << "," << bVectors[i].size() << "\n";
+
+            // Same size, bot accessible
+            if (j < aVectors[i].size() && j < bVectors[i].size()) {
+                std::cout << "Vector | - " << i << ": " << aVectors[i][j] << " = " << bVectors[i][j] << std::endl;
+                if (aVectors[i][j] != bVectors[i][j])
+                {
+                    std::cout << "| - " << i << "," << j << ": " << aVectors[i][j] << " != " << bVectors[i][j] << std::endl;
+                    failed = 1;
+                }
             }
+
+            // One of them not accisible
+            if (aVectors[i].size() != bVectors[i].size()) {
+                std::cout << "Vector Missmatch! " << aVectors[i].size() << "," << bVectors[i].size() << "\n";
+
+
+                if (j <= aVectors[i].size())
+                    std::cout << aVectors[i][j] << "\n";
+
+                if (j <= bVectors[i].size())
+                    std::cout << bVectors[i][j] << "\n";
+            }
+
+
         }
     }
 
@@ -292,6 +349,7 @@ int save_and_load()
     // Compare if both sets still hold the same data
     // after being saved and loaded
     failed = compare(UserDataSave, UserDataLoad);
+    //compareSafe(UserDataSave, UserDataLoad);
 
     return failed;
 

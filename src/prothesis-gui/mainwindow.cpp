@@ -72,6 +72,31 @@ void MainWindow::LoadUserData() {
     if (UserData.lifeKeys.size() == 3)
         ui->txtLifeKey3->setText(QString::fromStdString(UserData.lifeKeys[2]));
 
+    // ======================
+    // Interests START
+    // ======================
+
+    if (UserData.interests.size() >= 1)
+         ui->txtInterest1->setText(QString::fromStdString(UserData.interests[0]));
+    if (UserData.interests.size() >= 2)
+         ui->txtInterest2->setText(QString::fromStdString(UserData.interests[1]));
+    if (UserData.interests.size() >= 3)
+         ui->txtInterest3->setText(QString::fromStdString(UserData.interests[2]));
+    if (UserData.interests.size() == 4)
+         ui->txtInterest4->setText(QString::fromStdString(UserData.interests[3]));
+
+    // ======================
+    // Interests Perc START
+    // ======================
+    if (UserData.interestsPerc.size() >= 1)
+         ui->spnbInternest1->setValue(QString::fromStdString(UserData.interestsPerc[0]).toInt());
+    if (UserData.interestsPerc.size() >= 2)
+         ui->spnbInternest2->setValue(QString::fromStdString(UserData.interestsPerc[1]).toInt());
+    if (UserData.interestsPerc.size() >= 3)
+         ui->spnbInternest3->setValue(QString::fromStdString(UserData.interestsPerc[2]).toInt());
+    if (UserData.interestsPerc.size() == 4)
+         ui->spnbInternest4->setValue(QString::fromStdString(UserData.interestsPerc[3]).toInt());
+
 }
 
 /* MainWindow::SaveUserData()
@@ -118,6 +143,31 @@ void MainWindow::SaveUserData() {
     UserData.lifeKeys.push_back(ui->txtLifeKey1->text().toStdString());
     UserData.lifeKeys.push_back(ui->txtLifeKey2->text().toStdString());
     UserData.lifeKeys.push_back(ui->txtLifeKey3->text().toStdString());
+
+    // ======================
+    // Interests START
+    // ======================
+
+    // Clear the current vector
+    UserData.interests.clear();
+
+    UserData.interests.push_back(ui->txtInterest1->text().toStdString());
+    UserData.interests.push_back(ui->txtInterest2->text().toStdString());
+    UserData.interests.push_back(ui->txtInterest3->text().toStdString());
+    UserData.interests.push_back(ui->txtInterest4->text().toStdString());
+
+
+    // ======================
+    // Interests Perc START
+    // ======================
+
+    // Clear the current vector
+    UserData.interestsPerc.clear();
+
+    UserData.interestsPerc.push_back(std::to_string(ui->spnbInternest1->value()));
+    UserData.interestsPerc.push_back(std::to_string(ui->spnbInternest2->value()));
+    UserData.interestsPerc.push_back(std::to_string(ui->spnbInternest3->value()));
+    UserData.interestsPerc.push_back(std::to_string(ui->spnbInternest4->value()));
 
 
     UserData.save();

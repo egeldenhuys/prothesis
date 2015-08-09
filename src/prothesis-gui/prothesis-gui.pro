@@ -23,3 +23,5 @@ HEADERS  += mainwindow.h \
     ../user.h
 
 FORMS    += mainwindow.ui
+
+CONFIG += c++11

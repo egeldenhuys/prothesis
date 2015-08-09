@@ -213,6 +213,22 @@ int User::save()
     for (unsigned int i = 0; i < lifeKeys.size(); i++)
         outf << encode(lifeKeys[i]) << std::endl;
 
+    outf << "[interests]" << std::endl;
+    for (unsigned int i = 0; i < interests.size(); i++)
+        outf << encode(interests[i]) << std::endl;
+
+    outf << "[interestsPerc]" << std::endl;
+    for (unsigned int i = 0; i < interestsPerc.size(); i++)
+        outf << encode(interestsPerc[i]) << std::endl;
+
+    outf << "[subInterests]" << std::endl;
+    for (unsigned int i = 0; i < subInterests.size(); i++)
+        outf << encode(subInterests[i]) << std::endl;
+
+    outf << "[subInterestsPerc]" << std::endl;
+    for (unsigned int i = 0; i < subInterestsPerc.size(); i++)
+        outf << encode(subInterestsPerc[i]) << std::endl;
+
     outf << "[roles]" << std::endl;
         for (unsigned int i = 0; i < roles.size(); i++)
         outf << encode(roles[i]) << std::endl;
@@ -309,6 +325,7 @@ Returns:
 */
 int User::_addToVar(std::string varName, std::string value)
 {
+    //std::cout << varName << "=" << value << std::endl;
 
     if (varName == "[name]")
         name = decode(value);
@@ -316,9 +333,17 @@ int User::_addToVar(std::string varName, std::string value)
         surname = decode(value);
     else if (varName == "[mbti]")
         mbti = decode(value);
-    else if (varName == "[lifeKeys]" && lifeKeys.size() <= LIFE_KEYS_MAX)
+    else if (varName == "[lifeKeys]")
         lifeKeys.push_back(decode(value));
-    else if (varName == "[roles]" && roles.size() <= ROLES_MAX)
+    else if (varName == "[interests]")
+        interests.push_back(decode(value));
+    else if (varName == "[interestsPerc]")
+        interestsPerc.push_back(decode(value));
+    else if (varName == "[subInterests]")
+        subInterests.push_back(decode(value));
+    else if (varName == "[subInterestsPerc]")
+        subInterestsPerc.push_back(decode(value));
+    else if (varName == "[roles]")
         roles.push_back(decode(value));
     else if (varName == "[skills]")
         skills.push_back(decode(value));
@@ -391,11 +416,15 @@ Returns:
 
 bool User::_matchesVar(std::string varName)
 {
+    std::cout << "Matching: " << varName << " : ";
+
     bool value = false;
 
-    std::string varNames [30] = {
+    // Change this value at 2 locations
+    std::string varNames [34] = {
     "[name]", "[surname]", "[mbti]",
-    "[lifeKeys]", "[roles]", "[skills]", "[passionsMovie]",
+    "[lifeKeys]", "[interests]", "[interestsPerc]",
+    "[subInterests]", "[subInterestsPerc]", "[roles]", "[skills]", "[passionsMovie]",
     "[passionsOneThing]", "[passionsChange]", "[passionsAlive]",
     "[passionsGiveUp]", "[passionsSummary]", "[dreamsPasttime]",
     "[dreamsChildDreams]", "[dreamsCurrentDreams]",
@@ -406,9 +435,17 @@ bool User::_matchesVar(std::string varName)
     "[workUndefined]", "[workSummary]"
     };
 
-    for (int i = 0; i < 30; i++)
+    //print_vector(varNames);
+
+    for (int i = 0; i < 34; i++)
+    {
+        //std::cout << varNames[i] << std::endl;
+
         if (varNames[i] == varName)
-            return true;
+            value = true;
+    }
+
+    std::cout << value << "\n";
 
     return value;
 }
@@ -466,18 +503,22 @@ int User::load()
     // Loop for reading all lines
     while (getline(inf, line))
     {
+        //std::cout << "line=" << line << std::endl;
         // Check if the line matches a variable
         if ( _matchesVar(line) )
         {
             // The next lines need to be added under that variable
             //representation
             varName = line;
+
+
         }
 
         // The line is a value to be added to a variable
         if (varName != "NULL" && line != varName)
         {
             _addToVar(varName, line);
+            std::cout << "Loading: " << varName << " <--- " << line << "\n";
         }
 
     }

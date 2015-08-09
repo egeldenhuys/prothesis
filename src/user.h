@@ -29,11 +29,24 @@ class User
 {
     public:
 
+    /* Adding a new Variable
+     * 1. Add declaration to header
+     * 2. Add code to Saving function
+     * 3. Add code to AddToVar
+     * 4. Add code to MatchesVar
+    */
+
         // User info
         std::string name;
         std::string surname;
         std::string mbti;
         std::vector<std::string> lifeKeys;
+
+        std::vector<std::string> interests;
+        std::vector<std::string> interestsPerc;
+
+        std::vector<std::string> subInterests;
+        std::vector<std::string> subInterestsPerc;
 
         std::vector<std::string> roles; // The names of the checked roles
         std::vector<std::string> skills;
