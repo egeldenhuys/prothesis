@@ -186,7 +186,7 @@ void MainWindow::SaveUserData() {
     UserData.interestsPerc.push_back(std::to_string(ui->spnbInternest1->value()));
     UserData.interestsPerc.push_back(std::to_string(ui->spnbInternest2->value()));
     UserData.interestsPerc.push_back(std::to_string(ui->spnbInternest3->value()));
-
+    UserData.interestsPerc.push_back(std::to_string(ui->spnbInternest4->value()));
 
     // ======================
     // Sub Interests START
