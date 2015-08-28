@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -476,121 +476,121 @@
           <height>472</height>
          </rect>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout">
+        <layout class="QVBoxLayout" name="vlRoles_1">
          <item>
-          <widget class="QCheckBox" name="chAnalyser">
+          <widget class="QCheckBox" name="chkbRoles_2">
            <property name="text">
             <string>Analyzer</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="chkArtist">
+          <widget class="QCheckBox" name="chkbRoles_3">
            <property name="text">
             <string>Artist</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_8">
+          <widget class="QCheckBox" name="chkbRoles_4">
            <property name="text">
             <string>Clarifier</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_4">
+          <widget class="QCheckBox" name="chkbRoles_15">
            <property name="text">
             <string>Collector</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_10">
+          <widget class="QCheckBox" name="chkbRoles_1">
            <property name="text">
             <string>Competitor</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_5">
+          <widget class="QCheckBox" name="chkbRoles_16">
            <property name="text">
             <string>Creator of Order</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_13">
+          <widget class="QCheckBox" name="chkbRoles_8">
            <property name="text">
             <string>Decision maker</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_2">
+          <widget class="QCheckBox" name="chkbRoles_13">
            <property name="text">
             <string>Diplomat</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_12">
+          <widget class="QCheckBox" name="chkbRoles_7">
            <property name="text">
             <string>Encourager</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_9">
+          <widget class="QCheckBox" name="chkbRoles_17">
            <property name="text">
             <string>Entrepeneur</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_16">
+          <widget class="QCheckBox" name="chkbRoles_11">
            <property name="text">
             <string>Facilitator</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_11">
+          <widget class="QCheckBox" name="chkbRoles_6">
            <property name="text">
             <string>Follower/Supporter</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_15">
+          <widget class="QCheckBox" name="chkbRoles_10">
            <property name="text">
             <string>Friend</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_17">
+          <widget class="QCheckBox" name="chkbRoles_12">
            <property name="text">
             <string>Giver</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_14">
+          <widget class="QCheckBox" name="chkbRoles_9">
            <property name="text">
             <string>Harmoniser</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_3">
+          <widget class="QCheckBox" name="chkbRoles_14">
            <property name="text">
             <string>Influencer/Inspire</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox">
+          <widget class="QCheckBox" name="chkbRoles_5">
            <property name="text">
             <string>Inventor</string>
            </property>
@@ -609,119 +609,119 @@
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
          <item>
-          <widget class="QCheckBox" name="checkBox_18">
+          <widget class="QCheckBox" name="chkbRoles_18">
            <property name="text">
             <string>Investigator</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_20">
+          <widget class="QCheckBox" name="chkbRoles_20">
            <property name="text">
             <string>Leader</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_21">
+          <widget class="QCheckBox" name="chkbRoles_21">
            <property name="text">
             <string>Listener</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_23">
+          <widget class="QCheckBox" name="chkbRoles_23">
            <property name="text">
             <string>Marketer</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_24">
+          <widget class="QCheckBox" name="chkbRoles_24">
            <property name="text">
             <string>Mentor</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_25">
+          <widget class="QCheckBox" name="chkbRoles_25">
            <property name="text">
             <string>Negotiator</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_26">
+          <widget class="QCheckBox" name="chkbRoles_26">
            <property name="text">
             <string>Organizer</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_34">
+          <widget class="QCheckBox" name="chkbRoles_34">
            <property name="text">
             <string>Peacemaker</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_33">
+          <widget class="QCheckBox" name="chkbRoles_33">
            <property name="text">
             <string>Pioneer</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_32">
+          <widget class="QCheckBox" name="chkbRoles_32">
            <property name="text">
             <string>Protector</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_31">
+          <widget class="QCheckBox" name="chkbRoles_31">
            <property name="text">
             <string>Reality Tester</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_30">
+          <widget class="QCheckBox" name="chkbRoles_30">
            <property name="text">
             <string>Standard Setter</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_29">
+          <widget class="QCheckBox" name="chkbRoles_29">
            <property name="text">
             <string>Student</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_28">
+          <widget class="QCheckBox" name="chkbRoles_28">
            <property name="text">
             <string>Teacher</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_27">
+          <widget class="QCheckBox" name="chkbRoles_27">
            <property name="text">
             <string>Team Builder</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_19">
+          <widget class="QCheckBox" name="chkbRoles_19">
            <property name="text">
             <string>Trend Setter</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_22">
+          <widget class="QCheckBox" name="chkbRoles_22">
            <property name="text">
             <string>Worker</string>
            </property>
@@ -2313,7 +2313,7 @@
      <x>0</x>
      <y>0</y>
      <width>1186</width>
-     <height>27</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
@@ -2357,40 +2357,40 @@
   <tabstop>spnbSubIntertest3</tabstop>
   <tabstop>tabWidget</tabstop>
   <tabstop>tabWidget_2</tabstop>
-  <tabstop>chAnalyser</tabstop>
-  <tabstop>chkArtist</tabstop>
-  <tabstop>checkBox_8</tabstop>
-  <tabstop>checkBox_4</tabstop>
-  <tabstop>checkBox_10</tabstop>
-  <tabstop>checkBox_5</tabstop>
-  <tabstop>checkBox_13</tabstop>
-  <tabstop>checkBox_2</tabstop>
-  <tabstop>checkBox_12</tabstop>
-  <tabstop>checkBox_9</tabstop>
-  <tabstop>checkBox_16</tabstop>
-  <tabstop>checkBox_11</tabstop>
-  <tabstop>checkBox_15</tabstop>
-  <tabstop>checkBox_17</tabstop>
-  <tabstop>checkBox_14</tabstop>
-  <tabstop>checkBox_3</tabstop>
-  <tabstop>checkBox</tabstop>
-  <tabstop>checkBox_18</tabstop>
-  <tabstop>checkBox_20</tabstop>
-  <tabstop>checkBox_21</tabstop>
-  <tabstop>checkBox_23</tabstop>
-  <tabstop>checkBox_24</tabstop>
-  <tabstop>checkBox_25</tabstop>
-  <tabstop>checkBox_26</tabstop>
-  <tabstop>checkBox_34</tabstop>
-  <tabstop>checkBox_33</tabstop>
-  <tabstop>checkBox_32</tabstop>
-  <tabstop>checkBox_31</tabstop>
-  <tabstop>checkBox_30</tabstop>
-  <tabstop>checkBox_29</tabstop>
-  <tabstop>checkBox_28</tabstop>
-  <tabstop>checkBox_27</tabstop>
-  <tabstop>checkBox_19</tabstop>
-  <tabstop>checkBox_22</tabstop>
+  <tabstop>chkbRoles_2</tabstop>
+  <tabstop>chkbRoles_3</tabstop>
+  <tabstop>chkbRoles_4</tabstop>
+  <tabstop>chkbRoles_15</tabstop>
+  <tabstop>chkbRoles_1</tabstop>
+  <tabstop>chkbRoles_16</tabstop>
+  <tabstop>chkbRoles_8</tabstop>
+  <tabstop>chkbRoles_13</tabstop>
+  <tabstop>chkbRoles_7</tabstop>
+  <tabstop>chkbRoles_17</tabstop>
+  <tabstop>chkbRoles_11</tabstop>
+  <tabstop>chkbRoles_6</tabstop>
+  <tabstop>chkbRoles_10</tabstop>
+  <tabstop>chkbRoles_12</tabstop>
+  <tabstop>chkbRoles_9</tabstop>
+  <tabstop>chkbRoles_14</tabstop>
+  <tabstop>chkbRoles_5</tabstop>
+  <tabstop>chkbRoles_18</tabstop>
+  <tabstop>chkbRoles_20</tabstop>
+  <tabstop>chkbRoles_21</tabstop>
+  <tabstop>chkbRoles_23</tabstop>
+  <tabstop>chkbRoles_24</tabstop>
+  <tabstop>chkbRoles_25</tabstop>
+  <tabstop>chkbRoles_26</tabstop>
+  <tabstop>chkbRoles_34</tabstop>
+  <tabstop>chkbRoles_33</tabstop>
+  <tabstop>chkbRoles_32</tabstop>
+  <tabstop>chkbRoles_31</tabstop>
+  <tabstop>chkbRoles_30</tabstop>
+  <tabstop>chkbRoles_29</tabstop>
+  <tabstop>chkbRoles_28</tabstop>
+  <tabstop>chkbRoles_27</tabstop>
+  <tabstop>chkbRoles_19</tabstop>
+  <tabstop>chkbRoles_22</tabstop>
   <tabstop>checkBox_6</tabstop>
   <tabstop>checkBox_35</tabstop>
   <tabstop>checkBox_7</tabstop>

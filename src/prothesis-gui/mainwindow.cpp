@@ -116,6 +116,66 @@ void MainWindow::LoadUserData() {
          ui->spnbSubIntertest2->setValue(QString::fromStdString(UserData.subInterestsPerc[1]).toInt());
     if (UserData.subInterestsPerc.size() >= 3)
          ui->spnbSubIntertest3->setValue(QString::fromStdString(UserData.subInterestsPerc[2]).toInt());
+
+    // =======================
+    // Roles Start
+    // =======================
+
+    // Add all role checkboxes to a vector of QCheckBox
+
+    std::vector<QCheckBox*> roleBoxes;
+
+    roleBoxes.push_back(ui->chkbRoles_1);
+    roleBoxes.push_back(ui->chkbRoles_2);
+    roleBoxes.push_back(ui->chkbRoles_3);
+    roleBoxes.push_back(ui->chkbRoles_4);
+    roleBoxes.push_back(ui->chkbRoles_5);
+    roleBoxes.push_back(ui->chkbRoles_6);
+    roleBoxes.push_back(ui->chkbRoles_7);
+    roleBoxes.push_back(ui->chkbRoles_8);
+    roleBoxes.push_back(ui->chkbRoles_9);
+    roleBoxes.push_back(ui->chkbRoles_10);
+    roleBoxes.push_back(ui->chkbRoles_11);
+    roleBoxes.push_back(ui->chkbRoles_12);
+    roleBoxes.push_back(ui->chkbRoles_13);
+    roleBoxes.push_back(ui->chkbRoles_14);
+    roleBoxes.push_back(ui->chkbRoles_15);
+    roleBoxes.push_back(ui->chkbRoles_16);
+    roleBoxes.push_back(ui->chkbRoles_17);
+    roleBoxes.push_back(ui->chkbRoles_18);
+    roleBoxes.push_back(ui->chkbRoles_19);
+    roleBoxes.push_back(ui->chkbRoles_20);
+    roleBoxes.push_back(ui->chkbRoles_21);
+    roleBoxes.push_back(ui->chkbRoles_22);
+    roleBoxes.push_back(ui->chkbRoles_23);
+    roleBoxes.push_back(ui->chkbRoles_24);
+    roleBoxes.push_back(ui->chkbRoles_25);
+    roleBoxes.push_back(ui->chkbRoles_26);
+    roleBoxes.push_back(ui->chkbRoles_27);
+    roleBoxes.push_back(ui->chkbRoles_28);
+    roleBoxes.push_back(ui->chkbRoles_29);
+    roleBoxes.push_back(ui->chkbRoles_30);
+    roleBoxes.push_back(ui->chkbRoles_31);
+    roleBoxes.push_back(ui->chkbRoles_32);
+    roleBoxes.push_back(ui->chkbRoles_33);
+    roleBoxes.push_back(ui->chkbRoles_34);
+
+
+    // Loop through loaded box names and check those that exist
+
+
+    // Loop through all Loaded roles
+    for (uint i = 0; i < UserData.roles.size(); i++)
+    {
+        // Loop through all  Checkboxes
+        for (uint j = 0; j < roleBoxes.size(); j++)
+        {
+            if (roleBoxes.at(j)->text() == QString::fromStdString(UserData.roles.at(i)))
+                roleBoxes.at(j)->setChecked(1);
+        }
+    }
+
+
 }
 
 /* MainWindow::SaveUserData()
@@ -209,6 +269,64 @@ void MainWindow::SaveUserData() {
     UserData.subInterestsPerc.push_back(std::to_string(ui->spnbSubIntertest1->value()));
     UserData.subInterestsPerc.push_back(std::to_string(ui->spnbSubIntertest2->value()));
     UserData.subInterestsPerc.push_back(std::to_string(ui->spnbSubIntertest3->value()));
+
+
+    // =======================
+    // Roles Start
+    // =======================
+
+    // Add all role checkboxes to a vector of QCheckBox
+
+    std::vector<QCheckBox*> roleBoxes;
+
+    roleBoxes.push_back(ui->chkbRoles_1);
+    roleBoxes.push_back(ui->chkbRoles_2);
+    roleBoxes.push_back(ui->chkbRoles_3);
+    roleBoxes.push_back(ui->chkbRoles_4);
+    roleBoxes.push_back(ui->chkbRoles_5);
+    roleBoxes.push_back(ui->chkbRoles_6);
+    roleBoxes.push_back(ui->chkbRoles_7);
+    roleBoxes.push_back(ui->chkbRoles_8);
+    roleBoxes.push_back(ui->chkbRoles_9);
+    roleBoxes.push_back(ui->chkbRoles_10);
+    roleBoxes.push_back(ui->chkbRoles_11);
+    roleBoxes.push_back(ui->chkbRoles_12);
+    roleBoxes.push_back(ui->chkbRoles_13);
+    roleBoxes.push_back(ui->chkbRoles_14);
+    roleBoxes.push_back(ui->chkbRoles_15);
+    roleBoxes.push_back(ui->chkbRoles_16);
+    roleBoxes.push_back(ui->chkbRoles_17);
+    roleBoxes.push_back(ui->chkbRoles_18);
+    roleBoxes.push_back(ui->chkbRoles_19);
+    roleBoxes.push_back(ui->chkbRoles_20);
+    roleBoxes.push_back(ui->chkbRoles_21);
+    roleBoxes.push_back(ui->chkbRoles_22);
+    roleBoxes.push_back(ui->chkbRoles_23);
+    roleBoxes.push_back(ui->chkbRoles_24);
+    roleBoxes.push_back(ui->chkbRoles_25);
+    roleBoxes.push_back(ui->chkbRoles_26);
+    roleBoxes.push_back(ui->chkbRoles_27);
+    roleBoxes.push_back(ui->chkbRoles_28);
+    roleBoxes.push_back(ui->chkbRoles_29);
+    roleBoxes.push_back(ui->chkbRoles_30);
+    roleBoxes.push_back(ui->chkbRoles_31);
+    roleBoxes.push_back(ui->chkbRoles_32);
+    roleBoxes.push_back(ui->chkbRoles_33);
+    roleBoxes.push_back(ui->chkbRoles_34);
+
+
+    // Loop through all the boxes and save the checked names
+
+    UserData.roles.clear();
+
+    for (uint i = 0; i < roleBoxes.size(); i++)
+    {
+
+        if (roleBoxes.at(i)->checkState() == 2)
+            UserData.roles.push_back(roleBoxes.at(i)->text().toStdString());
+
+    }
+
 
     // ====================
     // END
