@@ -461,7 +461,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
@@ -737,7 +737,7 @@
        <widget class="QWidget" name="verticalLayoutWidget_3">
         <property name="geometry">
          <rect>
-          <x>0</x>
+          <x>10</x>
           <y>0</y>
           <width>160</width>
           <height>472</height>
@@ -745,119 +745,119 @@
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_3">
          <item>
-          <widget class="QCheckBox" name="checkBox_6">
+          <widget class="QCheckBox" name="chkbSkills_16">
            <property name="text">
             <string>Administartion</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_35">
+          <widget class="QCheckBox" name="chkbSkills_1">
            <property name="text">
             <string>Analyse</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_7">
+          <widget class="QCheckBox" name="chkbSkills_17">
            <property name="text">
             <string>Artistic</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_39">
+          <widget class="QCheckBox" name="chkbSkills_5">
            <property name="text">
             <string>Communicate</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_40">
+          <widget class="QCheckBox" name="chkbSkills_6">
            <property name="text">
             <string>Computers</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_42">
+          <widget class="QCheckBox" name="chkbSkills_8">
            <property name="text">
             <string>Control</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_41">
+          <widget class="QCheckBox" name="chkbSkills_7">
            <property name="text">
             <string>Counselling</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_38">
+          <widget class="QCheckBox" name="chkbSkills_4">
            <property name="text">
             <string>Creative</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_47">
+          <widget class="QCheckBox" name="chkbSkills_13">
            <property name="text">
             <string>Decision Making</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_43">
+          <widget class="QCheckBox" name="chkbSkills_9">
            <property name="text">
             <string>Empathy</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_46">
+          <widget class="QCheckBox" name="chkbSkills_12">
            <property name="text">
             <string>Entertaining</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_48">
+          <widget class="QCheckBox" name="chkbSkills_14">
            <property name="text">
             <string>Handwork</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_49">
+          <widget class="QCheckBox" name="chkbSkills_15">
            <property name="text">
             <string>Marketing</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_45">
+          <widget class="QCheckBox" name="chkbSkills_11">
            <property name="text">
             <string>Negotiate</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_44">
+          <widget class="QCheckBox" name="chkbSkills_10">
            <property name="text">
             <string>Numeracy</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_37">
+          <widget class="QCheckBox" name="chkbSkills_3">
            <property name="text">
             <string>Objectivity</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_36">
+          <widget class="QCheckBox" name="chkbSkills_2">
            <property name="text">
             <string>Organise</string>
            </property>
@@ -868,7 +868,7 @@
        <widget class="QWidget" name="verticalLayoutWidget_4">
         <property name="geometry">
          <rect>
-          <x>160</x>
+          <x>170</x>
           <y>0</y>
           <width>199</width>
           <height>459</height>
@@ -879,91 +879,91 @@
           <number>100</number>
          </property>
          <item>
-          <widget class="QCheckBox" name="checkBox_50">
+          <widget class="QCheckBox" name="chkbSkills_18">
            <property name="text">
             <string>Planning</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_52">
+          <widget class="QCheckBox" name="chkbSkills_19">
            <property name="text">
             <string>Playing Musical instruments</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_54">
+          <widget class="QCheckBox" name="chkbSkills_20">
            <property name="text">
             <string>Practical</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_55">
+          <widget class="QCheckBox" name="chkbSkills_21">
            <property name="text">
             <string>Public speaking</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_61">
+          <widget class="QCheckBox" name="chkbSkills_25">
            <property name="text">
             <string>Reading</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_60">
+          <widget class="QCheckBox" name="chkbSkills_24">
            <property name="text">
             <string>Receptive for people</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_59">
+          <widget class="QCheckBox" name="chkbSkills_23">
            <property name="text">
             <string>Sharing</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_66">
+          <widget class="QCheckBox" name="chkbSkills_30">
            <property name="text">
             <string>Sport</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_65">
+          <widget class="QCheckBox" name="chkbSkills_29">
            <property name="text">
             <string>Strategic planning</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_64">
+          <widget class="QCheckBox" name="chkbSkills_28">
            <property name="text">
             <string>Study</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_63">
+          <widget class="QCheckBox" name="chkbSkills_27">
            <property name="text">
             <string>Taking the lead</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_62">
+          <widget class="QCheckBox" name="chkbSkills_26">
            <property name="text">
             <string>Teaching</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_58">
+          <widget class="QCheckBox" name="chkbSkills_22">
            <property name="text">
             <string>Writing</string>
            </property>
@@ -979,7 +979,7 @@
        <widget class="QWidget" name="verticalLayoutWidget_7">
         <property name="geometry">
          <rect>
-          <x>0</x>
+          <x>10</x>
           <y>0</y>
           <width>160</width>
           <height>472</height>
@@ -1110,7 +1110,7 @@
        <widget class="QWidget" name="verticalLayoutWidget_8">
         <property name="geometry">
          <rect>
-          <x>160</x>
+          <x>170</x>
           <y>0</y>
           <width>160</width>
           <height>457</height>
@@ -2391,36 +2391,36 @@
   <tabstop>chkbRoles_27</tabstop>
   <tabstop>chkbRoles_19</tabstop>
   <tabstop>chkbRoles_22</tabstop>
-  <tabstop>checkBox_6</tabstop>
-  <tabstop>checkBox_35</tabstop>
-  <tabstop>checkBox_7</tabstop>
-  <tabstop>checkBox_39</tabstop>
-  <tabstop>checkBox_40</tabstop>
-  <tabstop>checkBox_42</tabstop>
-  <tabstop>checkBox_41</tabstop>
-  <tabstop>checkBox_38</tabstop>
-  <tabstop>checkBox_47</tabstop>
-  <tabstop>checkBox_43</tabstop>
-  <tabstop>checkBox_46</tabstop>
-  <tabstop>checkBox_48</tabstop>
-  <tabstop>checkBox_49</tabstop>
-  <tabstop>checkBox_45</tabstop>
-  <tabstop>checkBox_44</tabstop>
-  <tabstop>checkBox_37</tabstop>
-  <tabstop>checkBox_36</tabstop>
-  <tabstop>checkBox_50</tabstop>
-  <tabstop>checkBox_52</tabstop>
-  <tabstop>checkBox_54</tabstop>
-  <tabstop>checkBox_55</tabstop>
-  <tabstop>checkBox_61</tabstop>
-  <tabstop>checkBox_60</tabstop>
-  <tabstop>checkBox_59</tabstop>
-  <tabstop>checkBox_66</tabstop>
-  <tabstop>checkBox_65</tabstop>
-  <tabstop>checkBox_64</tabstop>
-  <tabstop>checkBox_63</tabstop>
-  <tabstop>checkBox_62</tabstop>
-  <tabstop>checkBox_58</tabstop>
+  <tabstop>chkbSkills_16</tabstop>
+  <tabstop>chkbSkills_1</tabstop>
+  <tabstop>chkbSkills_17</tabstop>
+  <tabstop>chkbSkills_5</tabstop>
+  <tabstop>chkbSkills_6</tabstop>
+  <tabstop>chkbSkills_8</tabstop>
+  <tabstop>chkbSkills_7</tabstop>
+  <tabstop>chkbSkills_4</tabstop>
+  <tabstop>chkbSkills_13</tabstop>
+  <tabstop>chkbSkills_9</tabstop>
+  <tabstop>chkbSkills_12</tabstop>
+  <tabstop>chkbSkills_14</tabstop>
+  <tabstop>chkbSkills_15</tabstop>
+  <tabstop>chkbSkills_11</tabstop>
+  <tabstop>chkbSkills_10</tabstop>
+  <tabstop>chkbSkills_3</tabstop>
+  <tabstop>chkbSkills_2</tabstop>
+  <tabstop>chkbSkills_18</tabstop>
+  <tabstop>chkbSkills_19</tabstop>
+  <tabstop>chkbSkills_20</tabstop>
+  <tabstop>chkbSkills_21</tabstop>
+  <tabstop>chkbSkills_25</tabstop>
+  <tabstop>chkbSkills_24</tabstop>
+  <tabstop>chkbSkills_23</tabstop>
+  <tabstop>chkbSkills_30</tabstop>
+  <tabstop>chkbSkills_29</tabstop>
+  <tabstop>chkbSkills_28</tabstop>
+  <tabstop>chkbSkills_27</tabstop>
+  <tabstop>chkbSkills_26</tabstop>
+  <tabstop>chkbSkills_22</tabstop>
   <tabstop>checkBox_89</tabstop>
   <tabstop>checkBox_90</tabstop>
   <tabstop>checkBox_91</tabstop>

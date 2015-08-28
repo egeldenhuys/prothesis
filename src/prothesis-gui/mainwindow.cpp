@@ -175,6 +175,60 @@ void MainWindow::LoadUserData() {
         }
     }
 
+    // =======================
+    // Skills Start
+    // =======================
+
+    // Add all role checkboxes to a vector of QCheckBox
+
+    std::vector<QCheckBox*> skillBoxes;
+
+    skillBoxes.push_back(ui->chkbSkills_1);
+    skillBoxes.push_back(ui->chkbSkills_2);
+    skillBoxes.push_back(ui->chkbSkills_3);
+    skillBoxes.push_back(ui->chkbSkills_4);
+    skillBoxes.push_back(ui->chkbSkills_5);
+    skillBoxes.push_back(ui->chkbSkills_6);
+    skillBoxes.push_back(ui->chkbSkills_7);
+    skillBoxes.push_back(ui->chkbSkills_8);
+    skillBoxes.push_back(ui->chkbSkills_9);
+    skillBoxes.push_back(ui->chkbSkills_10);
+    skillBoxes.push_back(ui->chkbSkills_11);
+    skillBoxes.push_back(ui->chkbSkills_12);
+    skillBoxes.push_back(ui->chkbSkills_13);
+    skillBoxes.push_back(ui->chkbSkills_14);
+    skillBoxes.push_back(ui->chkbSkills_15);
+    skillBoxes.push_back(ui->chkbSkills_16);
+    skillBoxes.push_back(ui->chkbSkills_17);
+    skillBoxes.push_back(ui->chkbSkills_18);
+    skillBoxes.push_back(ui->chkbSkills_19);
+    skillBoxes.push_back(ui->chkbSkills_20);
+    skillBoxes.push_back(ui->chkbSkills_21);
+    skillBoxes.push_back(ui->chkbSkills_22);
+    skillBoxes.push_back(ui->chkbSkills_23);
+    skillBoxes.push_back(ui->chkbSkills_24);
+    skillBoxes.push_back(ui->chkbSkills_25);
+    skillBoxes.push_back(ui->chkbSkills_26);
+    skillBoxes.push_back(ui->chkbSkills_27);
+    skillBoxes.push_back(ui->chkbSkills_28);
+    skillBoxes.push_back(ui->chkbSkills_29);
+    skillBoxes.push_back(ui->chkbSkills_30);
+
+
+    // Loop through loaded box names and check those that exist
+
+
+    // Loop through all Loaded roles
+    for (uint i = 0; i < UserData.skills.size(); i++)
+    {
+        // Loop through all  Checkboxes
+        for (uint j = 0; j < skillBoxes.size(); j++)
+        {
+            if (skillBoxes.at(j)->text() == QString::fromStdString(UserData.skills.at(i)))
+                skillBoxes.at(j)->setChecked(1);
+        }
+    }
+
 
 }
 
@@ -325,6 +379,58 @@ void MainWindow::SaveUserData() {
         if (roleBoxes.at(i)->checkState() == 2)
             UserData.roles.push_back(roleBoxes.at(i)->text().toStdString());
 
+    }
+
+
+    // =======================
+    // Skills Start
+    // =======================
+
+    // Add all role checkboxes to a vector of QCheckBox
+
+    std::vector<QCheckBox*> skillBoxes;
+
+    skillBoxes.push_back(ui->chkbSkills_1);
+    skillBoxes.push_back(ui->chkbSkills_2);
+    skillBoxes.push_back(ui->chkbSkills_3);
+    skillBoxes.push_back(ui->chkbSkills_4);
+    skillBoxes.push_back(ui->chkbSkills_5);
+    skillBoxes.push_back(ui->chkbSkills_6);
+    skillBoxes.push_back(ui->chkbSkills_7);
+    skillBoxes.push_back(ui->chkbSkills_8);
+    skillBoxes.push_back(ui->chkbSkills_9);
+    skillBoxes.push_back(ui->chkbSkills_10);
+    skillBoxes.push_back(ui->chkbSkills_11);
+    skillBoxes.push_back(ui->chkbSkills_12);
+    skillBoxes.push_back(ui->chkbSkills_13);
+    skillBoxes.push_back(ui->chkbSkills_14);
+    skillBoxes.push_back(ui->chkbSkills_15);
+    skillBoxes.push_back(ui->chkbSkills_16);
+    skillBoxes.push_back(ui->chkbSkills_17);
+    skillBoxes.push_back(ui->chkbSkills_18);
+    skillBoxes.push_back(ui->chkbSkills_19);
+    skillBoxes.push_back(ui->chkbSkills_20);
+    skillBoxes.push_back(ui->chkbSkills_21);
+    skillBoxes.push_back(ui->chkbSkills_22);
+    skillBoxes.push_back(ui->chkbSkills_23);
+    skillBoxes.push_back(ui->chkbSkills_24);
+    skillBoxes.push_back(ui->chkbSkills_25);
+    skillBoxes.push_back(ui->chkbSkills_26);
+    skillBoxes.push_back(ui->chkbSkills_27);
+    skillBoxes.push_back(ui->chkbSkills_28);
+    skillBoxes.push_back(ui->chkbSkills_29);
+    skillBoxes.push_back(ui->chkbSkills_30);
+
+
+    // Loop through all the boxes and save the checked names
+
+    UserData.skills.clear();
+
+    for (uint i = 0; i < skillBoxes.size(); i++)
+    {
+
+        if (skillBoxes.at(i)->checkState() == 2)
+            UserData.skills.push_back(skillBoxes.at(i)->text().toStdString());
     }
 
 
