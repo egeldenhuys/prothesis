@@ -77,8 +77,8 @@ std::vector<std::string> get_strings(User UserData)
     UserDataStrings.push_back(UserData.passionsGiveUp);
     UserDataStrings.push_back(UserData.passionsSummary);
     UserDataStrings.push_back(UserData.dreamsPasttime);
-    UserDataStrings.push_back(UserData.dreamsChildDreams);
-    UserDataStrings.push_back(UserData.dreamsCurrentDreams);
+    UserDataStrings.push_back(UserData.dreamsChild);
+    UserDataStrings.push_back(UserData.dreamsCurrent);
     UserDataStrings.push_back(UserData.dreamsSummary);
     UserDataStrings.push_back(UserData.peopleHero);
     UserDataStrings.push_back(UserData.peopleInfluence);
@@ -176,8 +176,8 @@ User set_user_data()
     UserData.passionsGiveUp="Passions Give Up";
     UserData.passionsSummary="Passions Summary";
     UserData.dreamsPasttime="Pasti[me";
-    UserData.dreamsChildDreams="Child dreams";
-    UserData.dreamsCurrentDreams="curr dreams";
+    UserData.dreamsChild="Child dreams";
+    UserData.dreamsCurrent="curr dreams";
     UserData.dreamsSummary="dreams[ ] ] [ ] ][] summ[]ary";
     UserData.peopleHero="people hero";
     UserData.peopleInfluence="people influence";

@@ -300,6 +300,15 @@ void MainWindow::LoadUserData() {
     ui->txtPassionsOneThing->setText(QString::fromStdString(UserData.passionsMovie));
     ui->txtPassionsSummary->setPlainText(QString::fromStdString(UserData.passionsSummary));
 
+    // ======================
+    // Dreams START
+    // ======================
+
+    ui->txtDreamsChild->setText(QString::fromStdString(UserData.dreamsChild));
+    ui->txtDreamsCurrent->setText(QString::fromStdString(UserData.dreamsCurrent));
+    ui->txtDreamsPasttime->setText(QString::fromStdString(UserData.dreamsPasttime));
+    ui->txtDreamSummary->setPlainText(QString::fromStdString(UserData.dreamsSummary));
+
 
 }
 
@@ -570,6 +579,15 @@ void MainWindow::SaveUserData() {
     UserData.passionsOneThing = ui->txtPassionsOneThing->text().toStdString();
     UserData.passionsSummary = ui->txtPassionsSummary->document()->toPlainText().toStdString();
 
+
+    // ======================
+    // Dreams START
+    // ======================
+
+    UserData.dreamsChild = ui->txtDreamsChild->text().toStdString();
+    UserData.dreamsCurrent = ui->txtDreamsCurrent->text().toStdString();
+    UserData.dreamsPasttime = ui->txtDreamsPasttime->text().toStdString();
+    UserData.dreamsSummary = ui->txtDreamSummary->document()->toPlainText().toStdString();
 
 
     // ====================

@@ -64,8 +64,8 @@ class User
 
         // Dreams
         std::string dreamsPasttime;
-        std::string dreamsChildDreams;
-        std::string dreamsCurrentDreams;
+        std::string dreamsChild;
+        std::string dreamsCurrent;
         std::string dreamsSummary;
 
         // People ID

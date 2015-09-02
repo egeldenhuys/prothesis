@@ -264,10 +264,10 @@ int User::save()
     // ======
     outf << "[dreamsPasttime]" << std::endl;
     outf << encode(dreamsPasttime) << std::endl;
-    outf << "[dreamsChildDreams]" << std::endl;
-    outf << encode(dreamsChildDreams) << std::endl;
-    outf << "[dreamsCurrentDreams]" << std::endl;
-    outf << encode(dreamsCurrentDreams) << std::endl;
+    outf << "[dreamsChild]" << std::endl;
+    outf << encode(dreamsChild) << std::endl;
+    outf << "[dreamsCurrent]" << std::endl;
+    outf << encode(dreamsCurrent) << std::endl;
     outf << "[dreamsSummary]" << std::endl;
     outf << encode(dreamsSummary) << std::endl;
 
@@ -371,10 +371,10 @@ int User::_addToVar(std::string varName, std::string value)
         passionsSummary = decode(value);
     else if (varName == "[dreamsPasttime]")
         dreamsPasttime = decode(value);
-    else if (varName == "[dreamsChildDreams]")
-        dreamsChildDreams = decode(value);
-    else if (varName == "[dreamsCurrentDreams]")
-        dreamsCurrentDreams = decode(value);
+    else if (varName == "[dreamsChild]")
+        dreamsChild = decode(value);
+    else if (varName == "[dreamsCurrent]")
+        dreamsCurrent = decode(value);
     else if (varName == "[dreamsSummary]")
         dreamsSummary = decode(value);
     else if (varName == "[peopleHero]")
@@ -439,7 +439,7 @@ bool User::_matchesVar(std::string varName)
     "[subInterests]", "[subInterestsPerc]", "[roles]", "[skills]", "[passionsMovie]",
     "[passionsOneThing]", "[passionsChange]", "[passionsAlive]",
     "[passionsGiveUp]", "[passionsSummary]", "[dreamsPasttime]",
-    "[dreamsChildDreams]", "[dreamsCurrentDreams]",
+    "[dreamsChild]", "[dreamsCurrent]",
     "[dreamsSummary]", "[peopleHero]", "[peopleInfluence]",
     "[peopleIdentify]", "[peopleCharacter]", "[peopleSummary]",
     "[spokenWords]", "[spokenSummary]", "[people]", "[priorities]",
