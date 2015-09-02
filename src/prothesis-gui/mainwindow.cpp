@@ -3,7 +3,7 @@
 #include <QString>
 #include <QLineEdit>
 #include <string>
-
+#include "../tests.h"
 #include "../user.h"
 #include "../globals.h"
 
@@ -12,11 +12,13 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    //run_tests();
     LoadUserData();
 }
 
 MainWindow::~MainWindow()
 {
+
    SaveUserData();
 
    delete ui;
@@ -230,6 +232,63 @@ void MainWindow::LoadUserData() {
     }
 
 
+    // =======================
+    // Strengths Start
+    // =======================
+
+    // Add all role checkboxes to a vector of QCheckBox
+
+    std::vector<QCheckBox*> strengthBoxes;
+
+    strengthBoxes.push_back(ui->chkbStrengths_1);
+    strengthBoxes.push_back(ui->chkbStrengths_2);
+    strengthBoxes.push_back(ui->chkbStrengths_3);
+    strengthBoxes.push_back(ui->chkbStrengths_4);
+    strengthBoxes.push_back(ui->chkbStrengths_5);
+    strengthBoxes.push_back(ui->chkbStrengths_6);
+    strengthBoxes.push_back(ui->chkbStrengths_7);
+    strengthBoxes.push_back(ui->chkbStrengths_8);
+    strengthBoxes.push_back(ui->chkbStrengths_9);
+    strengthBoxes.push_back(ui->chkbStrengths_10);
+    strengthBoxes.push_back(ui->chkbStrengths_11);
+    strengthBoxes.push_back(ui->chkbStrengths_12);
+    strengthBoxes.push_back(ui->chkbStrengths_13);
+    strengthBoxes.push_back(ui->chkbStrengths_14);
+    strengthBoxes.push_back(ui->chkbStrengths_15);
+    strengthBoxes.push_back(ui->chkbStrengths_16);
+    strengthBoxes.push_back(ui->chkbStrengths_17);
+    strengthBoxes.push_back(ui->chkbStrengths_18);
+    strengthBoxes.push_back(ui->chkbStrengths_19);
+    strengthBoxes.push_back(ui->chkbStrengths_20);
+    strengthBoxes.push_back(ui->chkbStrengths_21);
+    strengthBoxes.push_back(ui->chkbStrengths_22);
+    strengthBoxes.push_back(ui->chkbStrengths_23);
+    strengthBoxes.push_back(ui->chkbStrengths_24);
+    strengthBoxes.push_back(ui->chkbStrengths_25);
+    strengthBoxes.push_back(ui->chkbStrengths_26);
+    strengthBoxes.push_back(ui->chkbStrengths_27);
+    strengthBoxes.push_back(ui->chkbStrengths_28);
+    strengthBoxes.push_back(ui->chkbStrengths_29);
+    strengthBoxes.push_back(ui->chkbStrengths_30);
+    strengthBoxes.push_back(ui->chkbStrengths_31);
+    strengthBoxes.push_back(ui->chkbStrengths_32);
+    strengthBoxes.push_back(ui->chkbStrengths_33);
+
+
+    // Loop through loaded box names and check those that exist
+
+
+    // Loop through all Loaded roles
+    for (uint i = 0; i < UserData.strengths.size(); i++)
+    {
+        // Loop through all  Checkboxes
+        for (uint j = 0; j < strengthBoxes.size(); j++)
+        {
+            if (strengthBoxes.at(j)->text() == QString::fromStdString(UserData.strengths.at(i)))
+                strengthBoxes.at(j)->setChecked(1);
+        }
+    }
+
 }
 
 /* MainWindow::SaveUserData()
@@ -432,6 +491,62 @@ void MainWindow::SaveUserData() {
         if (skillBoxes.at(i)->checkState() == 2)
             UserData.skills.push_back(skillBoxes.at(i)->text().toStdString());
     }
+
+
+    // =======================
+    // Strengths Start
+    // =======================
+
+    // Add all role checkboxes to a vector of QCheckBox
+
+    std::vector<QCheckBox*> strengthBoxes;
+
+    strengthBoxes.push_back(ui->chkbStrengths_1);
+    strengthBoxes.push_back(ui->chkbStrengths_2);
+    strengthBoxes.push_back(ui->chkbStrengths_3);
+    strengthBoxes.push_back(ui->chkbStrengths_4);
+    strengthBoxes.push_back(ui->chkbStrengths_5);
+    strengthBoxes.push_back(ui->chkbStrengths_6);
+    strengthBoxes.push_back(ui->chkbStrengths_7);
+    strengthBoxes.push_back(ui->chkbStrengths_8);
+    strengthBoxes.push_back(ui->chkbStrengths_9);
+    strengthBoxes.push_back(ui->chkbStrengths_10);
+    strengthBoxes.push_back(ui->chkbStrengths_11);
+    strengthBoxes.push_back(ui->chkbStrengths_12);
+    strengthBoxes.push_back(ui->chkbStrengths_13);
+    strengthBoxes.push_back(ui->chkbStrengths_14);
+    strengthBoxes.push_back(ui->chkbStrengths_15);
+    strengthBoxes.push_back(ui->chkbStrengths_16);
+    strengthBoxes.push_back(ui->chkbStrengths_17);
+    strengthBoxes.push_back(ui->chkbStrengths_18);
+    strengthBoxes.push_back(ui->chkbStrengths_19);
+    strengthBoxes.push_back(ui->chkbStrengths_20);
+    strengthBoxes.push_back(ui->chkbStrengths_21);
+    strengthBoxes.push_back(ui->chkbStrengths_22);
+    strengthBoxes.push_back(ui->chkbStrengths_23);
+    strengthBoxes.push_back(ui->chkbStrengths_24);
+    strengthBoxes.push_back(ui->chkbStrengths_25);
+    strengthBoxes.push_back(ui->chkbStrengths_26);
+    strengthBoxes.push_back(ui->chkbStrengths_27);
+    strengthBoxes.push_back(ui->chkbStrengths_28);
+    strengthBoxes.push_back(ui->chkbStrengths_29);
+    strengthBoxes.push_back(ui->chkbStrengths_30);
+    strengthBoxes.push_back(ui->chkbStrengths_31);
+    strengthBoxes.push_back(ui->chkbStrengths_32);
+    strengthBoxes.push_back(ui->chkbStrengths_33);
+
+
+    // Loop through all the boxes and save the checked names
+
+    UserData.strengths.clear();
+
+    for (uint i = 0; i < strengthBoxes.size(); i++)
+    {
+
+        if (strengthBoxes.at(i)->checkState() == 2)
+            UserData.strengths.push_back(strengthBoxes.at(i)->text().toStdString());
+    }
+
 
 
     // ====================

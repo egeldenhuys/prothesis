@@ -461,7 +461,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
@@ -987,119 +987,119 @@
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_7">
          <item>
-          <widget class="QCheckBox" name="checkBox_89">
+          <widget class="QCheckBox" name="chkbStrengths_1">
            <property name="text">
             <string>Idealate</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_90">
+          <widget class="QCheckBox" name="chkbStrengths_8">
            <property name="text">
             <string>Believe</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_91">
+          <widget class="QCheckBox" name="chkbStrengths_9">
            <property name="text">
             <string>Significant</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_92">
+          <widget class="QCheckBox" name="chkbStrengths_10">
            <property name="text">
             <string>Futurist</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_93">
+          <widget class="QCheckBox" name="chkbStrengths_11">
            <property name="text">
             <string>Develop</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_94">
+          <widget class="QCheckBox" name="chkbStrengths_12">
            <property name="text">
             <string>Learn</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_95">
+          <widget class="QCheckBox" name="chkbStrengths_14">
            <property name="text">
             <string>Include</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_96">
+          <widget class="QCheckBox" name="chkbStrengths_15">
            <property name="text">
             <string>Empathize</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_97">
+          <widget class="QCheckBox" name="chkbStrengths_13">
            <property name="text">
             <string>Relate</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_98">
+          <widget class="QCheckBox" name="chkbStrengths_16">
            <property name="text">
             <string>Restore</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_99">
+          <widget class="QCheckBox" name="chkbStrengths_17">
            <property name="text">
             <string>Activate</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_100">
+          <widget class="QCheckBox" name="chkbStrengths_2">
            <property name="text">
             <string>Individualize</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_101">
+          <widget class="QCheckBox" name="chkbStrengths_3">
            <property name="text">
             <string>Intellect</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_102">
+          <widget class="QCheckBox" name="chkbStrengths_4">
            <property name="text">
             <string>Communicate</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_103">
+          <widget class="QCheckBox" name="chkbStrengths_5">
            <property name="text">
             <string>Information Input</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_104">
+          <widget class="QCheckBox" name="chkbStrengths_6">
            <property name="text">
             <string>Self-Confident</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_105">
+          <widget class="QCheckBox" name="chkbStrengths_7">
            <property name="text">
             <string>Commanding</string>
            </property>
@@ -1121,112 +1121,112 @@
           <number>14</number>
          </property>
          <item>
-          <widget class="QCheckBox" name="checkBox_106">
+          <widget class="QCheckBox" name="chkbStrengths_18">
            <property name="text">
             <string>Strategize</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_107">
+          <widget class="QCheckBox" name="chkbStrengths_19">
            <property name="text">
             <string>Connect</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_108">
+          <widget class="QCheckBox" name="chkbStrengths_20">
            <property name="text">
             <string>Arrange</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_109">
+          <widget class="QCheckBox" name="chkbStrengths_21">
            <property name="text">
             <string>Contextualize</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_110">
+          <widget class="QCheckBox" name="chkbStrengths_22">
            <property name="text">
             <string>Maximize</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_111">
+          <widget class="QCheckBox" name="chkbStrengths_23">
            <property name="text">
             <string>Focusing</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_112">
+          <widget class="QCheckBox" name="chkbStrengths_24">
            <property name="text">
             <string>Achieve</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_113">
+          <widget class="QCheckBox" name="chkbStrengths_25">
            <property name="text">
             <string>Harmonize</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_114">
+          <widget class="QCheckBox" name="chkbStrengths_26">
            <property name="text">
             <string>Fair</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_115">
+          <widget class="QCheckBox" name="chkbStrengths_27">
            <property name="text">
             <string>Responsible</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_116">
+          <widget class="QCheckBox" name="chkbStrengths_28">
            <property name="text">
             <string>Analyze</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_117">
+          <widget class="QCheckBox" name="chkbStrengths_29">
            <property name="text">
             <string>Meet People</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_118">
+          <widget class="QCheckBox" name="chkbStrengths_30">
            <property name="text">
             <string>Disciplined</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_119">
+          <widget class="QCheckBox" name="chkbStrengths_31">
            <property name="text">
             <string>Positive</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_120">
+          <widget class="QCheckBox" name="chkbStrengths_32">
            <property name="text">
             <string>Adapt</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_121">
+          <widget class="QCheckBox" name="chkbStrengths_33">
            <property name="text">
             <string>Deliberate</string>
            </property>
@@ -2421,39 +2421,39 @@
   <tabstop>chkbSkills_27</tabstop>
   <tabstop>chkbSkills_26</tabstop>
   <tabstop>chkbSkills_22</tabstop>
-  <tabstop>checkBox_89</tabstop>
-  <tabstop>checkBox_90</tabstop>
-  <tabstop>checkBox_91</tabstop>
-  <tabstop>checkBox_92</tabstop>
-  <tabstop>checkBox_93</tabstop>
-  <tabstop>checkBox_94</tabstop>
-  <tabstop>checkBox_95</tabstop>
-  <tabstop>checkBox_96</tabstop>
-  <tabstop>checkBox_97</tabstop>
-  <tabstop>checkBox_98</tabstop>
-  <tabstop>checkBox_99</tabstop>
-  <tabstop>checkBox_100</tabstop>
-  <tabstop>checkBox_101</tabstop>
-  <tabstop>checkBox_102</tabstop>
-  <tabstop>checkBox_103</tabstop>
-  <tabstop>checkBox_104</tabstop>
-  <tabstop>checkBox_105</tabstop>
-  <tabstop>checkBox_106</tabstop>
-  <tabstop>checkBox_107</tabstop>
-  <tabstop>checkBox_108</tabstop>
-  <tabstop>checkBox_109</tabstop>
-  <tabstop>checkBox_110</tabstop>
-  <tabstop>checkBox_111</tabstop>
-  <tabstop>checkBox_112</tabstop>
-  <tabstop>checkBox_113</tabstop>
-  <tabstop>checkBox_114</tabstop>
-  <tabstop>checkBox_115</tabstop>
-  <tabstop>checkBox_116</tabstop>
-  <tabstop>checkBox_117</tabstop>
-  <tabstop>checkBox_118</tabstop>
-  <tabstop>checkBox_119</tabstop>
-  <tabstop>checkBox_120</tabstop>
-  <tabstop>checkBox_121</tabstop>
+  <tabstop>chkbStrengths_1</tabstop>
+  <tabstop>chkbStrengths_8</tabstop>
+  <tabstop>chkbStrengths_9</tabstop>
+  <tabstop>chkbStrengths_10</tabstop>
+  <tabstop>chkbStrengths_11</tabstop>
+  <tabstop>chkbStrengths_12</tabstop>
+  <tabstop>chkbStrengths_14</tabstop>
+  <tabstop>chkbStrengths_15</tabstop>
+  <tabstop>chkbStrengths_13</tabstop>
+  <tabstop>chkbStrengths_16</tabstop>
+  <tabstop>chkbStrengths_17</tabstop>
+  <tabstop>chkbStrengths_2</tabstop>
+  <tabstop>chkbStrengths_3</tabstop>
+  <tabstop>chkbStrengths_4</tabstop>
+  <tabstop>chkbStrengths_5</tabstop>
+  <tabstop>chkbStrengths_6</tabstop>
+  <tabstop>chkbStrengths_7</tabstop>
+  <tabstop>chkbStrengths_18</tabstop>
+  <tabstop>chkbStrengths_19</tabstop>
+  <tabstop>chkbStrengths_20</tabstop>
+  <tabstop>chkbStrengths_21</tabstop>
+  <tabstop>chkbStrengths_22</tabstop>
+  <tabstop>chkbStrengths_23</tabstop>
+  <tabstop>chkbStrengths_24</tabstop>
+  <tabstop>chkbStrengths_25</tabstop>
+  <tabstop>chkbStrengths_26</tabstop>
+  <tabstop>chkbStrengths_27</tabstop>
+  <tabstop>chkbStrengths_28</tabstop>
+  <tabstop>chkbStrengths_29</tabstop>
+  <tabstop>chkbStrengths_30</tabstop>
+  <tabstop>chkbStrengths_31</tabstop>
+  <tabstop>chkbStrengths_32</tabstop>
+  <tabstop>chkbStrengths_33</tabstop>
   <tabstop>lineEdit</tabstop>
   <tabstop>lineEdit_2</tabstop>
   <tabstop>lineEdit_3</tabstop>

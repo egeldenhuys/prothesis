@@ -40,6 +40,7 @@ std::vector<std::vector<std::string> > get_vectors(User UserData)
     UserDataVectors.push_back(UserData.subInterestsPerc);
     UserDataVectors.push_back(UserData.roles);
     UserDataVectors.push_back(UserData.skills);
+    UserDataVectors.push_back(UserData.strengths);
     UserDataVectors.push_back(UserData.people);
     UserDataVectors.push_back(UserData.priorities);
 
@@ -70,9 +71,6 @@ std::vector<std::string> get_strings(User UserData)
     UserDataStrings.push_back(UserData.name);
     UserDataStrings.push_back(UserData.surname);
     UserDataStrings.push_back(UserData.mbti);
-    //UserDataStrings.push_back(UserData.lifeKeys);
-    //UserDataStrings.push_back(UserData.roles);
-    //UserDataStrings.push_back(UserData.skills);
     UserDataStrings.push_back(UserData.passionsMovie);
     UserDataStrings.push_back(UserData.passionsChange);
     UserDataStrings.push_back(UserData.passionsAlive);
@@ -89,8 +87,6 @@ std::vector<std::string> get_strings(User UserData)
     UserDataStrings.push_back(UserData.peopleSummary);
     UserDataStrings.push_back(UserData.spokenWords);
     UserDataStrings.push_back(UserData.spokenSummary);
-    //UserDataStrings.push_back(UserData.people);
-    //UserDataStrings.push_back(UserData.priorities);
     UserDataStrings.push_back(UserData.workIdeal);
     UserDataStrings.push_back(UserData.workCreative);
     UserDataStrings.push_back(UserData.workStructure);
@@ -155,6 +151,24 @@ User set_user_data()
     UserData.skills.push_back("ski[skills]lls 5");
     UserData.skills.push_back("skills 6");
     UserData.skills.push_back("skills 7");
+
+    UserData.strengths.push_back("Str 1");
+    UserData.strengths.push_back("Str 2");
+    UserData.strengths.push_back("Str 3");
+    UserData.strengths.push_back("Str 4");
+    UserData.strengths.push_back("Str 5");
+    UserData.strengths.push_back("Str 6");
+    UserData.strengths.push_back("Str 7");
+    UserData.strengths.push_back("Str 8");
+    UserData.strengths.push_back("Str 9");
+    UserData.strengths.push_back("Str 10");
+    UserData.strengths.push_back("Str 11");
+    UserData.strengths.push_back("Str 12");
+    UserData.strengths.push_back("Str 13");
+    UserData.strengths.push_back("Str 14");
+    UserData.strengths.push_back("Str 15");
+    UserData.strengths.push_back("Str 16");
+
 
     UserData.passionsMovie="Passions Movie";
     UserData.passionsChange="Passions Change";

@@ -34,6 +34,7 @@ class User
      * 2. Add code to Saving function
      * 3. Add code to AddToVar
      * 4. Add code to MatchesVar
+     * 5. Add code to tests.cpp, get_vectors
     */
 
         // User info
@@ -50,6 +51,8 @@ class User
 
         std::vector<std::string> roles; // The names of the checked roles
         std::vector<std::string> skills;
+
+        std::vector<std::string> strengths;
 
         // Passions
         std::string passionsMovie;

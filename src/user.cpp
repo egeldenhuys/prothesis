@@ -237,6 +237,10 @@ int User::save()
     for (unsigned int i = 0; i < skills.size(); i++)
         outf << encode(skills[i]) << std::endl;
 
+    outf << "[strengths]" << std::endl;
+    for (unsigned int i = 0; i < strengths.size(); i++)
+        outf << encode(strengths[i]) << std::endl;
+
     // Passions
     // ========
     outf << "[passionsMovie]" << std::endl;
@@ -347,6 +351,8 @@ int User::_addToVar(std::string varName, std::string value)
         roles.push_back(decode(value));
     else if (varName == "[skills]")
         skills.push_back(decode(value));
+    else if (varName == "[strengths]")
+        strengths.push_back(decode(value));
     else if (varName == "[passionsMovie]")
         passionsMovie = decode(value);
     else if (varName == "[passionsChange]")
@@ -421,7 +427,7 @@ bool User::_matchesVar(std::string varName)
     bool value = false;
 
     // Change this value at 2 locations
-    std::string varNames [34] = {
+    std::string varNames [35] = {
     "[name]", "[surname]", "[mbti]",
     "[lifeKeys]", "[interests]", "[interestsPerc]",
     "[subInterests]", "[subInterestsPerc]", "[roles]", "[skills]", "[passionsMovie]",
@@ -432,12 +438,12 @@ bool User::_matchesVar(std::string varName)
     "[peopleIdentify]", "[peopleCharacter]", "[peopleSummary]",
     "[spokenWords]", "[spokenSummary]", "[people]", "[priorities]",
     "[workIdeal]", "[workCreative]", "[workStructure]",
-    "[workUndefined]", "[workSummary]"
+    "[workUndefined]", "[workSummary]", "[strengths]"
     };
 
     //print_vector(varNames);
 
-    for (int i = 0; i < 34; i++)
+    for (int i = 0; i < 35; i++)
     {
         //std::cout << varNames[i] << std::endl;
 
