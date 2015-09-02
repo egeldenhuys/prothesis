@@ -461,7 +461,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
@@ -1251,7 +1251,7 @@
         <property name="title">
          <string>What scene in a movie provoked strong emotional feelings, passion in your heart?</string>
         </property>
-        <widget class="QLineEdit" name="lineEdit">
+        <widget class="QLineEdit" name="txtPassionsMovie">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -1274,7 +1274,7 @@
         <property name="title">
          <string>If you hade one thing left to do and no limit on your resources, what would it be?</string>
         </property>
-        <widget class="QLineEdit" name="lineEdit_2">
+        <widget class="QLineEdit" name="txtPassionsOneThing">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -1297,7 +1297,7 @@
         <property name="title">
          <string>What would you like to change if you knew you couldn't fail?</string>
         </property>
-        <widget class="QLineEdit" name="lineEdit_3">
+        <widget class="QLineEdit" name="txtPassionsChange">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -1320,7 +1320,7 @@
         <property name="title">
          <string>What thing that you do makes you come alive?</string>
         </property>
-        <widget class="QLineEdit" name="lineEdit_4">
+        <widget class="QLineEdit" name="txtPassionsAlive">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -1343,7 +1343,7 @@
         <property name="title">
          <string>Is there something that you would have difficulty giving up? What is it and why?</string>
         </property>
-        <widget class="QLineEdit" name="lineEdit_5">
+        <widget class="QLineEdit" name="txtPassionsGiveUp">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -1366,7 +1366,7 @@
         <property name="title">
          <string>Now summarize the central themes from your answers and type them below</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit">
+        <widget class="QPlainTextEdit" name="txtPassionsSummary">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -2454,12 +2454,12 @@
   <tabstop>chkbStrengths_31</tabstop>
   <tabstop>chkbStrengths_32</tabstop>
   <tabstop>chkbStrengths_33</tabstop>
-  <tabstop>lineEdit</tabstop>
-  <tabstop>lineEdit_2</tabstop>
-  <tabstop>lineEdit_3</tabstop>
-  <tabstop>lineEdit_4</tabstop>
-  <tabstop>lineEdit_5</tabstop>
-  <tabstop>plainTextEdit</tabstop>
+  <tabstop>txtPassionsMovie</tabstop>
+  <tabstop>txtPassionsOneThing</tabstop>
+  <tabstop>txtPassionsChange</tabstop>
+  <tabstop>txtPassionsAlive</tabstop>
+  <tabstop>txtPassionsGiveUp</tabstop>
+  <tabstop>txtPassionsSummary</tabstop>
   <tabstop>lineEdit_6</tabstop>
   <tabstop>lineEdit_7</tabstop>
   <tabstop>plainTextEdit_2</tabstop>

@@ -289,6 +289,18 @@ void MainWindow::LoadUserData() {
         }
     }
 
+    // ======================
+    // Passion START
+    // ======================
+
+    ui->txtPassionsAlive->setText(QString::fromStdString(UserData.passionsAlive));
+    ui->txtPassionsChange->setText(QString::fromStdString(UserData.passionsChange));
+    ui->txtPassionsGiveUp->setText(QString::fromStdString(UserData.passionsGiveUp));
+    ui->txtPassionsMovie->setText(QString::fromStdString(UserData.passionsMovie));
+    ui->txtPassionsOneThing->setText(QString::fromStdString(UserData.passionsMovie));
+    ui->txtPassionsSummary->setPlainText(QString::fromStdString(UserData.passionsSummary));
+
+
 }
 
 /* MainWindow::SaveUserData()
@@ -546,6 +558,17 @@ void MainWindow::SaveUserData() {
         if (strengthBoxes.at(i)->checkState() == 2)
             UserData.strengths.push_back(strengthBoxes.at(i)->text().toStdString());
     }
+
+    // ======================
+    // Passions START
+    // ======================
+
+    UserData.passionsAlive = ui->txtPassionsAlive->text().toStdString();
+    UserData.passionsChange = ui->txtPassionsChange->text().toStdString();
+    UserData.passionsGiveUp = ui->txtPassionsGiveUp->text().toStdString();
+    UserData.passionsMovie = ui->txtPassionsMovie->text().toStdString();
+    UserData.passionsOneThing = ui->txtPassionsOneThing->text().toStdString();
+    UserData.passionsSummary = ui->txtPassionsSummary->document()->toPlainText().toStdString();
 
 
 

@@ -94,6 +94,9 @@ std::string User::decode(std::string text)
     specialsA.push_back("]");
     specialsB.push_back("&%2");
 
+    specialsA.push_back("\n");
+    specialsB.push_back("&%3");
+
     std::size_t foundLoc = 0;
     // Find and replace each element from specialsB with specialsA
     // in the given string
@@ -150,6 +153,9 @@ std::string User::encode(std::string text)
 
     specialsA.push_back(']');
     specialsB.push_back("&%2");
+
+    specialsA.push_back('\n');
+    specialsB.push_back("&%3");
 
     int specLoc = 0;
 
@@ -513,6 +519,7 @@ int User::load()
         // Check if the line matches a variable
         if ( _matchesVar(line) )
         {
+
             // The next lines need to be added under that variable
             //representation
             varName = line;
