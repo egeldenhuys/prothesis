@@ -366,6 +366,39 @@ void MainWindow::LoadUserData() {
         }
     }
 
+    // =======================
+    // Priorities Start
+    // =======================
+
+    // Add all role checkboxes to a vector of QCheckBox
+
+    std::vector<QCheckBox*> priorityBoxes;
+
+    priorityBoxes.push_back(ui->chkbPriorities_1);
+    priorityBoxes.push_back(ui->chkbPriorities_2);
+    priorityBoxes.push_back(ui->chkbPriorities_3);
+    priorityBoxes.push_back(ui->chkbPriorities_4);
+    priorityBoxes.push_back(ui->chkbPriorities_5);
+    priorityBoxes.push_back(ui->chkbPriorities_6);
+    priorityBoxes.push_back(ui->chkbPriorities_7);
+    priorityBoxes.push_back(ui->chkbPriorities_8);
+    priorityBoxes.push_back(ui->chkbPriorities_9);
+    priorityBoxes.push_back(ui->chkbPriorities_10);
+
+
+    // Loop through loaded box names and check those that exist
+
+
+    // Loop through all Loaded roles
+    for (uint i = 0; i < UserData.priorities.size(); i++)
+    {
+        // Loop through all  Checkboxes
+        for (uint j = 0; j < priorityBoxes.size(); j++)
+        {
+            if (priorityBoxes.at(j)->text() == QString::fromStdString(UserData.priorities.at(i)))
+                priorityBoxes.at(j)->setChecked(1);
+        }
+    }
 
 }
 
@@ -700,6 +733,38 @@ void MainWindow::SaveUserData() {
             UserData.people.push_back(peopleBoxes.at(i)->text().toStdString());
     }
 
+
+    // =======================
+    // Priorities Start
+    // =======================
+
+    // Add all role checkboxes to a vector of QCheckBox
+
+    std::vector<QCheckBox*> priorityBoxes;
+
+    priorityBoxes.push_back(ui->chkbPriorities_1);
+    priorityBoxes.push_back(ui->chkbPriorities_2);
+    priorityBoxes.push_back(ui->chkbPriorities_3);
+    priorityBoxes.push_back(ui->chkbPriorities_4);
+    priorityBoxes.push_back(ui->chkbPriorities_5);
+    priorityBoxes.push_back(ui->chkbPriorities_6);
+    priorityBoxes.push_back(ui->chkbPriorities_7);
+    priorityBoxes.push_back(ui->chkbPriorities_8);
+    priorityBoxes.push_back(ui->chkbPriorities_9);
+    priorityBoxes.push_back(ui->chkbPriorities_10);
+
+
+
+    // Loop through all the boxes and save the checked names
+
+    UserData.priorities.clear();
+
+    for (uint i = 0; i < priorityBoxes.size(); i++)
+    {
+
+        if (priorityBoxes.at(i)->checkState() == 2)
+            UserData.priorities.push_back(priorityBoxes.at(i)->text().toStdString());
+    }
 
 
     // ====================

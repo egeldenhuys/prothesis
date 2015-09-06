@@ -1675,7 +1675,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_11">
        <attribute name="title">
@@ -1821,70 +1821,70 @@
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_6">
          <item>
-          <widget class="QCheckBox" name="checkBox_76">
+          <widget class="QCheckBox" name="chkbPriorities_1">
            <property name="text">
             <string>Self actualization</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_81">
+          <widget class="QCheckBox" name="chkbPriorities_3">
            <property name="text">
             <string>Creative Work</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_82">
+          <widget class="QCheckBox" name="chkbPriorities_4">
            <property name="text">
             <string>Money</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_84">
+          <widget class="QCheckBox" name="chkbPriorities_6">
            <property name="text">
             <string>Work security</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_83">
+          <widget class="QCheckBox" name="chkbPriorities_5">
            <property name="text">
             <string>Post school training</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_86">
+          <widget class="QCheckBox" name="chkbPriorities_8">
            <property name="text">
             <string>Working with people</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_85">
+          <widget class="QCheckBox" name="chkbPriorities_7">
            <property name="text">
             <string>Changing of routine</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_78">
+          <widget class="QCheckBox" name="chkbPriorities_2">
            <property name="text">
             <string>Leading</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_88">
+          <widget class="QCheckBox" name="chkbPriorities_10">
            <property name="text">
             <string>Concepts rather than people</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_87">
+          <widget class="QCheckBox" name="chkbPriorities_9">
            <property name="text">
             <string>Recognition and status</string>
            </property>
@@ -2510,16 +2510,16 @@
   <tabstop>chkbPeople_13</tabstop>
   <tabstop>chkbPeople_16</tabstop>
   <tabstop>chkbPeople_14</tabstop>
-  <tabstop>checkBox_76</tabstop>
-  <tabstop>checkBox_81</tabstop>
-  <tabstop>checkBox_82</tabstop>
-  <tabstop>checkBox_84</tabstop>
-  <tabstop>checkBox_83</tabstop>
-  <tabstop>checkBox_86</tabstop>
-  <tabstop>checkBox_85</tabstop>
-  <tabstop>checkBox_78</tabstop>
-  <tabstop>checkBox_88</tabstop>
-  <tabstop>checkBox_87</tabstop>
+  <tabstop>chkbPriorities_1</tabstop>
+  <tabstop>chkbPriorities_3</tabstop>
+  <tabstop>chkbPriorities_4</tabstop>
+  <tabstop>chkbPriorities_6</tabstop>
+  <tabstop>chkbPriorities_5</tabstop>
+  <tabstop>chkbPriorities_8</tabstop>
+  <tabstop>chkbPriorities_7</tabstop>
+  <tabstop>chkbPriorities_2</tabstop>
+  <tabstop>chkbPriorities_10</tabstop>
+  <tabstop>chkbPriorities_9</tabstop>
   <tabstop>lineEdit_8</tabstop>
   <tabstop>lineEdit_9</tabstop>
   <tabstop>lineEdit_10</tabstop>
