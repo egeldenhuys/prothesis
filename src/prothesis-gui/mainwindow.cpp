@@ -319,6 +319,13 @@ void MainWindow::LoadUserData() {
     ui->txtPeopleIdentify->setPlainText(QString::fromStdString(UserData.peopleIdentify));
     ui->txtPeopleSummary->setPlainText(QString::fromStdString(UserData.peopleSummary));
 
+    // ======================
+    // Spoken Words START
+    // ======================
+
+    ui->ptxtSpokenSummary->setPlainText(QString::fromStdString(UserData.spokenSummary));
+    ui->ptxtSpokenWords->setPlainText(QString::fromStdString(UserData.spokenWords));
+
 
 }
 
@@ -608,6 +615,14 @@ void MainWindow::SaveUserData() {
     UserData.peopleHero = ui->txtPeopleHero->document()->toPlainText().toStdString();
     UserData.peopleIdentify = ui->txtPeopleIdentify->document()->toPlainText().toStdString();
     UserData.peopleSummary = ui->txtPeopleSummary->document()->toPlainText().toStdString();
+
+    // ======================
+    // Spoken Words START
+    // ======================
+
+    UserData.spokenSummary = ui->ptxtSpokenSummary->document()->toPlainText().toStdString();
+    UserData.spokenWords = ui->ptxtSpokenWords->document()->toPlainText().toStdString();
+
 
 
     // ====================

@@ -461,7 +461,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>5</number>
+       <number>6</number>
       </property>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
@@ -1624,7 +1624,7 @@
         <property name="title">
          <string>Fill these commonly spoken lines in below</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_8">
+        <widget class="QPlainTextEdit" name="ptxtSpokenWords">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -1647,7 +1647,7 @@
         <property name="title">
          <string>Now summarize the central themes from your answers and type them below</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_10">
+        <widget class="QPlainTextEdit" name="ptxtSpokenSummary">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -2491,8 +2491,8 @@
   <tabstop>txtPeopleIdentify</tabstop>
   <tabstop>txtPeopleCharacter</tabstop>
   <tabstop>txtPeopleSummary</tabstop>
-  <tabstop>plainTextEdit_8</tabstop>
-  <tabstop>plainTextEdit_10</tabstop>
+  <tabstop>ptxtSpokenWords</tabstop>
+  <tabstop>ptxtSpokenSummary</tabstop>
   <tabstop>tabWidget_3</tabstop>
   <tabstop>checkBox_51</tabstop>
   <tabstop>checkBox_53</tabstop>
