@@ -456,12 +456,12 @@
        <rect>
         <x>0</x>
         <y>10</y>
-        <width>871</width>
-        <height>541</height>
+        <width>941</width>
+        <height>611</height>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>5</number>
       </property>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
@@ -1485,19 +1485,19 @@
           <x>10</x>
           <y>10</y>
           <width>841</width>
-          <height>81</height>
+          <height>91</height>
          </rect>
         </property>
         <property name="title">
          <string>Who was your childhood hero? Why?</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_3">
+        <widget class="QPlainTextEdit" name="txtPeopleHero">
          <property name="geometry">
           <rect>
            <x>10</x>
            <y>30</y>
            <width>811</width>
-           <height>41</height>
+           <height>51</height>
           </rect>
          </property>
         </widget>
@@ -1506,21 +1506,21 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>100</y>
+          <y>120</y>
           <width>841</width>
-          <height>81</height>
+          <height>91</height>
          </rect>
         </property>
         <property name="title">
-         <string>Who were te people that influenced your life the most? Why?</string>
+         <string>Who were the people that influenced your life the most? Why?</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_4">
+        <widget class="QPlainTextEdit" name="txtpeopleInfluence">
          <property name="geometry">
           <rect>
            <x>10</x>
            <y>30</y>
            <width>811</width>
-           <height>41</height>
+           <height>51</height>
           </rect>
          </property>
         </widget>
@@ -1529,21 +1529,21 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>190</y>
+          <y>230</y>
           <width>841</width>
-          <height>81</height>
+          <height>91</height>
          </rect>
         </property>
         <property name="title">
          <string>With whom do you identifty strongly at the moment? Why?</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_5">
+        <widget class="QPlainTextEdit" name="txtPeopleIdentify">
          <property name="geometry">
           <rect>
            <x>10</x>
            <y>30</y>
            <width>811</width>
-           <height>41</height>
+           <height>51</height>
           </rect>
          </property>
         </widget>
@@ -1552,21 +1552,21 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>280</y>
+          <y>340</y>
           <width>841</width>
-          <height>81</height>
+          <height>91</height>
          </rect>
         </property>
         <property name="title">
          <string>With wich character in a movie or book did you relate to the most in your life? Why?</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_6">
+        <widget class="QPlainTextEdit" name="txtPeopleCharacter">
          <property name="geometry">
           <rect>
            <x>10</x>
            <y>30</y>
            <width>811</width>
-           <height>41</height>
+           <height>51</height>
           </rect>
          </property>
         </widget>
@@ -1575,7 +1575,7 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>370</y>
+          <y>440</y>
           <width>841</width>
           <height>131</height>
          </rect>
@@ -1583,7 +1583,7 @@
         <property name="title">
          <string>Now summarize the central themes from your answers and type them below</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_7">
+        <widget class="QPlainTextEdit" name="txtPeopleSummary">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -2486,11 +2486,11 @@
   <tabstop>txtDreamsPasttime</tabstop>
   <tabstop>txtName</tabstop>
   <tabstop>txtDreamSummary</tabstop>
-  <tabstop>plainTextEdit_3</tabstop>
-  <tabstop>plainTextEdit_4</tabstop>
-  <tabstop>plainTextEdit_5</tabstop>
-  <tabstop>plainTextEdit_6</tabstop>
-  <tabstop>plainTextEdit_7</tabstop>
+  <tabstop>txtPeopleHero</tabstop>
+  <tabstop>txtpeopleInfluence</tabstop>
+  <tabstop>txtPeopleIdentify</tabstop>
+  <tabstop>txtPeopleCharacter</tabstop>
+  <tabstop>txtPeopleSummary</tabstop>
   <tabstop>plainTextEdit_8</tabstop>
   <tabstop>plainTextEdit_10</tabstop>
   <tabstop>tabWidget_3</tabstop>

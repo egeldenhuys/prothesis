@@ -309,6 +309,16 @@ void MainWindow::LoadUserData() {
     ui->txtDreamsPasttime->setText(QString::fromStdString(UserData.dreamsPasttime));
     ui->txtDreamSummary->setPlainText(QString::fromStdString(UserData.dreamsSummary));
 
+    // ======================
+    // People ID START
+    // ======================
+
+    ui->txtpeopleInfluence->setPlainText(QString::fromStdString(UserData.peopleInfluence));
+    ui->txtPeopleCharacter->setPlainText(QString::fromStdString(UserData.peopleCharacter));
+    ui->txtPeopleHero->setPlainText(QString::fromStdString(UserData.peopleHero));
+    ui->txtPeopleIdentify->setPlainText(QString::fromStdString(UserData.peopleIdentify));
+    ui->txtPeopleSummary->setPlainText(QString::fromStdString(UserData.peopleSummary));
+
 
 }
 
@@ -588,6 +598,16 @@ void MainWindow::SaveUserData() {
     UserData.dreamsCurrent = ui->txtDreamsCurrent->text().toStdString();
     UserData.dreamsPasttime = ui->txtDreamsPasttime->text().toStdString();
     UserData.dreamsSummary = ui->txtDreamSummary->document()->toPlainText().toStdString();
+
+    // ======================
+    // People ID START
+    // ======================
+
+    UserData.peopleInfluence = ui->txtpeopleInfluence->document()->toPlainText().toStdString();
+    UserData.peopleCharacter = ui->txtPeopleCharacter->document()->toPlainText().toStdString();
+    UserData.peopleHero = ui->txtPeopleHero->document()->toPlainText().toStdString();
+    UserData.peopleIdentify = ui->txtPeopleIdentify->document()->toPlainText().toStdString();
+    UserData.peopleSummary = ui->txtPeopleSummary->document()->toPlainText().toStdString();
 
 
     // ====================
