@@ -326,6 +326,46 @@ void MainWindow::LoadUserData() {
     ui->ptxtSpokenSummary->setPlainText(QString::fromStdString(UserData.spokenSummary));
     ui->ptxtSpokenWords->setPlainText(QString::fromStdString(UserData.spokenWords));
 
+    // =======================
+    // People Orientation Start
+    // =======================
+
+    // Add all role checkboxes to a vector of QCheckBox
+
+    std::vector<QCheckBox*> peopleBoxes;
+
+    peopleBoxes.push_back(ui->chkbPeople_1);
+    peopleBoxes.push_back(ui->chkbPeople_2);
+    peopleBoxes.push_back(ui->chkbPeople_3);
+    peopleBoxes.push_back(ui->chkbPeople_4);
+    peopleBoxes.push_back(ui->chkbPeople_5);
+    peopleBoxes.push_back(ui->chkbPeople_6);
+    peopleBoxes.push_back(ui->chkbPeople_7);
+    peopleBoxes.push_back(ui->chkbPeople_8);
+    peopleBoxes.push_back(ui->chkbPeople_9);
+    peopleBoxes.push_back(ui->chkbPeople_10);
+    peopleBoxes.push_back(ui->chkbPeople_11);
+    peopleBoxes.push_back(ui->chkbPeople_12);
+    peopleBoxes.push_back(ui->chkbPeople_13);
+    peopleBoxes.push_back(ui->chkbPeople_14);
+    peopleBoxes.push_back(ui->chkbPeople_15);
+    peopleBoxes.push_back(ui->chkbPeople_16);
+
+
+    // Loop through loaded box names and check those that exist
+
+
+    // Loop through all Loaded roles
+    for (uint i = 0; i < UserData.people.size(); i++)
+    {
+        // Loop through all  Checkboxes
+        for (uint j = 0; j < peopleBoxes.size(); j++)
+        {
+            if (peopleBoxes.at(j)->text() == QString::fromStdString(UserData.people.at(i)))
+                peopleBoxes.at(j)->setChecked(1);
+        }
+    }
+
 
 }
 
@@ -622,6 +662,43 @@ void MainWindow::SaveUserData() {
 
     UserData.spokenSummary = ui->ptxtSpokenSummary->document()->toPlainText().toStdString();
     UserData.spokenWords = ui->ptxtSpokenWords->document()->toPlainText().toStdString();
+
+    // =======================
+    // People Orientation Start
+    // =======================
+
+    // Add all role checkboxes to a vector of QCheckBox
+
+    std::vector<QCheckBox*> peopleBoxes;
+
+    peopleBoxes.push_back(ui->chkbPeople_1);
+    peopleBoxes.push_back(ui->chkbPeople_2);
+    peopleBoxes.push_back(ui->chkbPeople_3);
+    peopleBoxes.push_back(ui->chkbPeople_4);
+    peopleBoxes.push_back(ui->chkbPeople_5);
+    peopleBoxes.push_back(ui->chkbPeople_6);
+    peopleBoxes.push_back(ui->chkbPeople_7);
+    peopleBoxes.push_back(ui->chkbPeople_8);
+    peopleBoxes.push_back(ui->chkbPeople_9);
+    peopleBoxes.push_back(ui->chkbPeople_10);
+    peopleBoxes.push_back(ui->chkbPeople_11);
+    peopleBoxes.push_back(ui->chkbPeople_12);
+    peopleBoxes.push_back(ui->chkbPeople_13);
+    peopleBoxes.push_back(ui->chkbPeople_14);
+    peopleBoxes.push_back(ui->chkbPeople_15);
+    peopleBoxes.push_back(ui->chkbPeople_16);
+
+
+    // Loop through all the boxes and save the checked names
+
+    UserData.people.clear();
+
+    for (uint i = 0; i < peopleBoxes.size(); i++)
+    {
+
+        if (peopleBoxes.at(i)->checkState() == 2)
+            UserData.people.push_back(peopleBoxes.at(i)->text().toStdString());
+    }
 
 
 

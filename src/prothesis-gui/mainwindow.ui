@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -461,7 +461,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>6</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
@@ -1692,112 +1692,112 @@
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_5">
          <item>
-          <widget class="QCheckBox" name="checkBox_51">
+          <widget class="QCheckBox" name="chkbPeople_1">
            <property name="text">
             <string>Babies</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_53">
+          <widget class="QCheckBox" name="chkbPeople_2">
            <property name="text">
             <string>Toddlers</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_67">
+          <widget class="QCheckBox" name="chkbPeople_5">
            <property name="text">
             <string>Primary school children</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_69">
+          <widget class="QCheckBox" name="chkbPeople_7">
            <property name="text">
             <string>High school children</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_70">
+          <widget class="QCheckBox" name="chkbPeople_8">
            <property name="text">
             <string>Students</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_75">
+          <widget class="QCheckBox" name="chkbPeople_12">
            <property name="text">
             <string>Teenagers</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_68">
+          <widget class="QCheckBox" name="chkbPeople_6">
            <property name="text">
             <string>People in need</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_74">
+          <widget class="QCheckBox" name="chkbPeople_15">
            <property name="text">
             <string>Working people</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_73">
+          <widget class="QCheckBox" name="chkbPeople_11">
            <property name="text">
             <string>Married people</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_72">
+          <widget class="QCheckBox" name="chkbPeople_10">
            <property name="text">
             <string>Older people</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_71">
+          <widget class="QCheckBox" name="chkbPeople_9">
            <property name="text">
             <string>The handicapped</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_57">
+          <widget class="QCheckBox" name="chkbPeople_4">
            <property name="text">
             <string>Addicted people</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_56">
+          <widget class="QCheckBox" name="chkbPeople_3">
            <property name="text">
             <string>The homeless</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_77">
+          <widget class="QCheckBox" name="chkbPeople_13">
            <property name="text">
             <string>Men</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_80">
+          <widget class="QCheckBox" name="chkbPeople_16">
            <property name="text">
             <string>Women</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_79">
+          <widget class="QCheckBox" name="chkbPeople_14">
            <property name="text">
             <string>To be on my own</string>
            </property>
@@ -2494,22 +2494,22 @@
   <tabstop>ptxtSpokenWords</tabstop>
   <tabstop>ptxtSpokenSummary</tabstop>
   <tabstop>tabWidget_3</tabstop>
-  <tabstop>checkBox_51</tabstop>
-  <tabstop>checkBox_53</tabstop>
-  <tabstop>checkBox_67</tabstop>
-  <tabstop>checkBox_69</tabstop>
-  <tabstop>checkBox_70</tabstop>
-  <tabstop>checkBox_75</tabstop>
-  <tabstop>checkBox_68</tabstop>
-  <tabstop>checkBox_74</tabstop>
-  <tabstop>checkBox_73</tabstop>
-  <tabstop>checkBox_72</tabstop>
-  <tabstop>checkBox_71</tabstop>
-  <tabstop>checkBox_57</tabstop>
-  <tabstop>checkBox_56</tabstop>
-  <tabstop>checkBox_77</tabstop>
-  <tabstop>checkBox_80</tabstop>
-  <tabstop>checkBox_79</tabstop>
+  <tabstop>chkbPeople_1</tabstop>
+  <tabstop>chkbPeople_2</tabstop>
+  <tabstop>chkbPeople_5</tabstop>
+  <tabstop>chkbPeople_7</tabstop>
+  <tabstop>chkbPeople_8</tabstop>
+  <tabstop>chkbPeople_12</tabstop>
+  <tabstop>chkbPeople_6</tabstop>
+  <tabstop>chkbPeople_15</tabstop>
+  <tabstop>chkbPeople_11</tabstop>
+  <tabstop>chkbPeople_10</tabstop>
+  <tabstop>chkbPeople_9</tabstop>
+  <tabstop>chkbPeople_4</tabstop>
+  <tabstop>chkbPeople_3</tabstop>
+  <tabstop>chkbPeople_13</tabstop>
+  <tabstop>chkbPeople_16</tabstop>
+  <tabstop>chkbPeople_14</tabstop>
   <tabstop>checkBox_76</tabstop>
   <tabstop>checkBox_81</tabstop>
   <tabstop>checkBox_82</tabstop>
