@@ -400,6 +400,17 @@ void MainWindow::LoadUserData() {
         }
     }
 
+    // ======================
+    // Work Environment START
+    // ======================
+
+    ui->txtWorkCreative->setText(QString::fromStdString(UserData.workCreative));
+    ui->txtWorkIdeal->setText(QString::fromStdString(UserData.workIdeal));
+    ui->txtWorkStructure->setText(QString::fromStdString(UserData.workStructure));
+    ui->txtWorkUndefined->setText(QString::fromStdString(UserData.workUndefined));
+    ui->ptxtWorkSummary->setPlainText(QString::fromStdString(UserData.workSummary));
+
+
 }
 
 /* MainWindow::SaveUserData()
@@ -765,6 +776,16 @@ void MainWindow::SaveUserData() {
         if (priorityBoxes.at(i)->checkState() == 2)
             UserData.priorities.push_back(priorityBoxes.at(i)->text().toStdString());
     }
+
+    // ======================
+    // Passions START
+    // ======================
+
+    UserData.workCreative = ui->txtWorkCreative->text().toStdString();
+    UserData.workIdeal = ui->txtWorkIdeal->text().toStdString();
+    UserData.workStructure = ui->txtWorkStructure->text().toStdString();
+    UserData.workUndefined = ui->txtWorkUndefined->text().toStdString();
+    UserData.workSummary = ui->ptxtWorkSummary->document()->toPlainText().toStdString();
 
 
     // ====================

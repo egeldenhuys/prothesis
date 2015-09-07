@@ -1675,7 +1675,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_11">
        <attribute name="title">
@@ -1909,7 +1909,7 @@
         <property name="title">
          <string>My ideal work environment</string>
         </property>
-        <widget class="QLineEdit" name="lineEdit_8">
+        <widget class="QLineEdit" name="txtWorkIdeal">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -1932,7 +1932,7 @@
         <property name="title">
          <string>I am creative in the following ways</string>
         </property>
-        <widget class="QLineEdit" name="lineEdit_9">
+        <widget class="QLineEdit" name="txtWorkCreative">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -1955,7 +1955,7 @@
         <property name="title">
          <string>Fixed structure makes me feel</string>
         </property>
-        <widget class="QLineEdit" name="lineEdit_10">
+        <widget class="QLineEdit" name="txtWorkStructure">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -1978,7 +1978,7 @@
         <property name="title">
          <string>An undefined environment makes me feel</string>
         </property>
-        <widget class="QLineEdit" name="lineEdit_11">
+        <widget class="QLineEdit" name="txtWorkUndefined">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -2001,7 +2001,7 @@
         <property name="title">
          <string>Now summarize the central themes from your answers and type them below</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_11">
+        <widget class="QPlainTextEdit" name="ptxtWorkSummary">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -2520,11 +2520,11 @@
   <tabstop>chkbPriorities_2</tabstop>
   <tabstop>chkbPriorities_10</tabstop>
   <tabstop>chkbPriorities_9</tabstop>
-  <tabstop>lineEdit_8</tabstop>
-  <tabstop>lineEdit_9</tabstop>
-  <tabstop>lineEdit_10</tabstop>
-  <tabstop>lineEdit_11</tabstop>
-  <tabstop>plainTextEdit_11</tabstop>
+  <tabstop>txtWorkIdeal</tabstop>
+  <tabstop>txtWorkCreative</tabstop>
+  <tabstop>txtWorkStructure</tabstop>
+  <tabstop>txtWorkUndefined</tabstop>
+  <tabstop>ptxtWorkSummary</tabstop>
   <tabstop>lineEdit_14</tabstop>
   <tabstop>lineEdit_15</tabstop>
   <tabstop>lineEdit_12</tabstop>
