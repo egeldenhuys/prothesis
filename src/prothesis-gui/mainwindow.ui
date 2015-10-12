@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1186</width>
+    <width>1280</width>
     <height>742</height>
    </rect>
   </property>
@@ -19,12 +19,12 @@
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>1151</width>
+      <width>1241</width>
       <height>671</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -2030,14 +2030,32 @@
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="btnRed">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(231, 150, 150);</string>
+         </property>
          <property name="text">
           <string/>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_3">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(158, 255, 161);</string>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -2045,6 +2063,9 @@
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_5">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(172, 166, 255);</string>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -2052,6 +2073,9 @@
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_4">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 253, 166);</string>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -2059,6 +2083,9 @@
        </item>
        <item>
         <widget class="QPushButton" name="pushButton">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -2066,7 +2093,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QPushButton" name="pushButton_6">
+     <widget class="QPushButton" name="btnColour">
       <property name="geometry">
        <rect>
         <x>300</x>
@@ -2074,6 +2101,9 @@
         <width>49</width>
         <height>23</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
        <string/>
@@ -2241,7 +2271,7 @@
        <rect>
         <x>830</x>
         <y>50</y>
-        <width>301</width>
+        <width>341</width>
         <height>491</height>
        </rect>
       </property>
@@ -2253,52 +2283,150 @@
         <rect>
          <x>10</x>
          <y>30</y>
-         <width>281</width>
+         <width>311</width>
          <height>101</height>
         </rect>
        </property>
        <property name="title">
         <string>Theme 1</string>
        </property>
+       <widget class="QPlainTextEdit" name="txtTheme_1">
+        <property name="geometry">
+         <rect>
+          <x>13</x>
+          <y>20</y>
+          <width>261</width>
+          <height>71</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnColTheme_1">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>20</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Changen Theme 1 colour&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
       </widget>
       <widget class="QGroupBox" name="groupBox_34">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>140</y>
-         <width>281</width>
+         <width>311</width>
          <height>101</height>
         </rect>
        </property>
        <property name="title">
         <string>Theme 2</string>
        </property>
+       <widget class="QPlainTextEdit" name="txtTheme_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>261</width>
+          <height>71</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnColTheme_2">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>20</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;lolwat&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
       </widget>
       <widget class="QGroupBox" name="groupBox_35">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>250</y>
-         <width>281</width>
+         <width>311</width>
          <height>101</height>
         </rect>
        </property>
        <property name="title">
         <string>Theme 3</string>
        </property>
+       <widget class="QPlainTextEdit" name="txtTheme_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>261</width>
+          <height>71</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnColTheme_3">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>20</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
       </widget>
       <widget class="QGroupBox" name="groupBox_36">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>360</y>
-         <width>281</width>
+         <width>311</width>
          <height>101</height>
         </rect>
        </property>
        <property name="title">
         <string>Theme 4</string>
        </property>
+       <widget class="QPlainTextEdit" name="txtTheme_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>261</width>
+          <height>71</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnColTheme_4">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>20</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
       </widget>
      </widget>
      <widget class="QGroupBox" name="groupBox_37">
@@ -2335,7 +2463,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1186</width>
+     <width>1280</width>
      <height>21</height>
     </rect>
    </property>
@@ -2532,9 +2660,9 @@
   <tabstop>pushButton_5</tabstop>
   <tabstop>pushButton_4</tabstop>
   <tabstop>pushButton</tabstop>
-  <tabstop>pushButton_6</tabstop>
+  <tabstop>btnColour</tabstop>
   <tabstop>lineEdit_13</tabstop>
-  <tabstop>pushButton_2</tabstop>
+  <tabstop>btnRed</tabstop>
   <tabstop>txtDreamsCurrent</tabstop>
  </tabstops>
  <resources/>

@@ -7,11 +7,15 @@
 #include "../user.h"
 #include "../globals.h"
 
+QString colour;
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+
     //run_tests();
     LoadUserData();
 }
@@ -793,4 +797,57 @@ void MainWindow::SaveUserData() {
     // ====================
 
     UserData.save();
+}
+
+void MainWindow::SetColour(QString newColour) {
+    colour = newColour;
+
+    ui->btnColour->setStyleSheet("background-color: rgb(" + newColour + ");");
+}
+
+void MainWindow::on_btnRed_clicked()
+{
+    SetColour("231, 150, 150");
+
+}
+
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    SetColour("158, 255, 161");
+}
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    SetColour("172, 166, 255");
+}
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    SetColour("255, 253, 166");
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    SetColour("255, 255, 255");
+}
+
+void MainWindow::on_btnColTheme_1_clicked()
+{
+    ui->txtTheme_1->setStyleSheet("background-color: rgb(" + colour + ");");
+}
+
+void MainWindow::on_btnColTheme_2_clicked()
+{
+    ui->txtTheme_2->setStyleSheet("background-color: rgb(" + colour + ");");
+}
+
+void MainWindow::on_btnColTheme_3_clicked()
+{
+    ui->txtTheme_3->setStyleSheet("background-color: rgb(" + colour + ");");
+}
+
+void MainWindow::on_btnColTheme_4_clicked()
+{
+    ui->txtTheme_4->setStyleSheet("background-color: rgb(" + colour + ");");
 }
