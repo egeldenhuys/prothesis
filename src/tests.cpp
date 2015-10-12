@@ -92,7 +92,14 @@ std::vector<std::string> get_strings(User UserData)
     UserDataStrings.push_back(UserData.workStructure);
     UserDataStrings.push_back(UserData.workUndefined);
     UserDataStrings.push_back(UserData.workSummary);
-
+    UserDataStrings.push_back(UserData.theme1);
+    UserDataStrings.push_back(UserData.theme1c);
+    UserDataStrings.push_back(UserData.theme2);
+    UserDataStrings.push_back(UserData.theme2c);
+    UserDataStrings.push_back(UserData.theme3);
+    UserDataStrings.push_back(UserData.theme3c);
+    UserDataStrings.push_back(UserData.theme4);
+    UserDataStrings.push_back(UserData.theme4c);
     return UserDataStrings;
 
 }
@@ -201,6 +208,18 @@ User set_user_data()
     UserData.workStructure="work struct";
     UserData.workUndefined="work und]efined";
     UserData.workSummary="work summa][ry";
+
+    UserData.theme1="Theme 1";
+    UserData.theme1c="255, 255, 0";
+
+    UserData.theme2="theme 2";
+    UserData.theme2c="255, 0, 0";
+
+    UserData.theme3="Theeme 3";
+    UserData.theme3c="0, 255, 0";
+
+    UserData.theme4="Theme 4";
+    UserData.theme4c="0, 0, 255";
 
     return UserData;
 }

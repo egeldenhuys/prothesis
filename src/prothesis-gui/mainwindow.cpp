@@ -414,6 +414,19 @@ void MainWindow::LoadUserData() {
     ui->txtWorkUndefined->setText(QString::fromStdString(UserData.workUndefined));
     ui->ptxtWorkSummary->setPlainText(QString::fromStdString(UserData.workSummary));
 
+    // ======================
+    // Analysis START
+    // ======================
+
+    ui->txtTheme_1->setPlainText(QString::fromStdString(UserData.theme1));
+    ui->txtTheme_2->setPlainText(QString::fromStdString(UserData.theme2));
+    ui->txtTheme_3->setPlainText(QString::fromStdString(UserData.theme3));
+    ui->txtTheme_4->setPlainText(QString::fromStdString(UserData.theme4));
+
+    ui->txtTheme_1->setStyleSheet(QString::fromStdString("background-color: rgb(" + UserData.theme1c + ");"));
+    ui->txtTheme_2->setStyleSheet(QString::fromStdString("background-color: rgb(" + UserData.theme2c + ");"));
+    ui->txtTheme_3->setStyleSheet(QString::fromStdString("background-color: rgb(" + UserData.theme3c + ");"));
+    ui->txtTheme_4->setStyleSheet(QString::fromStdString("background-color: rgb(" + UserData.theme4c + ");"));
 
 }
 
@@ -791,6 +804,16 @@ void MainWindow::SaveUserData() {
     UserData.workUndefined = ui->txtWorkUndefined->text().toStdString();
     UserData.workSummary = ui->ptxtWorkSummary->document()->toPlainText().toStdString();
 
+    // ======================
+    // Analysis START
+    // ======================
+
+    UserData.theme1 = ui->txtTheme_1->document()->toPlainText().toStdString();
+    UserData.theme2 = ui->txtTheme_2->document()->toPlainText().toStdString();
+    UserData.theme3 = ui->txtTheme_3->document()->toPlainText().toStdString();
+    UserData.theme4 = ui->txtTheme_4->document()->toPlainText().toStdString();
+
+    // Colours are directly set
 
     // ====================
     // END
@@ -835,19 +858,24 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::on_btnColTheme_1_clicked()
 {
     ui->txtTheme_1->setStyleSheet("background-color: rgb(" + colour + ");");
+    UserData.theme1c = colour.toStdString();
+
 }
 
 void MainWindow::on_btnColTheme_2_clicked()
 {
     ui->txtTheme_2->setStyleSheet("background-color: rgb(" + colour + ");");
+    UserData.theme2c = colour.toStdString();
 }
 
 void MainWindow::on_btnColTheme_3_clicked()
 {
     ui->txtTheme_3->setStyleSheet("background-color: rgb(" + colour + ");");
+    UserData.theme3c = colour.toStdString();
 }
 
 void MainWindow::on_btnColTheme_4_clicked()
 {
     ui->txtTheme_4->setStyleSheet("background-color: rgb(" + colour + ");");
+    UserData.theme4c = colour.toStdString();
 }

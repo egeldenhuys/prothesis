@@ -34,8 +34,20 @@ class User
      * 2. Add code to Saving function
      * 3. Add code to AddToVar
      * 4. Add code to MatchesVar
-     * 5. Add code to tests.cpp, get_vectors
+     * 5. Add code to tests.cpp, get_strings or get_vectors
+     * 6. Add code to tests.cpp, set_user_data
     */
+
+    // Analysis
+    // c - Colour
+    std::string theme1;
+    std::string theme1c;
+    std::string theme2;
+    std::string theme2c;
+    std::string theme3;
+    std::string theme3c;
+    std::string theme4;
+    std::string theme4c;
 
         // User info
         std::string name;

@@ -313,6 +313,30 @@ int User::save()
     outf << "[workSummary]" << std::endl;
     outf << encode(workSummary) << std::endl;
 
+    // Analysis
+    outf << "[theme1]" << std::endl;
+    outf << encode(theme1) << std::endl;
+
+    outf << "[theme1c]" << std::endl;
+    outf << encode(theme1c) << std::endl;
+
+    outf << "[theme2]" << std::endl;
+    outf << encode(theme2) << std::endl;
+
+    outf << "[theme2c]" << std::endl;
+    outf << encode(theme2c) << std::endl;
+
+    outf << "[theme3]" << std::endl;
+    outf << encode(theme3) << std::endl;
+
+    outf << "[theme3c]" << std::endl;
+    outf << encode(theme3c) << std::endl;
+
+    outf << "[theme4]" << std::endl;
+    outf << encode(theme4) << std::endl;
+
+    outf << "[theme4c]" << std::endl;
+    outf << encode(theme4c) << std::endl;
 
     outf.close();
 
@@ -405,6 +429,22 @@ int User::_addToVar(std::string varName, std::string value)
         workUndefined = decode(value);
     else if (varName == "[workSummary]")
         workSummary = decode(value);
+    else if (varName == "[theme1]")
+        theme1 = decode(value);
+    else if (varName == "[theme1c]")
+        theme1c = decode(value);
+    else if (varName == "[theme2]")
+        theme2 = decode(value);
+    else if (varName == "[theme2c]")
+        theme2c = decode(value);
+    else if (varName == "[theme3]")
+        theme3 = decode(value);
+    else if (varName == "[theme3c]")
+        theme3c = decode(value);
+    else if (varName == "[theme4]")
+        theme4 = decode(value);
+    else if (varName == "[theme4c]")
+        theme4c = decode(value);
 
     return -1;
 }
@@ -433,7 +473,7 @@ bool User::_matchesVar(std::string varName)
     bool value = false;
 
     // Change this value at 2 locations
-    std::string varNames [35] = {
+    std::string varNames [48] = {
     "[name]", "[surname]", "[mbti]",
     "[lifeKeys]", "[interests]", "[interestsPerc]",
     "[subInterests]", "[subInterestsPerc]", "[roles]", "[skills]", "[passionsMovie]",
@@ -444,12 +484,14 @@ bool User::_matchesVar(std::string varName)
     "[peopleIdentify]", "[peopleCharacter]", "[peopleSummary]",
     "[spokenWords]", "[spokenSummary]", "[people]", "[priorities]",
     "[workIdeal]", "[workCreative]", "[workStructure]",
-    "[workUndefined]", "[workSummary]", "[strengths]"
+    "[workUndefined]", "[workSummary]", "[strengths]",
+    "[theme1]", "[theme1c]", "[theme2]", "[theme2c]",
+    "[theme3]", "[theme3c]", "[theme4]", "[theme4c]"
     };
 
     //print_vector(varNames);
 
-    for (int i = 0; i < 35; i++)
+    for (int i = 0; i < 48; i++)
     {
         //std::cout << varNames[i] << std::endl;
 
