@@ -18,19 +18,12 @@ public:
     void LoadUserData();
     void SaveUserData();
     void SetColour(QString newColour);
+    void SetMBTI();
 
 private slots:
 
 
     void on_btnRed_clicked();
-
-    void on_pushButton_3_clicked();
-
-    void on_pushButton_clicked();
-
-    void on_pushButton_5_clicked();
-
-    void on_pushButton_4_clicked();
 
     void on_btnColTheme_1_clicked();
 
@@ -39,6 +32,22 @@ private slots:
     void on_btnColTheme_3_clicked();
 
     void on_btnColTheme_4_clicked();
+
+    void on_cmbMBTI1_currentTextChanged(const QString &arg1);
+
+    void on_cmbMBTI2_currentTextChanged(const QString &arg1);
+
+    void on_cmbMBTI3_currentTextChanged(const QString &arg1);
+
+    void on_cmbMBTI4_currentTextChanged(const QString &arg1);
+
+    void on_btnGreen_clicked();
+
+    void on_btnBlue_clicked();
+
+    void on_btnYellow_clicked();
+
+    void on_btnWhite_clicked();
 
 private:
     Ui::MainWindow *ui;

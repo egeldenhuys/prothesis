@@ -18,6 +18,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //run_tests();
     LoadUserData();
+    SetMBTI();
+
 }
 
 MainWindow::~MainWindow()
@@ -826,34 +828,17 @@ void MainWindow::SetColour(QString newColour) {
     colour = newColour;
 
     ui->btnColour->setStyleSheet("background-color: rgb(" + newColour + ");");
+    ui->btnColTheme_1->setStyleSheet("background-color: rgb(" + newColour + ");");
+    ui->btnColTheme_2->setStyleSheet("background-color: rgb(" + newColour + ");");
+    ui->btnColTheme_3->setStyleSheet("background-color: rgb(" + newColour + ");");
+    ui->btnColTheme_4->setStyleSheet("background-color: rgb(" + newColour + ");");
 }
 
 void MainWindow::on_btnRed_clicked()
 {
     SetColour("231, 150, 150");
-
 }
 
-
-void MainWindow::on_pushButton_3_clicked()
-{
-    SetColour("158, 255, 161");
-}
-
-void MainWindow::on_pushButton_5_clicked()
-{
-    SetColour("172, 166, 255");
-}
-
-void MainWindow::on_pushButton_4_clicked()
-{
-    SetColour("255, 253, 166");
-}
-
-void MainWindow::on_pushButton_clicked()
-{
-    SetColour("255, 255, 255");
-}
 
 void MainWindow::on_btnColTheme_1_clicked()
 {
@@ -878,4 +863,131 @@ void MainWindow::on_btnColTheme_4_clicked()
 {
     ui->txtTheme_4->setStyleSheet("background-color: rgb(" + colour + ");");
     UserData.theme4c = colour.toStdString();
+}
+
+void MainWindow::on_cmbMBTI1_currentTextChanged(const QString &arg1)
+{
+    //SaveUserData();
+    ui->txtMBTI_1->setText(arg1);
+    SetMBTI();
+
+}
+
+void MainWindow::on_cmbMBTI2_currentTextChanged(const QString &arg1)
+{
+   // SaveUserData();
+    ui->txtMBTI_2->setText(arg1);
+    SetMBTI();
+}
+
+void MainWindow::on_cmbMBTI3_currentTextChanged(const QString &arg1)
+{
+    //SaveUserData();
+    ui->txtMBTI_3->setText(arg1);
+    SetMBTI();
+}
+
+void MainWindow::on_cmbMBTI4_currentTextChanged(const QString &arg1)
+{
+    //SaveUserData();
+    ui->txtMBTI_4->setText(arg1);
+    SetMBTI();
+}
+
+void MainWindow::SetMBTI()
+{
+    QString mbti1, mbti2, mbti3, mbti4;
+
+    mbti1 = ui->txtMBTI_1->text();
+    mbti2 = ui->txtMBTI_2->text();
+    mbti3 = ui->txtMBTI_3->text();
+    mbti4 = ui->txtMBTI_4->text();
+
+    if (mbti1 == "E")
+    {
+        ui->lblMBTI_1->setText("Outward focus, communication, energy");
+        ui->lblMBTI_B_1->setText("Direct involvement and implementation");
+    }
+
+    if (mbti1 == "I")
+    {
+        ui->lblMBTI_1->setText("Thinkers, concepts, writing, alone time");
+        ui->lblMBTI_B_1->setText("Direct or indirect involvement and implementation with enough time alone");
+    }
+
+    if (mbti2 == "S")
+    {
+        ui->lblMBTI_2->setText("Practical and detail orientated");
+    }
+
+    if (mbti2 == "N")
+    {
+        ui->lblMBTI_2->setText("Innovative, holistic, see new possibilities");
+    }
+
+    if (mbti3 == "T")
+    {
+        ui->lblMBTI_3->setText("Objective, analytical, logical");
+    }
+
+    if (mbti3 == "F")
+    {
+        ui->lblMBTI_3->setText("People oriented, sympathetic, personal");
+    }
+
+    if (mbti4 == "J")
+    {
+        ui->lblMBTI_4->setText("Order, control, structure");\
+        ui->lblMBTI_B_3->setText("Organized, structured and conclusive environment");
+    }
+
+    if (mbti4 == "P")
+    {
+        ui->lblMBTI_4->setText("Flexible, spontaneous, philosophical");
+        ui->lblMBTI_B_3->setText("Spontaneous and flexible environment");
+    }
+
+    if (mbti2 == "N" && mbti3 == "F")
+    {
+        ui->lblMBTI_B_2->setText("You will be innovative in the development of people on a more personal basis");
+
+    }
+
+    if (mbti2 == "N" && mbti3 == "T")
+    {
+        ui->lblMBTI_B_2->setText("You will be innovative in some of the following: development of systems, patents, organizations, management or people on a less personal level");
+
+    }
+
+    if (mbti2 == "S" && mbti3 == "F")
+    {
+        ui->lblMBTI_B_2->setText("You will want to help people by working hands on and in a practical manner with them");
+
+    }
+
+    if (mbti2 == "S" && mbti3 == "T")
+    {
+        ui->lblMBTI_B_2->setText("You will want to manage or bring practical solutions to systems, organizations, management or people on a less personal level");
+
+    }
+}
+
+void MainWindow::on_btnGreen_clicked()
+{
+    SetColour("158, 255, 161");
+}
+
+void MainWindow::on_btnBlue_clicked()
+{
+    SetColour("172, 166, 255");
+}
+
+void MainWindow::on_btnYellow_clicked()
+{
+    SetColour("255, 253, 166");
+}
+
+void MainWindow::on_btnWhite_clicked()
+{
+    SetColour("255, 255, 255");
 }
