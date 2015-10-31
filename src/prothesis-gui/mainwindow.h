@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QPushButton>
 
 namespace Ui {
 class MainWindow;
@@ -49,8 +50,13 @@ private slots:
 
     void on_btnWhite_clicked();
 
+    void handleButton();
+
+    void applyColour();
+
 private:
     Ui::MainWindow *ui;
+
 };
 
 #endif // MAINWINDOW_H

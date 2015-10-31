@@ -6,6 +6,9 @@
 #include "../tests.h"
 #include "../user.h"
 #include "../globals.h"
+#include <QCoreApplication>
+#include <stdio.h>
+#include "button_list.h"
 
 QString colour;
 
@@ -15,10 +18,38 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-
     //run_tests();
     LoadUserData();
     SetMBTI();
+
+    button_list btnList(ui->vlButtons);
+
+    btnList.add_button("Mah String", "");
+
+    connect(btnList.coloured_buttons.at(0).button, SIGNAL (clicked()),this, SLOT (applyColour()));
+
+
+
+}
+
+void MainWindow::applyColour()
+{
+
+    QPushButton *theButton = qobject_cast<QPushButton*>(sender());
+       if (!theButton)
+          return;
+
+    theButton->setText("YOU CLICKED ME!");
+    theButton->setStyleSheet("background-color: rgb(" + colour + ");");
+
+}
+
+void MainWindow::handleButton()
+{
+
+QPushButton *button = dynamic_cast<QPushButton*>(sender());
+
+button->setStyleSheet("background-color: rgb(" + colour + ");");
 
 }
 
@@ -991,3 +1022,49 @@ void MainWindow::on_btnWhite_clicked()
 {
     SetColour("255, 255, 255");
 }
+
+/* Button List
+ *
+ * Functions:
+ * - Get list of items from UserData object
+ * - Add button
+ * - On button click change color
+ * - Clear list
+ * -
+ * Algorithm
+ *
+ * Get item from UserData [0: "Analyzer"]
+ * Create button with name ["Analyzer"]
+ * Set button stylesheet
+ * Add button to the layout widget
+ *
+ * Button List
+ * - Buttons
+ * - Remove by name
+ * - Add button(name, colour)
+ *
+ * Button
+ * - Text
+ * - Colour
+*/
+
+/* UserData.roles
+ * - [String]
+ * - Analyzer
+ * - Pope
+ * - Creator
+ * - Mister
+ * - Dog manager
+ * - Sheep
+ * - Farmer
+ *
+ * UserData.buttonsRoles
+ * - [String, String]
+ * - Analyzer, 0
+ * - Pope, 45
+ * - Creator, 74
+ * - Mister, 23
+ * - Dog manager, 51
+ * - Sheep, 8
+ * - Farmer, 99
+*/

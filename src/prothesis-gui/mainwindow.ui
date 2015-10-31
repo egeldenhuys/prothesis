@@ -2032,7 +2032,7 @@
        <item>
         <widget class="QPushButton" name="btnRed">
          <property name="autoFillBackground">
-          <bool>true</bool>
+          <bool>false</bool>
          </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(231, 150, 150);</string>
@@ -2054,7 +2054,7 @@
        <item>
         <widget class="QPushButton" name="btnGreen">
          <property name="autoFillBackground">
-          <bool>true</bool>
+          <bool>false</bool>
          </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(158, 255, 161);</string>
@@ -2070,7 +2070,7 @@
        <item>
         <widget class="QPushButton" name="btnBlue">
          <property name="autoFillBackground">
-          <bool>true</bool>
+          <bool>false</bool>
          </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(172, 166, 255);</string>
@@ -2086,7 +2086,7 @@
        <item>
         <widget class="QPushButton" name="btnYellow">
          <property name="autoFillBackground">
-          <bool>true</bool>
+          <bool>false</bool>
          </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(255, 253, 166);</string>
@@ -2102,7 +2102,7 @@
        <item>
         <widget class="QPushButton" name="btnWhite">
          <property name="autoFillBackground">
-          <bool>true</bool>
+          <bool>false</bool>
          </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(255, 255, 255);</string>
@@ -2127,7 +2127,7 @@
        </rect>
       </property>
       <property name="autoFillBackground">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(255, 255, 255);</string>
@@ -2411,13 +2411,28 @@
        <rect>
         <x>440</x>
         <y>50</y>
-        <width>181</width>
-        <height>161</height>
+        <width>171</width>
+        <height>191</height>
        </rect>
       </property>
       <property name="title">
        <string>7 Roles</string>
       </property>
+      <widget class="QWidget" name="verticalLayoutWidget_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>151</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="vlButtons">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
      </widget>
      <widget class="QGroupBox" name="groupBox_29">
       <property name="geometry">
@@ -2684,164 +2699,6 @@
       <property name="title">
        <string>Dreams</string>
       </property>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_9">
-      <property name="geometry">
-       <rect>
-        <x>760</x>
-        <y>580</y>
-        <width>151</width>
-        <height>199</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QPushButton" name="pushButton_3">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 0, 0);
-alternate-background-color: rgb(255, 255, 0);
-border-color: rgb(0, 85, 0);
-selection-color: rgb(85, 255, 255);
-selection-background-color: rgb(85, 0, 255);</string>
-         </property>
-         <property name="text">
-          <string>PushButton</string>
-         </property>
-         <property name="flat">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_5">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 0, 0);
-alternate-background-color: rgb(255, 255, 0);
-border-color: rgb(0, 85, 0);
-selection-color: rgb(85, 255, 255);
-selection-background-color: rgb(85, 0, 255);</string>
-         </property>
-         <property name="text">
-          <string>PushButton</string>
-         </property>
-         <property name="flat">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_6">
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 0, 0);
-alternate-background-color: rgb(255, 255, 0);
-border-color: rgb(0, 85, 0);
-selection-color: rgb(85, 255, 255);
-selection-background-color: rgb(85, 0, 255);</string>
-         </property>
-         <property name="text">
-          <string>PushButton</string>
-         </property>
-         <property name="flat">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_8">
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 0, 0);
-alternate-background-color: rgb(255, 255, 0);
-border-color: rgb(0, 85, 0);
-selection-color: rgb(85, 255, 255);
-selection-background-color: rgb(85, 0, 255);</string>
-         </property>
-         <property name="text">
-          <string>PushButton</string>
-         </property>
-         <property name="flat">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_7">
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 0, 0);
-alternate-background-color: rgb(255, 255, 0);
-border-color: rgb(0, 85, 0);
-selection-color: rgb(85, 255, 255);
-selection-background-color: rgb(85, 0, 255);</string>
-         </property>
-         <property name="text">
-          <string>PushButton</string>
-         </property>
-         <property name="flat">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_4">
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 0, 0);
-alternate-background-color: rgb(255, 255, 0);
-border-color: rgb(0, 85, 0);
-selection-color: rgb(85, 255, 255);
-selection-background-color: rgb(85, 0, 255);</string>
-         </property>
-         <property name="text">
-          <string>PushButton</string>
-         </property>
-         <property name="flat">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="autoFillBackground">
-          <bool>true</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 0, 0);
-alternate-background-color: rgb(255, 255, 0);
-border-color: rgb(0, 85, 0);
-selection-color: rgb(85, 255, 255);
-selection-background-color: rgb(85, 0, 255);</string>
-         </property>
-         <property name="text">
-          <string>PushButton</string>
-         </property>
-         <property name="flat">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-      </layout>
      </widget>
     </widget>
    </widget>
