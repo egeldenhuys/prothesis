@@ -22,13 +22,43 @@ MainWindow::MainWindow(QWidget *parent) :
     LoadUserData();
     SetMBTI();
 
-    button_list btnList(ui->vlButtons);
+    loadButtons();
 
-    btnList.add_button("Mah String", "");
+}
 
-    connect(btnList.coloured_buttons.at(0).button, SIGNAL (clicked()),this, SLOT (applyColour()));
+void MainWindow::linkButton(QPushButton *btn)
+{
+    connect(btn, SIGNAL (clicked()),this, SLOT (applyColour()));
 
+}
 
+/*
+ * Button List Algorithm
+ * =====================
+ *
+ * User checks a checkbox
+ * Analysis tab is clicked (Data is saved and added to UserClass)
+ * Update() is called on the Button List
+*/
+void MainWindow::loadButtons()
+{
+ // Create a button for each Role that has been loaded
+    button_list btnListRoles(ui->vlRoles, &UserData.roles);
+
+    // Link the buttons
+    for (uint i = 0; i < btnListRoles.coloured_buttons.size(); i++)
+    {
+        linkButton(btnListRoles.coloured_buttons.at(i).button);
+    }
+
+    /*
+    for (uint i = 0; i < UserData.roles.size(); i++)
+    {
+        btnListRoles.add_button(QString::fromStdString(UserData.roles.at(i)), "");
+        connect(btnListRoles.coloured_buttons.at(i).button, SIGNAL (clicked()),this, SLOT (applyColour()));
+
+    }
+*/
 
 }
 
@@ -39,19 +69,11 @@ void MainWindow::applyColour()
        if (!theButton)
           return;
 
-    theButton->setText("YOU CLICKED ME!");
+    //theButton->setText("YOU CLICKED ME!");
     theButton->setStyleSheet("background-color: rgb(" + colour + ");");
 
 }
 
-void MainWindow::handleButton()
-{
-
-QPushButton *button = dynamic_cast<QPushButton*>(sender());
-
-button->setStyleSheet("background-color: rgb(" + colour + ");");
-
-}
 
 MainWindow::~MainWindow()
 {

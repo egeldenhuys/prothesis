@@ -5,9 +5,11 @@
 #include "coloured_button.h"
 #include <QPushButton>
 
-button_list::button_list(QVBoxLayout *layout)
+button_list::button_list(QVBoxLayout *layout, vector<string> *sourceNames)
 {
     parentLayout = layout;
+    sourceList = sourceNames;
+    update();
 }
 
 
@@ -59,17 +61,71 @@ int button_list::remove_button(string name)
 
 int button_list::remove_button(int index)
 {
-
+    parentLayout->removeWidget(coloured_buttons.at(index).button);
+    delete coloured_buttons.at(index).button;
+    coloured_buttons.erase(coloured_buttons.begin()+index);
 }
+
+/* 3. Update
+* ---------
+* 1. Loop through each item in UserData
+* 2. If the item does not exist, create the button in the list. [Exists], [Add Button]
+*
+* 3. Loop through each item in the list, if it does not exist in UserData, remove it.
+*/
 
 int button_list::update()
 {
+    // Loop through each item in UserData
+    for (uint i = 0; i < sourceList->size(); i++)
+    {
+        // If the item does not exist in the button list create it
+        if (! exists(sourceList->at(i)))
+        {
+            add_button(QString::fromStdString(sourceList->at(i)), "");
+        }
+    }
+
+    bool found = false;
+
+    // Loop through every button
+    for (uint i = 0; i < coloured_buttons.size(); i++)
+    {
+        found = false;
+
+        // If the button does not exist in the source list, remove the button
+        for (uint j = 0; j < sourceList->size(); j++)
+        {
+            if (QString::fromStdString(sourceList->at(j)) == coloured_buttons.at(i).name)
+            {
+                found = true;
+                break;
+            }
+        }
+
+        if (found == false)
+        {
+            remove_button(i);
+        }
+
+    }
 
 }
 
 int button_list::exists(string name)
 {
+    // Go through all buttons in list
 
+    int result = 0;
+
+    for (uint i = 0; i < coloured_buttons.size(); i++)
+    {
+        if (coloured_buttons.at(i).name == QString::fromStdString(name))
+            result = 1;
+            return result;
+    }
+
+    return result;
 }
 
 /* button_list

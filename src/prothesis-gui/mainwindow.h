@@ -20,6 +20,8 @@ public:
     void SaveUserData();
     void SetColour(QString newColour);
     void SetMBTI();
+    void loadButtons();
+    void linkButton(QPushButton *btn);
 
 private slots:
 
@@ -50,9 +52,8 @@ private slots:
 
     void on_btnWhite_clicked();
 
-    void handleButton();
-
     void applyColour();
+
 
 private:
     Ui::MainWindow *ui;

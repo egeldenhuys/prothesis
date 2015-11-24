@@ -2427,7 +2427,7 @@
          <height>161</height>
         </rect>
        </property>
-       <layout class="QVBoxLayout" name="vlButtons">
+       <layout class="QVBoxLayout" name="vlRoles">
         <property name="spacing">
          <number>0</number>
         </property>
@@ -2709,7 +2709,7 @@
      <x>0</x>
      <y>0</y>
      <width>1353</width>
-     <height>21</height>
+     <height>27</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuSomething">

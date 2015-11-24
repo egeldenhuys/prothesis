@@ -11,10 +11,11 @@ class button_list
 {
 
 public:
-    button_list(QVBoxLayout *layout);
+    button_list(QVBoxLayout *layout, vector<std::string> *sourceNames);
 
     vector<coloured_button> coloured_buttons;
 
+    vector<std::string> *sourceList;
 
     QVBoxLayout *parentLayout;
 
