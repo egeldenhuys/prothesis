@@ -14,5 +14,3 @@ script:
     - cd prothesis-gui/
     - qmake prothesis-gui.pro
     - make
-    - cd /
-    - ls
