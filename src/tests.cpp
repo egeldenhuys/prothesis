@@ -34,8 +34,13 @@ std::vector<std::vector<std::string> > get_vectors(User UserData)
 {
     std::vector<std::vector<std::string> > UserDataVectors;
     UserDataVectors.push_back(UserData.lifeKeys);
+    UserDataVectors.push_back(UserData.interests);
+    UserDataVectors.push_back(UserData.interestsPerc);
+    UserDataVectors.push_back(UserData.subInterests);
+    UserDataVectors.push_back(UserData.subInterestsPerc);
     UserDataVectors.push_back(UserData.roles);
     UserDataVectors.push_back(UserData.skills);
+    UserDataVectors.push_back(UserData.strengths);
     UserDataVectors.push_back(UserData.people);
     UserDataVectors.push_back(UserData.priorities);
 
@@ -66,17 +71,14 @@ std::vector<std::string> get_strings(User UserData)
     UserDataStrings.push_back(UserData.name);
     UserDataStrings.push_back(UserData.surname);
     UserDataStrings.push_back(UserData.mbti);
-    //UserDataStrings.push_back(UserData.lifeKeys);
-    //UserDataStrings.push_back(UserData.roles);
-    //UserDataStrings.push_back(UserData.skills);
     UserDataStrings.push_back(UserData.passionsMovie);
     UserDataStrings.push_back(UserData.passionsChange);
     UserDataStrings.push_back(UserData.passionsAlive);
     UserDataStrings.push_back(UserData.passionsGiveUp);
     UserDataStrings.push_back(UserData.passionsSummary);
     UserDataStrings.push_back(UserData.dreamsPasttime);
-    UserDataStrings.push_back(UserData.dreamsChildDreams);
-    UserDataStrings.push_back(UserData.dreamsCurrentDreams);
+    UserDataStrings.push_back(UserData.dreamsChild);
+    UserDataStrings.push_back(UserData.dreamsCurrent);
     UserDataStrings.push_back(UserData.dreamsSummary);
     UserDataStrings.push_back(UserData.peopleHero);
     UserDataStrings.push_back(UserData.peopleInfluence);
@@ -85,14 +87,19 @@ std::vector<std::string> get_strings(User UserData)
     UserDataStrings.push_back(UserData.peopleSummary);
     UserDataStrings.push_back(UserData.spokenWords);
     UserDataStrings.push_back(UserData.spokenSummary);
-    //UserDataStrings.push_back(UserData.people);
-    //UserDataStrings.push_back(UserData.priorities);
     UserDataStrings.push_back(UserData.workIdeal);
     UserDataStrings.push_back(UserData.workCreative);
     UserDataStrings.push_back(UserData.workStructure);
     UserDataStrings.push_back(UserData.workUndefined);
     UserDataStrings.push_back(UserData.workSummary);
-
+    UserDataStrings.push_back(UserData.theme1);
+    UserDataStrings.push_back(UserData.theme1c);
+    UserDataStrings.push_back(UserData.theme2);
+    UserDataStrings.push_back(UserData.theme2c);
+    UserDataStrings.push_back(UserData.theme3);
+    UserDataStrings.push_back(UserData.theme3c);
+    UserDataStrings.push_back(UserData.theme4);
+    UserDataStrings.push_back(UserData.theme4c);
     return UserDataStrings;
 
 }
@@ -120,6 +127,22 @@ User set_user_data()
     UserData.lifeKeys.push_back("Life Key 1");
     UserData.lifeKeys.push_back("Life Key 2");
     UserData.lifeKeys.push_back("Life Key 3");
+    UserData.interests.push_back("Interest 1");
+    UserData.interests.push_back("Interest 2");
+    UserData.interests.push_back("Interest 3");
+    UserData.interests.push_back("Interest 4");
+    UserData.interests.push_back("Interest 5");
+    UserData.interestsPerc.push_back("10");
+    UserData.interestsPerc.push_back("20");
+    UserData.interestsPerc.push_back("30");
+    UserData.interestsPerc.push_back("40");
+    UserData.interestsPerc.push_back("50");
+    UserData.subInterests.push_back("Sub Interest 1");
+    UserData.subInterests.push_back("Sub Interest 2");
+    UserData.subInterests.push_back("Sub Interest 3");
+    UserData.subInterestsPerc.push_back("60");
+    UserData.subInterestsPerc.push_back("70");
+    UserData.subInterestsPerc.push_back("80");
     UserData.roles.push_back("Rol]es 1");
     UserData.roles.push_back("Roles 2");
     UserData.roles.push_back("Roles 3");
@@ -136,14 +159,32 @@ User set_user_data()
     UserData.skills.push_back("skills 6");
     UserData.skills.push_back("skills 7");
 
+    UserData.strengths.push_back("Str 1");
+    UserData.strengths.push_back("Str 2");
+    UserData.strengths.push_back("Str 3");
+    UserData.strengths.push_back("Str 4");
+    UserData.strengths.push_back("Str 5");
+    UserData.strengths.push_back("Str 6");
+    UserData.strengths.push_back("Str 7");
+    UserData.strengths.push_back("Str 8");
+    UserData.strengths.push_back("Str 9");
+    UserData.strengths.push_back("Str 10");
+    UserData.strengths.push_back("Str 11");
+    UserData.strengths.push_back("Str 12");
+    UserData.strengths.push_back("Str 13");
+    UserData.strengths.push_back("Str 14");
+    UserData.strengths.push_back("Str 15");
+    UserData.strengths.push_back("Str 16");
+
+
     UserData.passionsMovie="Passions Movie";
     UserData.passionsChange="Passions Change";
     UserData.passionsAlive="Passions Alive";
     UserData.passionsGiveUp="Passions Give Up";
     UserData.passionsSummary="Passions Summary";
     UserData.dreamsPasttime="Pasti[me";
-    UserData.dreamsChildDreams="Child dreams";
-    UserData.dreamsCurrentDreams="curr dreams";
+    UserData.dreamsChild="Child dreams";
+    UserData.dreamsCurrent="curr dreams";
     UserData.dreamsSummary="dreams[ ] ] [ ] ][] summ[]ary";
     UserData.peopleHero="people hero";
     UserData.peopleInfluence="people influence";
@@ -168,9 +209,30 @@ User set_user_data()
     UserData.workUndefined="work und]efined";
     UserData.workSummary="work summa][ry";
 
+    UserData.theme1="Theme 1";
+    UserData.theme1c="255, 255, 0";
+
+    UserData.theme2="theme 2";
+    UserData.theme2c="255, 0, 0";
+
+    UserData.theme3="Theeme 3";
+    UserData.theme3c="0, 255, 0";
+
+    UserData.theme4="Theme 4";
+    UserData.theme4c="0, 0, 255";
+
     return UserData;
 }
 
+void compareSafe(User a, User b){
+
+    std::cout << a.lifeKeys[0] << "\n";
+    std::cout << b.lifeKeys[0] << "\n";
+
+    if (a.lifeKeys[0] != b.lifeKeys[0])
+        std::cout << a.lifeKeys[0] << " != " << b.lifeKeys[0] << "\n";
+
+}
 /*
 int compare(User a, User b)
 ===========
@@ -200,6 +262,7 @@ int compare(User a, User b)
     aStrings = get_strings(a);
     bStrings = get_strings(b);
 
+    std::cout << aStrings.size() << std::endl;
     // If they are not the same length there is an error
     // Disabled to give more information
     /*
@@ -207,9 +270,12 @@ int compare(User a, User b)
         return 1;
     */
 
+    std::cout << "Strings size: " << aStrings.size() << "," << bStrings.size() << std::endl;
+
     // Loop through all the string elements in the vector
     for (unsigned int i = 0; i < aStrings.size(); i++)
     {
+        std::cout << "String | - " << i << ": " << aStrings[i] << " = " << bStrings[i] << std::endl;
         if (aStrings[i] != bStrings[i])
         {
             std::cout << "| - " << i << ": " << aStrings[i] << " != " << bStrings[i] << std::endl;
@@ -229,17 +295,41 @@ int compare(User a, User b)
         return 1;
     */
 
+    std::cout << "Vectors size= " << aVectors.size() << "," << bVectors.size() << std::endl;
+
+
     // Loop through all the elements in the vector
     for (unsigned int i = 0; i < aVectors.size(); i++)
     {
         // Loop through all the elements in the selected vector i
         for (unsigned int j = 0; j < aVectors[i].size(); j++)
         {
-            if (aVectors[i][j] != bVectors[i][j])
-            {
-                std::cout << "| - " << i << "," << j << ": " << aVectors[i][j] << " != " << bVectors[i][j] << std::endl;
-                failed = 1;
+            std::cout << aVectors.size() << "," << bVectors.size() << "\n";
+            std::cout << aVectors[i].size() << "," << bVectors[i].size() << "\n";
+
+            // Same size, bot accessible
+            if (j < aVectors[i].size() && j < bVectors[i].size()) {
+                std::cout << "Vector | - " << i << ": " << aVectors[i][j] << " = " << bVectors[i][j] << std::endl;
+                if (aVectors[i][j] != bVectors[i][j])
+                {
+                    std::cout << "| - " << i << "," << j << ": " << aVectors[i][j] << " != " << bVectors[i][j] << std::endl;
+                    failed = 1;
+                }
             }
+
+            // One of them not accisible
+            if (aVectors[i].size() != bVectors[i].size()) {
+                std::cout << "Vector Missmatch! " << aVectors[i].size() << "," << bVectors[i].size() << "\n";
+
+
+                if (j <= aVectors[i].size())
+                    std::cout << aVectors[i][j] << "\n";
+
+                if (j <= bVectors[i].size())
+                    std::cout << bVectors[i][j] << "\n";
+            }
+
+
         }
     }
 
@@ -292,6 +382,7 @@ int save_and_load()
     // Compare if both sets still hold the same data
     // after being saved and loaded
     failed = compare(UserDataSave, UserDataLoad);
+    //compareSafe(UserDataSave, UserDataLoad);
 
     return failed;
 

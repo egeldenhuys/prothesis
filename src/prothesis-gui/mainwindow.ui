@@ -1,0 +1,2917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1353</width>
+    <height>943</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1241</width>
+      <height>871</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Start</string>
+     </attribute>
+     <widget class="QGroupBox" name="grpMBTI">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>251</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>MBTI</string>
+      </property>
+      <widget class="QComboBox" name="cmbMBTI1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>41</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>I</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>E</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="cmbMBTI2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>40</y>
+         <width>41</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>S</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>N</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="cmbMBTI3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>41</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>T</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="cmbMBTI4">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>40</y>
+         <width>41</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>J</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>P</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="grpLifeKeys">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>200</y>
+        <width>191</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Life Keys</string>
+      </property>
+      <widget class="QLineEdit" name="txtLifeKey1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>151</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Life Key 1</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtLifeKey3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>151</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Life Key 3</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtLifeKey2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>151</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Life Key 2</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>100</y>
+        <width>331</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Interests                                                              %</string>
+      </property>
+      <widget class="QLineEdit" name="txtInterest1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>261</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Interest 1</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtInterest2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>261</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Interest 2</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtInterest3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>261</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Interest 3</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtInterest4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>261</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Interest 4</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblSubInterests">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>150</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Sub Interests</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtSubInterest1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>261</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Sub Interest 1</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtSubInterest2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>261</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Sub Interest 2</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtSubInterest3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>230</y>
+         <width>261</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Sub Interest 3</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spnbInternest1">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>30</y>
+         <width>47</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="suffix">
+        <string>%</string>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spnbInternest2">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>60</y>
+         <width>47</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="suffix">
+        <string>%</string>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spnbInternest3">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>90</y>
+         <width>47</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="suffix">
+        <string>%</string>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spnbInternest4">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>120</y>
+         <width>47</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="suffix">
+        <string>%</string>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spnbSubIntertest1">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>170</y>
+         <width>47</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="suffix">
+        <string>%</string>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spnbSubIntertest2">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>200</y>
+         <width>47</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="suffix">
+        <string>%</string>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spnbSubIntertest3">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>230</y>
+         <width>47</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="suffix">
+        <string>%</string>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="grpName">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>381</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Name</string>
+      </property>
+      <widget class="QLineEdit" name="txtName">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>151</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtSurname">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>30</y>
+         <width>191</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Surname</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Mission</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>941</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>7 Roles</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>161</width>
+          <height>472</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="vlRoles_1">
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_2">
+           <property name="text">
+            <string>Analyzer</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_3">
+           <property name="text">
+            <string>Artist</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_4">
+           <property name="text">
+            <string>Clarifier</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_15">
+           <property name="text">
+            <string>Collector</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_1">
+           <property name="text">
+            <string>Competitor</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_16">
+           <property name="text">
+            <string>Creator of Order</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_8">
+           <property name="text">
+            <string>Decision maker</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_13">
+           <property name="text">
+            <string>Diplomat</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_7">
+           <property name="text">
+            <string>Encourager</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_17">
+           <property name="text">
+            <string>Entrepeneur</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_11">
+           <property name="text">
+            <string>Facilitator</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_6">
+           <property name="text">
+            <string>Follower/Supporter</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_10">
+           <property name="text">
+            <string>Friend</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_12">
+           <property name="text">
+            <string>Giver</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_9">
+           <property name="text">
+            <string>Harmoniser</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_14">
+           <property name="text">
+            <string>Influencer/Inspire</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_5">
+           <property name="text">
+            <string>Inventor</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>0</y>
+          <width>160</width>
+          <height>472</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_18">
+           <property name="text">
+            <string>Investigator</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_20">
+           <property name="text">
+            <string>Leader</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_21">
+           <property name="text">
+            <string>Listener</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_23">
+           <property name="text">
+            <string>Marketer</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_24">
+           <property name="text">
+            <string>Mentor</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_25">
+           <property name="text">
+            <string>Negotiator</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_26">
+           <property name="text">
+            <string>Organizer</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_34">
+           <property name="text">
+            <string>Peacemaker</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_33">
+           <property name="text">
+            <string>Pioneer</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_32">
+           <property name="text">
+            <string>Protector</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_31">
+           <property name="text">
+            <string>Reality Tester</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_30">
+           <property name="text">
+            <string>Standard Setter</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_29">
+           <property name="text">
+            <string>Student</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_28">
+           <property name="text">
+            <string>Teacher</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_27">
+           <property name="text">
+            <string>Team Builder</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_19">
+           <property name="text">
+            <string>Trend Setter</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbRoles_22">
+           <property name="text">
+            <string>Worker</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>7 Skills</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>160</width>
+          <height>472</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_16">
+           <property name="text">
+            <string>Administartion</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_1">
+           <property name="text">
+            <string>Analyse</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_17">
+           <property name="text">
+            <string>Artistic</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_5">
+           <property name="text">
+            <string>Communicate</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_6">
+           <property name="text">
+            <string>Computers</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_8">
+           <property name="text">
+            <string>Control</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_7">
+           <property name="text">
+            <string>Counselling</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_4">
+           <property name="text">
+            <string>Creative</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_13">
+           <property name="text">
+            <string>Decision Making</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_9">
+           <property name="text">
+            <string>Empathy</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_12">
+           <property name="text">
+            <string>Entertaining</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_14">
+           <property name="text">
+            <string>Handwork</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_15">
+           <property name="text">
+            <string>Marketing</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_11">
+           <property name="text">
+            <string>Negotiate</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_10">
+           <property name="text">
+            <string>Numeracy</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_3">
+           <property name="text">
+            <string>Objectivity</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_2">
+           <property name="text">
+            <string>Organise</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>0</y>
+          <width>199</width>
+          <height>459</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="bottomMargin">
+          <number>100</number>
+         </property>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_18">
+           <property name="text">
+            <string>Planning</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_19">
+           <property name="text">
+            <string>Playing Musical instruments</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_20">
+           <property name="text">
+            <string>Practical</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_21">
+           <property name="text">
+            <string>Public speaking</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_25">
+           <property name="text">
+            <string>Reading</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_24">
+           <property name="text">
+            <string>Receptive for people</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_23">
+           <property name="text">
+            <string>Sharing</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_30">
+           <property name="text">
+            <string>Sport</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_29">
+           <property name="text">
+            <string>Strategic planning</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_28">
+           <property name="text">
+            <string>Study</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_27">
+           <property name="text">
+            <string>Taking the lead</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_26">
+           <property name="text">
+            <string>Teaching</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbSkills_22">
+           <property name="text">
+            <string>Writing</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_14">
+       <attribute name="title">
+        <string>Strengths</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>160</width>
+          <height>472</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_1">
+           <property name="text">
+            <string>Idealate</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_8">
+           <property name="text">
+            <string>Believe</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_9">
+           <property name="text">
+            <string>Significant</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_10">
+           <property name="text">
+            <string>Futurist</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_11">
+           <property name="text">
+            <string>Develop</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_12">
+           <property name="text">
+            <string>Learn</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_14">
+           <property name="text">
+            <string>Include</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_15">
+           <property name="text">
+            <string>Empathize</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_13">
+           <property name="text">
+            <string>Relate</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_16">
+           <property name="text">
+            <string>Restore</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_17">
+           <property name="text">
+            <string>Activate</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_2">
+           <property name="text">
+            <string>Individualize</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_3">
+           <property name="text">
+            <string>Intellect</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_4">
+           <property name="text">
+            <string>Communicate</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_5">
+           <property name="text">
+            <string>Information Input</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_6">
+           <property name="text">
+            <string>Self-Confident</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_7">
+           <property name="text">
+            <string>Commanding</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_8">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>0</y>
+          <width>160</width>
+          <height>457</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <property name="bottomMargin">
+          <number>14</number>
+         </property>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_18">
+           <property name="text">
+            <string>Strategize</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_19">
+           <property name="text">
+            <string>Connect</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_20">
+           <property name="text">
+            <string>Arrange</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_21">
+           <property name="text">
+            <string>Contextualize</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_22">
+           <property name="text">
+            <string>Maximize</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_23">
+           <property name="text">
+            <string>Focusing</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_24">
+           <property name="text">
+            <string>Achieve</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_25">
+           <property name="text">
+            <string>Harmonize</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_26">
+           <property name="text">
+            <string>Fair</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_27">
+           <property name="text">
+            <string>Responsible</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_28">
+           <property name="text">
+            <string>Analyze</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_29">
+           <property name="text">
+            <string>Meet People</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_30">
+           <property name="text">
+            <string>Disciplined</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_31">
+           <property name="text">
+            <string>Positive</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_32">
+           <property name="text">
+            <string>Adapt</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_33">
+           <property name="text">
+            <string>Deliberate</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>Passions</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>841</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>What scene in a movie provoked strong emotional feelings, passion in your heart?</string>
+        </property>
+        <widget class="QLineEdit" name="txtPassionsMovie">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>23</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>841</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>If you hade one thing left to do and no limit on your resources, what would it be?</string>
+        </property>
+        <widget class="QLineEdit" name="txtPassionsOneThing">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>23</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>150</y>
+          <width>841</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>What would you like to change if you knew you couldn't fail?</string>
+        </property>
+        <widget class="QLineEdit" name="txtPassionsChange">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>23</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>220</y>
+          <width>841</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>What thing that you do makes you come alive?</string>
+        </property>
+        <widget class="QLineEdit" name="txtPassionsAlive">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>23</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>290</y>
+          <width>841</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Is there something that you would have difficulty giving up? What is it and why?</string>
+        </property>
+        <widget class="QLineEdit" name="txtPassionsGiveUp">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>23</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_7">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>360</y>
+          <width>841</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Now summarize the central themes from your answers and type them below</string>
+        </property>
+        <widget class="QPlainTextEdit" name="txtPassionsSummary">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>91</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>Dreams</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>841</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>What was your favourite passtime as a child?</string>
+        </property>
+        <widget class="QLineEdit" name="txtDreamsPasttime">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>23</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>841</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>What dreams did you have for your life as a child? Is it still of meaning today?</string>
+        </property>
+        <widget class="QLineEdit" name="txtDreamsChild">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>23</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>240</y>
+          <width>841</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Now summarize the central themes from your answers and type them below</string>
+        </property>
+        <widget class="QPlainTextEdit" name="txtDreamSummary">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>91</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_39">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>841</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>What dreams do you have for your life at the moment?</string>
+        </property>
+        <widget class="QLineEdit" name="txtDreamsCurrent">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>23</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>People ID</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>841</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Who was your childhood hero? Why?</string>
+        </property>
+        <widget class="QPlainTextEdit" name="txtPeopleHero">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>811</width>
+           <height>51</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_12">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>841</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Who were the people that influenced your life the most? Why?</string>
+        </property>
+        <widget class="QPlainTextEdit" name="txtpeopleInfluence">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>811</width>
+           <height>51</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_13">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>230</y>
+          <width>841</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>With whom do you identifty strongly at the moment? Why?</string>
+        </property>
+        <widget class="QPlainTextEdit" name="txtPeopleIdentify">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>811</width>
+           <height>51</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_14">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>340</y>
+          <width>841</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>With wich character in a movie or book did you relate to the most in your life? Why?</string>
+        </property>
+        <widget class="QPlainTextEdit" name="txtPeopleCharacter">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>811</width>
+           <height>51</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_15">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>440</y>
+          <width>841</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Now summarize the central themes from your answers and type them below</string>
+        </property>
+        <widget class="QPlainTextEdit" name="txtPeopleSummary">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>91</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>Spoken Words</string>
+       </attribute>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>631</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Things people say about you has a big impact on your life and often reveal a lot more than you think...</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_16">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>841</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Fill these commonly spoken lines in below</string>
+        </property>
+        <widget class="QPlainTextEdit" name="ptxtSpokenWords">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>91</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>180</y>
+          <width>841</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Now summarize the central themes from your answers and type them below</string>
+        </property>
+        <widget class="QPlainTextEdit" name="ptxtSpokenSummary">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>91</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Career</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>881</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="tab_11">
+       <attribute name="title">
+        <string>People Orientation</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>172</width>
+          <height>444</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_1">
+           <property name="text">
+            <string>Babies</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_2">
+           <property name="text">
+            <string>Toddlers</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_5">
+           <property name="text">
+            <string>Primary school children</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_7">
+           <property name="text">
+            <string>High school children</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_8">
+           <property name="text">
+            <string>Students</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_12">
+           <property name="text">
+            <string>Teenagers</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_6">
+           <property name="text">
+            <string>People in need</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_15">
+           <property name="text">
+            <string>Working people</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_11">
+           <property name="text">
+            <string>Married people</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_10">
+           <property name="text">
+            <string>Older people</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_9">
+           <property name="text">
+            <string>The handicapped</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_4">
+           <property name="text">
+            <string>Addicted people</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_3">
+           <property name="text">
+            <string>The homeless</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_13">
+           <property name="text">
+            <string>Men</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_16">
+           <property name="text">
+            <string>Women</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPeople_14">
+           <property name="text">
+            <string>To be on my own</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_12">
+       <attribute name="title">
+        <string>Priorities</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>202</width>
+          <height>276</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QCheckBox" name="chkbPriorities_1">
+           <property name="text">
+            <string>Self actualization</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPriorities_3">
+           <property name="text">
+            <string>Creative Work</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPriorities_4">
+           <property name="text">
+            <string>Money</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPriorities_6">
+           <property name="text">
+            <string>Work security</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPriorities_5">
+           <property name="text">
+            <string>Post school training</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPriorities_8">
+           <property name="text">
+            <string>Working with people</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPriorities_7">
+           <property name="text">
+            <string>Changing of routine</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPriorities_2">
+           <property name="text">
+            <string>Leading</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPriorities_10">
+           <property name="text">
+            <string>Concepts rather than people</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbPriorities_9">
+           <property name="text">
+            <string>Recognition and status</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_13">
+       <attribute name="title">
+        <string>Work Environment</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>841</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>My ideal work environment</string>
+        </property>
+        <widget class="QLineEdit" name="txtWorkIdeal">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>23</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>841</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>I am creative in the following ways</string>
+        </property>
+        <widget class="QLineEdit" name="txtWorkCreative">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>23</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>150</y>
+          <width>841</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Fixed structure makes me feel</string>
+        </property>
+        <widget class="QLineEdit" name="txtWorkStructure">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>23</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_21">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>220</y>
+          <width>841</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>An undefined environment makes me feel</string>
+        </property>
+        <widget class="QLineEdit" name="txtWorkUndefined">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>23</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_22">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>290</y>
+          <width>841</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Now summarize the central themes from your answers and type them below</string>
+        </property>
+        <widget class="QPlainTextEdit" name="ptxtWorkSummary">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>821</width>
+           <height>91</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_10">
+     <attribute name="title">
+      <string>Analysis</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>271</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="btnRed">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(231, 150, 150);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnGreen">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(158, 255, 161);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnBlue">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(172, 166, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnYellow">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 253, 166);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnWhite">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="btnColour">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>10</y>
+        <width>49</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_23">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>421</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>MBTI</string>
+      </property>
+      <widget class="QLineEdit" name="txtMBTI_1">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>I</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtMBTI_2">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>S</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtMBTI_3">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>150</y>
+         <width>21</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>T</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtMBTI_4">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>J</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblMBTI_1">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>10</y>
+         <width>151</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>lblMBTI_1</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblMBTI_B_1">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>10</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>lblMBTI_B_1</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblMBTI_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>80</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>lblMBTI_2</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblMBTI_B_2">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>69</y>
+         <width>191</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>lblMBTI_B_2</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblMBTI_3">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>140</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>lblMBTI_3</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblMBTI_4">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>210</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>lblMBTI_4</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblMBTI_B_3">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>210</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>lblMBTI_B_3</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>391</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>190</y>
+         <width>391</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_24">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>181</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Priorities</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_25">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>330</y>
+        <width>201</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>People</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_26">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>450</y>
+        <width>181</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Work</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_27">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>450</y>
+        <width>201</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Life Keys</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_28">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>50</y>
+        <width>171</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>7 Roles</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>151</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="vlRoles">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_29">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>50</y>
+        <width>181</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>7 Life Skills</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_31">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>220</y>
+        <width>181</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Strengths</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_32">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>50</y>
+        <width>341</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Who I Am</string>
+      </property>
+      <widget class="QGroupBox" name="groupBox_33">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>311</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Theme 1</string>
+       </property>
+       <widget class="QPlainTextEdit" name="txtTheme_1">
+        <property name="geometry">
+         <rect>
+          <x>13</x>
+          <y>20</y>
+          <width>261</width>
+          <height>71</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnColTheme_1">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>20</y>
+          <width>21</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_34">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>311</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Theme 2</string>
+       </property>
+       <widget class="QPlainTextEdit" name="txtTheme_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>261</width>
+          <height>71</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnColTheme_2">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>20</y>
+          <width>21</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_35">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>250</y>
+         <width>311</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Theme 3</string>
+       </property>
+       <widget class="QPlainTextEdit" name="txtTheme_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>261</width>
+          <height>71</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnColTheme_3">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>20</y>
+          <width>21</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_36">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>360</y>
+         <width>311</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Theme 4</string>
+       </property>
+       <widget class="QPlainTextEdit" name="txtTheme_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>261</width>
+          <height>71</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnColTheme_4">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>20</y>
+          <width>21</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_37">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>520</y>
+        <width>291</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Recomendation</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_38">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>330</y>
+        <width>181</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Interests                       %</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_40">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>570</y>
+        <width>181</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Passions</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_41">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>570</y>
+        <width>181</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Words</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_42">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>690</y>
+        <width>181</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Dreams</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1353</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSomething">
+    <property name="title">
+     <string>Something</string>
+    </property>
+   </widget>
+   <addaction name="menuSomething"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>txtSurname</tabstop>
+  <tabstop>cmbMBTI1</tabstop>
+  <tabstop>txtDreamsChild</tabstop>
+  <tabstop>cmbMBTI2</tabstop>
+  <tabstop>cmbMBTI3</tabstop>
+  <tabstop>cmbMBTI4</tabstop>
+  <tabstop>txtLifeKey1</tabstop>
+  <tabstop>txtLifeKey2</tabstop>
+  <tabstop>txtLifeKey3</tabstop>
+  <tabstop>txtInterest1</tabstop>
+  <tabstop>spnbInternest1</tabstop>
+  <tabstop>txtInterest2</tabstop>
+  <tabstop>spnbInternest2</tabstop>
+  <tabstop>txtInterest3</tabstop>
+  <tabstop>spnbInternest3</tabstop>
+  <tabstop>txtInterest4</tabstop>
+  <tabstop>spnbInternest4</tabstop>
+  <tabstop>txtSubInterest1</tabstop>
+  <tabstop>spnbSubIntertest1</tabstop>
+  <tabstop>txtSubInterest2</tabstop>
+  <tabstop>spnbSubIntertest2</tabstop>
+  <tabstop>txtSubInterest3</tabstop>
+  <tabstop>spnbSubIntertest3</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>tabWidget_2</tabstop>
+  <tabstop>chkbRoles_2</tabstop>
+  <tabstop>chkbRoles_3</tabstop>
+  <tabstop>chkbRoles_4</tabstop>
+  <tabstop>chkbRoles_15</tabstop>
+  <tabstop>chkbRoles_1</tabstop>
+  <tabstop>chkbRoles_16</tabstop>
+  <tabstop>chkbRoles_8</tabstop>
+  <tabstop>chkbRoles_13</tabstop>
+  <tabstop>chkbRoles_7</tabstop>
+  <tabstop>chkbRoles_17</tabstop>
+  <tabstop>chkbRoles_11</tabstop>
+  <tabstop>chkbRoles_6</tabstop>
+  <tabstop>chkbRoles_10</tabstop>
+  <tabstop>chkbRoles_12</tabstop>
+  <tabstop>chkbRoles_9</tabstop>
+  <tabstop>chkbRoles_14</tabstop>
+  <tabstop>chkbRoles_5</tabstop>
+  <tabstop>chkbRoles_18</tabstop>
+  <tabstop>chkbRoles_20</tabstop>
+  <tabstop>chkbRoles_21</tabstop>
+  <tabstop>chkbRoles_23</tabstop>
+  <tabstop>chkbRoles_24</tabstop>
+  <tabstop>chkbRoles_25</tabstop>
+  <tabstop>chkbRoles_26</tabstop>
+  <tabstop>chkbRoles_34</tabstop>
+  <tabstop>chkbRoles_33</tabstop>
+  <tabstop>chkbRoles_32</tabstop>
+  <tabstop>chkbRoles_31</tabstop>
+  <tabstop>chkbRoles_30</tabstop>
+  <tabstop>chkbRoles_29</tabstop>
+  <tabstop>chkbRoles_28</tabstop>
+  <tabstop>chkbRoles_27</tabstop>
+  <tabstop>chkbRoles_19</tabstop>
+  <tabstop>chkbRoles_22</tabstop>
+  <tabstop>chkbSkills_16</tabstop>
+  <tabstop>chkbSkills_1</tabstop>
+  <tabstop>chkbSkills_17</tabstop>
+  <tabstop>chkbSkills_5</tabstop>
+  <tabstop>chkbSkills_6</tabstop>
+  <tabstop>chkbSkills_8</tabstop>
+  <tabstop>chkbSkills_7</tabstop>
+  <tabstop>chkbSkills_4</tabstop>
+  <tabstop>chkbSkills_13</tabstop>
+  <tabstop>chkbSkills_9</tabstop>
+  <tabstop>chkbSkills_12</tabstop>
+  <tabstop>chkbSkills_14</tabstop>
+  <tabstop>chkbSkills_15</tabstop>
+  <tabstop>chkbSkills_11</tabstop>
+  <tabstop>chkbSkills_10</tabstop>
+  <tabstop>chkbSkills_3</tabstop>
+  <tabstop>chkbSkills_2</tabstop>
+  <tabstop>chkbSkills_18</tabstop>
+  <tabstop>chkbSkills_19</tabstop>
+  <tabstop>chkbSkills_20</tabstop>
+  <tabstop>chkbSkills_21</tabstop>
+  <tabstop>chkbSkills_25</tabstop>
+  <tabstop>chkbSkills_24</tabstop>
+  <tabstop>chkbSkills_23</tabstop>
+  <tabstop>chkbSkills_30</tabstop>
+  <tabstop>chkbSkills_29</tabstop>
+  <tabstop>chkbSkills_28</tabstop>
+  <tabstop>chkbSkills_27</tabstop>
+  <tabstop>chkbSkills_26</tabstop>
+  <tabstop>chkbSkills_22</tabstop>
+  <tabstop>chkbStrengths_1</tabstop>
+  <tabstop>chkbStrengths_8</tabstop>
+  <tabstop>chkbStrengths_9</tabstop>
+  <tabstop>chkbStrengths_10</tabstop>
+  <tabstop>chkbStrengths_11</tabstop>
+  <tabstop>chkbStrengths_12</tabstop>
+  <tabstop>chkbStrengths_14</tabstop>
+  <tabstop>chkbStrengths_15</tabstop>
+  <tabstop>chkbStrengths_13</tabstop>
+  <tabstop>chkbStrengths_16</tabstop>
+  <tabstop>chkbStrengths_17</tabstop>
+  <tabstop>chkbStrengths_2</tabstop>
+  <tabstop>chkbStrengths_3</tabstop>
+  <tabstop>chkbStrengths_4</tabstop>
+  <tabstop>chkbStrengths_5</tabstop>
+  <tabstop>chkbStrengths_6</tabstop>
+  <tabstop>chkbStrengths_7</tabstop>
+  <tabstop>chkbStrengths_18</tabstop>
+  <tabstop>chkbStrengths_19</tabstop>
+  <tabstop>chkbStrengths_20</tabstop>
+  <tabstop>chkbStrengths_21</tabstop>
+  <tabstop>chkbStrengths_22</tabstop>
+  <tabstop>chkbStrengths_23</tabstop>
+  <tabstop>chkbStrengths_24</tabstop>
+  <tabstop>chkbStrengths_25</tabstop>
+  <tabstop>chkbStrengths_26</tabstop>
+  <tabstop>chkbStrengths_27</tabstop>
+  <tabstop>chkbStrengths_28</tabstop>
+  <tabstop>chkbStrengths_29</tabstop>
+  <tabstop>chkbStrengths_30</tabstop>
+  <tabstop>chkbStrengths_31</tabstop>
+  <tabstop>chkbStrengths_32</tabstop>
+  <tabstop>chkbStrengths_33</tabstop>
+  <tabstop>txtPassionsMovie</tabstop>
+  <tabstop>txtPassionsOneThing</tabstop>
+  <tabstop>txtPassionsChange</tabstop>
+  <tabstop>txtPassionsAlive</tabstop>
+  <tabstop>txtPassionsGiveUp</tabstop>
+  <tabstop>txtPassionsSummary</tabstop>
+  <tabstop>txtDreamsPasttime</tabstop>
+  <tabstop>txtName</tabstop>
+  <tabstop>txtDreamSummary</tabstop>
+  <tabstop>txtPeopleHero</tabstop>
+  <tabstop>txtpeopleInfluence</tabstop>
+  <tabstop>txtPeopleIdentify</tabstop>
+  <tabstop>txtPeopleCharacter</tabstop>
+  <tabstop>txtPeopleSummary</tabstop>
+  <tabstop>ptxtSpokenWords</tabstop>
+  <tabstop>ptxtSpokenSummary</tabstop>
+  <tabstop>tabWidget_3</tabstop>
+  <tabstop>chkbPeople_1</tabstop>
+  <tabstop>chkbPeople_2</tabstop>
+  <tabstop>chkbPeople_5</tabstop>
+  <tabstop>chkbPeople_7</tabstop>
+  <tabstop>chkbPeople_8</tabstop>
+  <tabstop>chkbPeople_12</tabstop>
+  <tabstop>chkbPeople_6</tabstop>
+  <tabstop>chkbPeople_15</tabstop>
+  <tabstop>chkbPeople_11</tabstop>
+  <tabstop>chkbPeople_10</tabstop>
+  <tabstop>chkbPeople_9</tabstop>
+  <tabstop>chkbPeople_4</tabstop>
+  <tabstop>chkbPeople_3</tabstop>
+  <tabstop>chkbPeople_13</tabstop>
+  <tabstop>chkbPeople_16</tabstop>
+  <tabstop>chkbPeople_14</tabstop>
+  <tabstop>chkbPriorities_1</tabstop>
+  <tabstop>chkbPriorities_3</tabstop>
+  <tabstop>chkbPriorities_4</tabstop>
+  <tabstop>chkbPriorities_6</tabstop>
+  <tabstop>chkbPriorities_5</tabstop>
+  <tabstop>chkbPriorities_8</tabstop>
+  <tabstop>chkbPriorities_7</tabstop>
+  <tabstop>chkbPriorities_2</tabstop>
+  <tabstop>chkbPriorities_10</tabstop>
+  <tabstop>chkbPriorities_9</tabstop>
+  <tabstop>txtWorkIdeal</tabstop>
+  <tabstop>txtWorkCreative</tabstop>
+  <tabstop>txtWorkStructure</tabstop>
+  <tabstop>txtWorkUndefined</tabstop>
+  <tabstop>ptxtWorkSummary</tabstop>
+  <tabstop>btnGreen</tabstop>
+  <tabstop>btnBlue</tabstop>
+  <tabstop>btnYellow</tabstop>
+  <tabstop>btnWhite</tabstop>
+  <tabstop>btnColour</tabstop>
+  <tabstop>btnRed</tabstop>
+  <tabstop>txtDreamsCurrent</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

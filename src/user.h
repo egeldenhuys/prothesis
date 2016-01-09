@@ -29,14 +29,42 @@ class User
 {
     public:
 
+    /* Adding a new Variable
+     * 1. Add declaration to header
+     * 2. Add code to Saving function
+     * 3. Add code to AddToVar
+     * 4. Add code to MatchesVar
+     * 5. Add code to tests.cpp, get_strings or get_vectors
+     * 6. Add code to tests.cpp, set_user_data
+    */
+
+    // Analysis
+    // c - Colour
+    std::string theme1;
+    std::string theme1c;
+    std::string theme2;
+    std::string theme2c;
+    std::string theme3;
+    std::string theme3c;
+    std::string theme4;
+    std::string theme4c;
+
         // User info
         std::string name;
         std::string surname;
         std::string mbti;
         std::vector<std::string> lifeKeys;
 
+        std::vector<std::string> interests;
+        std::vector<std::string> interestsPerc;
+
+        std::vector<std::string> subInterests;
+        std::vector<std::string> subInterestsPerc;
+
         std::vector<std::string> roles; // The names of the checked roles
         std::vector<std::string> skills;
+
+        std::vector<std::string> strengths;
 
         // Passions
         std::string passionsMovie;
@@ -48,8 +76,8 @@ class User
 
         // Dreams
         std::string dreamsPasttime;
-        std::string dreamsChildDreams;
-        std::string dreamsCurrentDreams;
+        std::string dreamsChild;
+        std::string dreamsCurrent;
         std::string dreamsSummary;
 
         // People ID
@@ -77,6 +105,7 @@ class User
 
         std::string path; // The path for storting user data
         bool dirtyData; // Flag indicating if the data has changed and needs to be saved
+
 
         int save();
         int load();

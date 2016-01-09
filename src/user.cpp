@@ -3,6 +3,7 @@
 #define LIFE_KEYS_MAX 7
 #define ROLES_MAX 7
 
+
 /*
 #define SKILLS_MAX -1
 #define PEOPLE_MAX -1
@@ -93,6 +94,9 @@ std::string User::decode(std::string text)
     specialsA.push_back("]");
     specialsB.push_back("&%2");
 
+    specialsA.push_back("\n");
+    specialsB.push_back("&%3");
+
     std::size_t foundLoc = 0;
     // Find and replace each element from specialsB with specialsA
     // in the given string
@@ -149,6 +153,9 @@ std::string User::encode(std::string text)
 
     specialsA.push_back(']');
     specialsB.push_back("&%2");
+
+    specialsA.push_back('\n');
+    specialsB.push_back("&%3");
 
     int specLoc = 0;
 
@@ -212,6 +219,22 @@ int User::save()
     for (unsigned int i = 0; i < lifeKeys.size(); i++)
         outf << encode(lifeKeys[i]) << std::endl;
 
+    outf << "[interests]" << std::endl;
+    for (unsigned int i = 0; i < interests.size(); i++)
+        outf << encode(interests[i]) << std::endl;
+
+    outf << "[interestsPerc]" << std::endl;
+    for (unsigned int i = 0; i < interestsPerc.size(); i++)
+        outf << encode(interestsPerc[i]) << std::endl;
+
+    outf << "[subInterests]" << std::endl;
+    for (unsigned int i = 0; i < subInterests.size(); i++)
+        outf << encode(subInterests[i]) << std::endl;
+
+    outf << "[subInterestsPerc]" << std::endl;
+    for (unsigned int i = 0; i < subInterestsPerc.size(); i++)
+        outf << encode(subInterestsPerc[i]) << std::endl;
+
     outf << "[roles]" << std::endl;
         for (unsigned int i = 0; i < roles.size(); i++)
         outf << encode(roles[i]) << std::endl;
@@ -219,6 +242,10 @@ int User::save()
     outf << "[skills]" << std::endl;
     for (unsigned int i = 0; i < skills.size(); i++)
         outf << encode(skills[i]) << std::endl;
+
+    outf << "[strengths]" << std::endl;
+    for (unsigned int i = 0; i < strengths.size(); i++)
+        outf << encode(strengths[i]) << std::endl;
 
     // Passions
     // ========
@@ -237,10 +264,10 @@ int User::save()
     // ======
     outf << "[dreamsPasttime]" << std::endl;
     outf << encode(dreamsPasttime) << std::endl;
-    outf << "[dreamsChildDreams]" << std::endl;
-    outf << encode(dreamsChildDreams) << std::endl;
-    outf << "[dreamsCurrentDreams]" << std::endl;
-    outf << encode(dreamsCurrentDreams) << std::endl;
+    outf << "[dreamsChild]" << std::endl;
+    outf << encode(dreamsChild) << std::endl;
+    outf << "[dreamsCurrent]" << std::endl;
+    outf << encode(dreamsCurrent) << std::endl;
     outf << "[dreamsSummary]" << std::endl;
     outf << encode(dreamsSummary) << std::endl;
 
@@ -286,6 +313,30 @@ int User::save()
     outf << "[workSummary]" << std::endl;
     outf << encode(workSummary) << std::endl;
 
+    // Analysis
+    outf << "[theme1]" << std::endl;
+    outf << encode(theme1) << std::endl;
+
+    outf << "[theme1c]" << std::endl;
+    outf << encode(theme1c) << std::endl;
+
+    outf << "[theme2]" << std::endl;
+    outf << encode(theme2) << std::endl;
+
+    outf << "[theme2c]" << std::endl;
+    outf << encode(theme2c) << std::endl;
+
+    outf << "[theme3]" << std::endl;
+    outf << encode(theme3) << std::endl;
+
+    outf << "[theme3c]" << std::endl;
+    outf << encode(theme3c) << std::endl;
+
+    outf << "[theme4]" << std::endl;
+    outf << encode(theme4) << std::endl;
+
+    outf << "[theme4c]" << std::endl;
+    outf << encode(theme4c) << std::endl;
 
     outf.close();
 
@@ -308,6 +359,7 @@ Returns:
 */
 int User::_addToVar(std::string varName, std::string value)
 {
+    //std::cout << varName << "=" << value << std::endl;
 
     if (varName == "[name]")
         name = decode(value);
@@ -315,12 +367,22 @@ int User::_addToVar(std::string varName, std::string value)
         surname = decode(value);
     else if (varName == "[mbti]")
         mbti = decode(value);
-    else if (varName == "[lifeKeys]" && lifeKeys.size() <= LIFE_KEYS_MAX)
+    else if (varName == "[lifeKeys]")
         lifeKeys.push_back(decode(value));
-    else if (varName == "[roles]" && roles.size() <= ROLES_MAX)
+    else if (varName == "[interests]")
+        interests.push_back(decode(value));
+    else if (varName == "[interestsPerc]")
+        interestsPerc.push_back(decode(value));
+    else if (varName == "[subInterests]")
+        subInterests.push_back(decode(value));
+    else if (varName == "[subInterestsPerc]")
+        subInterestsPerc.push_back(decode(value));
+    else if (varName == "[roles]")
         roles.push_back(decode(value));
     else if (varName == "[skills]")
         skills.push_back(decode(value));
+    else if (varName == "[strengths]")
+        strengths.push_back(decode(value));
     else if (varName == "[passionsMovie]")
         passionsMovie = decode(value);
     else if (varName == "[passionsChange]")
@@ -333,10 +395,10 @@ int User::_addToVar(std::string varName, std::string value)
         passionsSummary = decode(value);
     else if (varName == "[dreamsPasttime]")
         dreamsPasttime = decode(value);
-    else if (varName == "[dreamsChildDreams]")
-        dreamsChildDreams = decode(value);
-    else if (varName == "[dreamsCurrentDreams]")
-        dreamsCurrentDreams = decode(value);
+    else if (varName == "[dreamsChild]")
+        dreamsChild = decode(value);
+    else if (varName == "[dreamsCurrent]")
+        dreamsCurrent = decode(value);
     else if (varName == "[dreamsSummary]")
         dreamsSummary = decode(value);
     else if (varName == "[peopleHero]")
@@ -367,6 +429,22 @@ int User::_addToVar(std::string varName, std::string value)
         workUndefined = decode(value);
     else if (varName == "[workSummary]")
         workSummary = decode(value);
+    else if (varName == "[theme1]")
+        theme1 = decode(value);
+    else if (varName == "[theme1c]")
+        theme1c = decode(value);
+    else if (varName == "[theme2]")
+        theme2 = decode(value);
+    else if (varName == "[theme2c]")
+        theme2c = decode(value);
+    else if (varName == "[theme3]")
+        theme3 = decode(value);
+    else if (varName == "[theme3c]")
+        theme3c = decode(value);
+    else if (varName == "[theme4]")
+        theme4 = decode(value);
+    else if (varName == "[theme4c]")
+        theme4c = decode(value);
 
     return -1;
 }
@@ -390,24 +468,38 @@ Returns:
 
 bool User::_matchesVar(std::string varName)
 {
+    std::cout << "Matching: " << varName << " : ";
+
     bool value = false;
 
-    std::string varNames [30] = {
+    // Change this value at 2 locations
+    std::string varNames [48] = {
     "[name]", "[surname]", "[mbti]",
-    "[lifeKeys]", "[roles]", "[skills]", "[passionsMovie]",
+    "[lifeKeys]", "[interests]", "[interestsPerc]",
+    "[subInterests]", "[subInterestsPerc]", "[roles]", "[skills]", "[passionsMovie]",
     "[passionsOneThing]", "[passionsChange]", "[passionsAlive]",
     "[passionsGiveUp]", "[passionsSummary]", "[dreamsPasttime]",
-    "[dreamsChildDreams]", "[dreamsCurrentDreams]",
+    "[dreamsChild]", "[dreamsCurrent]",
     "[dreamsSummary]", "[peopleHero]", "[peopleInfluence]",
     "[peopleIdentify]", "[peopleCharacter]", "[peopleSummary]",
     "[spokenWords]", "[spokenSummary]", "[people]", "[priorities]",
     "[workIdeal]", "[workCreative]", "[workStructure]",
-    "[workUndefined]", "[workSummary]"
+    "[workUndefined]", "[workSummary]", "[strengths]",
+    "[theme1]", "[theme1c]", "[theme2]", "[theme2c]",
+    "[theme3]", "[theme3c]", "[theme4]", "[theme4c]"
     };
 
-    for (int i = 0; i < 30; i++)
+    //print_vector(varNames);
+
+    for (int i = 0; i < 48; i++)
+    {
+        //std::cout << varNames[i] << std::endl;
+
         if (varNames[i] == varName)
-            return true;
+            value = true;
+    }
+
+    std::cout << value << "\n";
 
     return value;
 }
@@ -465,18 +557,23 @@ int User::load()
     // Loop for reading all lines
     while (getline(inf, line))
     {
+        //std::cout << "line=" << line << std::endl;
         // Check if the line matches a variable
         if ( _matchesVar(line) )
         {
+
             // The next lines need to be added under that variable
             //representation
             varName = line;
+
+
         }
 
         // The line is a value to be added to a variable
         if (varName != "NULL" && line != varName)
         {
             _addToVar(varName, line);
+            std::cout << "Loading: " << varName << " <--- " << line << "\n";
         }
 
     }
