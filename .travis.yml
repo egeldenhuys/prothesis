@@ -7,5 +7,6 @@ before_install:
     - sudo apt-get install qt5-default qttools5-dev-tools
 
 script:
-    - qmake src/prothesis-gui/prothesis-gui.pro
-    - make -C src/prothesis-gui/
+    - cd src/prothesis-gui/
+    - qmake prothesis-gui.pro
+    - make
