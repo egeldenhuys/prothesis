@@ -13,7 +13,9 @@ using namespace std;
 
 int main()
 {
-    run_tests();
+    int result = 0;
 
-    return 0;
+    result = run_tests();
+
+    return result;
 }

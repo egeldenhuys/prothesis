@@ -378,6 +378,7 @@ int save_and_load()
     // Load the generated data
     User UserDataLoad;
     UserDataLoad.load();
+    //UserDataLoad.name = "Fail";
 
     // Compare if both sets still hold the same data
     // after being saved and loaded
@@ -401,9 +402,10 @@ int run_tests()
 {
     int failed = 0;
 
-    if (save_and_load() == 1)
+    if (save_and_load() == 1) {
         std::cout << "save_and_load(): FAIL\n";
-    else
+        failed = 1;
+     } else
         std::cout << "save_and_load(): PASS\n";
 
     return failed;
