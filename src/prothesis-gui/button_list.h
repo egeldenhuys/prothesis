@@ -11,6 +11,8 @@ class button_list
 {
 
 public:
+    button_list(void);
+
     button_list(QVBoxLayout *layout, vector<std::string> *sourceNames);
 
     vector<coloured_button> coloured_buttons;

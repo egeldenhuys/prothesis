@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QPushButton>
+#include "button_list.h"
 
 namespace Ui {
 class MainWindow;
@@ -22,6 +23,7 @@ public:
     void SetMBTI();
     void loadButtons();
     void linkButton(QPushButton *btn);
+    void linkButtons(button_list * buttonList);
 
 private slots:
 
@@ -54,6 +56,8 @@ private slots:
 
     void applyColour();
 
+
+    void on_tabWidget_tabBarClicked(int index);
 
 private:
     Ui::MainWindow *ui;

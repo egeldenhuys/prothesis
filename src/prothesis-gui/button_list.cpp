@@ -5,6 +5,13 @@
 #include "coloured_button.h"
 #include <QPushButton>
 
+
+button_list::button_list(void)
+{
+
+
+}
+
 button_list::button_list(QVBoxLayout *layout, vector<string> *sourceNames)
 {
     parentLayout = layout;
@@ -87,10 +94,18 @@ int button_list::update()
     }
 
     bool found = false;
+    uint loopsDone = 0;
+    uint initialSize = coloured_buttons.size();
 
     // Loop through every button
-    for (uint i = 0; i < coloured_buttons.size(); i++)
+    for (uint i = 0; loopsDone < initialSize; i++)
     {
+        // We do this because the button has been popped from the array
+        // and we need to account for this
+
+        if ((found == false) && (loopsDone >= 1))
+            i = i -1;
+
         found = false;
 
         // If the button does not exist in the source list, remove the button
@@ -104,9 +119,9 @@ int button_list::update()
         }
 
         if (found == false)
-        {
             remove_button(i);
-        }
+
+        loopsDone++;
 
     }
 
@@ -121,8 +136,10 @@ int button_list::exists(string name)
     for (uint i = 0; i < coloured_buttons.size(); i++)
     {
         if (coloured_buttons.at(i).name == QString::fromStdString(name))
+        {
             result = 1;
             return result;
+        }
     }
 
     return result;
