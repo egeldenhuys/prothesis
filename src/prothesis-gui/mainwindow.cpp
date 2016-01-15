@@ -32,6 +32,8 @@ void MainWindow::linkButton(QPushButton *btn)
 
 }
 
+button_list *btnListRoles;
+
 /*
  * Button List Algorithm
  * =====================
@@ -43,23 +45,25 @@ void MainWindow::linkButton(QPushButton *btn)
 void MainWindow::loadButtons()
 {
  // Create a button for each Role that has been loaded
-    button_list btnListRoles(ui->vlRoles, &UserData.roles);
+
+    btnListRoles = new button_list(ui->vlRoles, &UserData.roles);
 
     // Link the buttons
-    for (uint i = 0; i < btnListRoles.coloured_buttons.size(); i++)
+    for (uint i = 0; i < btnListRoles->coloured_buttons.size(); i++)
     {
-        linkButton(btnListRoles.coloured_buttons.at(i).button);
+        linkButton(btnListRoles->coloured_buttons.at(i).button);
     }
 
-    /*
-    for (uint i = 0; i < UserData.roles.size(); i++)
+
+}
+
+void MainWindow::linkButtons(button_list * buttonList)
+{
+    // Link the buttons
+    for (uint i = 0; i < buttonList->coloured_buttons.size(); i++)
     {
-        btnListRoles.add_button(QString::fromStdString(UserData.roles.at(i)), "");
-        connect(btnListRoles.coloured_buttons.at(i).button, SIGNAL (clicked()),this, SLOT (applyColour()));
-
+        linkButton(buttonList->coloured_buttons.at(i).button);
     }
-*/
-
 }
 
 void MainWindow::applyColour()
@@ -1090,3 +1094,13 @@ void MainWindow::on_btnWhite_clicked()
  * - Sheep, 8
  * - Farmer, 99
 */
+
+void MainWindow::on_tabWidget_tabBarClicked(int index)
+{
+    SaveUserData();
+    if (index == 3)
+    {
+        btnListRoles->update();
+        linkButtons(btnListRoles);
+    }
+}
