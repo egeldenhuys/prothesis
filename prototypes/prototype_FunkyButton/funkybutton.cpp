@@ -4,7 +4,7 @@ QString FunkyButton::globalColour = "NONE";
 
 FunkyButton::FunkyButton()
 {
-
+    connect(this, SIGNAL(clicked()),this,SLOT(applyColour()));
 }
 
 FunkyButton::FunkyButton(QWidget *parent)
@@ -20,18 +20,3 @@ void FunkyButton::applyColour()
 
     this->setText(colour);
 }
-
-/*
- * User clicks colour setting button.
- * colour changes
- * user clicks a funky button
- * funky button gets the new colour
- * funky button changes to the new colour
-*/
-
-/*
- * colour changes
- * all funky buttons are updated with the new colour
- * funky button is pressed
- * funky button changes to the colour set
-*/
