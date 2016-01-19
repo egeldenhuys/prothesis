@@ -8,6 +8,13 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     CreateFunkyButton();
 
+    FunkyButton *wat = new FunkyButton();
+    wat->setGeometry(50, 50, 50, 50);
+
+    buttonList.append(wat);
+
+    ui->vlButtons->addWidget(buttonList.last());
+
 }
 
 MainWindow::~MainWindow()
@@ -22,6 +29,7 @@ void MainWindow::on_pushButton_clicked()
     ui->pushButton->setText(colour);
 
     FunkyButton::globalColour = colour;
+
 }
 
 void MainWindow::CreateFunkyButton()

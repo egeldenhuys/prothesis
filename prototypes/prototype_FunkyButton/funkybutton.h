@@ -22,7 +22,12 @@ class FunkyButton : public QPushButton
 {
     Q_OBJECT
 
+private:
+
+
 public:
+    Q_DISABLE_COPY(FunkyButton)
+
     FunkyButton();
     FunkyButton(QWidget *parent);
 

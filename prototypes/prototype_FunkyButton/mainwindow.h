@@ -26,6 +26,8 @@ private:
     void CreateFunkyButton();
     FunkyButton *btnFunky;
 
+    QList<FunkyButton*> buttonList;
+
 };
 
 #endif // MAINWINDOW_H

@@ -1,9 +1,5 @@
 #include "button_list.h"
-#include <QCoreApplication>
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
-#include "coloured_button.h"
-#include <QPushButton>
+
 
 
 button_list::button_list(void)
@@ -28,49 +24,32 @@ button_list::button_list(QVBoxLayout *layout, vector<string> *sourceNames)
  * This button is then added to the parent widget
  *
 */
-int button_list::add_button(QString name, QString colour)
+void button_list::add_button(QString name, QString colour)
 {
     // Create
 
 
     // Create new coloured button
-    coloured_button *myButton = new coloured_button;
+    ColouredButton *myButton = new ColouredButton;
     myButton->setText(name);
-    myButton->setColour(colour);
+    myButton->ApplyColour(colour);
 
     // Add the coloured button to the vector
 
-    coloured_buttons.push_back(*myButton);
+    cButtonList_.append(myButton);
 
     // Add to widget
-    parentLayout->addWidget(myButton->button,0,0);
+    parentLayout->addWidget(cButtonList_.last());
 
-    // Connect button to function
 
 }
 
-void button_list::applyColour()
-{
-    /*
-    QPushButton *theButton = qobject_cast<QPushButton*>(sender());
-       if (!theButton)
-          return;
-
-    theButton->setText("YOU CLICKED ME!" + rand() % 1000);
-    */
-}
-
-
-int button_list::remove_button(string name)
+void button_list::remove_button(int index)
 {
 
-}
-
-int button_list::remove_button(int index)
-{
-    parentLayout->removeWidget(coloured_buttons.at(index).button);
-    delete coloured_buttons.at(index).button;
-    coloured_buttons.erase(coloured_buttons.begin()+index);
+    parentLayout->removeWidget(cButtonList_.at(index));
+    delete cButtonList_.at(index);
+    cButtonList_.removeAt(index);
 }
 
 /* 3. Update
@@ -81,7 +60,7 @@ int button_list::remove_button(int index)
 * 3. Loop through each item in the list, if it does not exist in UserData, remove it.
 */
 
-int button_list::update()
+void button_list::update()
 {
     // Loop through each item in UserData
     for (uint i = 0; i < sourceList->size(); i++)
@@ -95,7 +74,7 @@ int button_list::update()
 
     bool found = false;
     uint loopsDone = 0;
-    uint initialSize = coloured_buttons.size();
+    uint initialSize = cButtonList_.size();
 
     // Loop through every button
     for (uint i = 0; loopsDone < initialSize; i++)
@@ -108,10 +87,13 @@ int button_list::update()
 
         found = false;
 
+         QString wat;
+
         // If the button does not exist in the source list, remove the button
         for (uint j = 0; j < sourceList->size(); j++)
         {
-            if (QString::fromStdString(sourceList->at(j)) == coloured_buttons.at(i).name)
+
+            if (QString::fromStdString(sourceList->at(j)) == cButtonList_.at(i)->text())
             {
                 found = true;
                 break;
@@ -133,9 +115,9 @@ int button_list::exists(string name)
 
     int result = 0;
 
-    for (uint i = 0; i < coloured_buttons.size(); i++)
+    for (int i = 0; i < cButtonList_.size(); i++)
     {
-        if (coloured_buttons.at(i).name == QString::fromStdString(name))
+        if (cButtonList_.at(i)->text() == QString::fromStdString(name))
         {
             result = 1;
             return result;

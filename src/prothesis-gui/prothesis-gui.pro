@@ -17,14 +17,14 @@ SOURCES += main.cpp\
     ../tests.cpp \
     ../user.cpp \
     button_list.cpp \
-    coloured_button.cpp
+    ColouredButton.cpp
 
 HEADERS  += mainwindow.h \
     ../globals.h \
     ../tests.h \
     ../user.h \
     button_list.h \
-    coloured_button.h
+    ColouredButton.h
 
 FORMS    += mainwindow.ui
 

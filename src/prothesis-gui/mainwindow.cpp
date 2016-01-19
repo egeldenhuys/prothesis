@@ -47,23 +47,6 @@ void MainWindow::loadButtons()
  // Create a button for each Role that has been loaded
 
     btnListRoles = new button_list(ui->vlRoles, &UserData.roles);
-
-    // Link the buttons
-    for (uint i = 0; i < btnListRoles->coloured_buttons.size(); i++)
-    {
-        linkButton(btnListRoles->coloured_buttons.at(i).button);
-    }
-
-
-}
-
-void MainWindow::linkButtons(button_list * buttonList)
-{
-    // Link the buttons
-    for (uint i = 0; i < buttonList->coloured_buttons.size(); i++)
-    {
-        linkButton(buttonList->coloured_buttons.at(i).button);
-    }
 }
 
 void MainWindow::applyColour()
@@ -889,6 +872,8 @@ void MainWindow::SetColour(QString newColour) {
     ui->btnColTheme_2->setStyleSheet("background-color: rgb(" + newColour + ");");
     ui->btnColTheme_3->setStyleSheet("background-color: rgb(" + newColour + ");");
     ui->btnColTheme_4->setStyleSheet("background-color: rgb(" + newColour + ");");
+
+    ColouredButton::globalColour = colour;
 }
 
 void MainWindow::on_btnRed_clicked()
@@ -1101,6 +1086,6 @@ void MainWindow::on_tabWidget_tabBarClicked(int index)
     if (index == 3)
     {
         btnListRoles->update();
-        linkButtons(btnListRoles);
+
     }
 }
