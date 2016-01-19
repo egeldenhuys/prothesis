@@ -1,5 +1,6 @@
 #include "ColouredButton.h"
 
+// Need to initialize the value somewhere
 QString ColouredButton::globalColour = "255, 255, 255";
 
 ColouredButton::ColouredButton()

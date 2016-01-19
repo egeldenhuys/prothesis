@@ -1,6 +1,22 @@
+/* ColouredButton.h
+ * ================
+ *
+ * DESCRIPTION:
+ * ------------
+ * Provides a button. When this button is clicked it changes its
+ * background colour to the rgb value in ColouredButton:globalColour
+ *
+ * EXAMPLE:
+ * --------
+ * ColouredButton *myButton = new ColouredButton(this)
+ * myButton->setText("My Button");
+ *
+ * // When myButton is clicked the background colour will be set to:
+ * ColouredButton::globalColour = "255, 255, 255";
+*/
+
 #ifndef COLOUREDBUTTON_H
 #define COLOUREDBUTTON_H
-
 
 #include <QPushButton>
 
@@ -14,11 +30,10 @@ private:
 public:
     ColouredButton();
     ColouredButton(QWidget *parent);
+    void ApplyColour(QString newColour);
 
     static QString globalColour;
-
     QString colour;
-    void ApplyColour(QString newColour);
 
 private slots:
     void ApplyColourClicked();
