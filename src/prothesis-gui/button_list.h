@@ -1,21 +1,24 @@
 #ifndef BUTTON_LIST_H
 #define BUTTON_LIST_H
 
-#include "coloured_button.h"
+#include "ColouredButton.h"
 #include <vector>
 #include <QVBoxLayout>
+#include <QPushButton>
 
 using namespace std;
 
 class button_list
 {
 
+private:
+    QList<ColouredButton*> cButtonList_;
+
 public:
     button_list(void);
 
     button_list(QVBoxLayout *layout, vector<std::string> *sourceNames);
 
-    vector<coloured_button> coloured_buttons;
 
     vector<std::string> *sourceList;
 
@@ -23,10 +26,10 @@ public:
 
     int change_colour(string name, string colour);
 
-    int add_button(QString name, QString colour);
+    void add_button(QString name, QString colour);
     int remove_button(string name);
-    int remove_button(int index);
-    int update();
+    void remove_button(int index);
+    void update();
     int exists(string name);
     void applyColour();
 
