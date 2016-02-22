@@ -41,6 +41,21 @@ class User
     std::vector<std::string> buttonsRoleNames;
     std::vector<std::string> buttonsRoleColours;
 
+    std::vector<std::string> buttonsSkillsNames;
+    std::vector<std::string> buttonsSkillsColours;
+
+    std::vector<std::string> buttonsPrioritiesNames;
+    std::vector<std::string> buttonsPrioritiesColours;
+
+    std::vector<std::string> buttonsPeopleNames;
+    std::vector<std::string> buttonsPeopleColours;
+
+    std::vector<std::string> buttonsStrengthsNames;
+    std::vector<std::string> buttonsStrengthsColours;
+
+    std::vector<std::string> buttonsLifeKeysNames;
+    std::vector<std::string> buttonsLifeKeysColours;
+
     // Analysis
     // c - Colour
     std::string theme1;

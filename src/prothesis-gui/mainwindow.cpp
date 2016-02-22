@@ -27,6 +27,12 @@ MainWindow::MainWindow(QWidget *parent) :
 }
 
 button_list *btnListRoles;
+button_list *btnListSkills;
+button_list *btnListPriorities;
+button_list *btnListPeople;
+button_list *btnListStrengths;
+button_list *btnListLifeKeys;
+
 
 /*
  * Button List Algorithm
@@ -45,6 +51,31 @@ void MainWindow::loadButtons()
     for (uint i = 0; i < UserData.buttonsRoleNames.size(); i++)
         btnListRoles->change_colour(UserData.buttonsRoleNames[i], UserData.buttonsRoleColours[i]);
 
+    btnListSkills = new button_list(ui->vlSkills, &UserData.skills);
+
+    for (uint i = 0; i < UserData.buttonsSkillsNames.size(); i++)
+        btnListSkills->change_colour(UserData.buttonsSkillsNames[i], UserData.buttonsSkillsColours[i]);
+
+    btnListPriorities = new button_list(ui->vlPriorities, &UserData.priorities);
+
+    for (uint i = 0; i < UserData.buttonsPrioritiesNames.size(); i++)
+        btnListPriorities->change_colour(UserData.buttonsPrioritiesNames[i], UserData.buttonsPrioritiesColours[i]);
+
+    btnListPeople = new button_list(ui->vlPeople, &UserData.people);
+
+    for (uint i = 0; i < UserData.buttonsPeopleNames.size(); i++)
+        btnListPeople->change_colour(UserData.buttonsPeopleNames[i], UserData.buttonsPeopleColours[i]);
+
+    btnListStrengths = new button_list(ui->vlStrengths, &UserData.strengths);
+
+    for (uint i = 0; i < UserData.buttonsStrengthsNames.size(); i++)
+        btnListStrengths->change_colour(UserData.buttonsStrengthsNames[i], UserData.buttonsStrengthsColours[i]);
+
+    btnListLifeKeys = new button_list(ui->vlLifeKeys, &UserData.lifeKeys);
+
+    for (uint i = 0; i < UserData.buttonsLifeKeysNames.size(); i++)
+        btnListLifeKeys->change_colour(UserData.buttonsLifeKeysNames[i], UserData.buttonsLifeKeysColours[i]);
+
 }
 
 void MainWindow::saveButtons()
@@ -56,6 +87,56 @@ void MainWindow::saveButtons()
     {
         UserData.buttonsRoleNames.push_back(btnListRoles->cButtonList_.at(i)->text().toStdString());
         UserData.buttonsRoleColours.push_back(btnListRoles->cButtonList_.at(i)->colour.toStdString());
+    }
+
+
+    UserData.buttonsSkillsNames.clear();
+    UserData.buttonsSkillsColours.clear();
+
+    for (int i = 0; i < btnListSkills->cButtonList_.size(); i++)
+    {
+        UserData.buttonsSkillsNames.push_back(btnListSkills->cButtonList_.at(i)->text().toStdString());
+        UserData.buttonsSkillsColours.push_back(btnListSkills->cButtonList_.at(i)->colour.toStdString());
+    }
+
+
+    UserData.buttonsPrioritiesNames.clear();
+    UserData.buttonsPrioritiesColours.clear();
+
+    for (int i = 0; i < btnListPriorities->cButtonList_.size(); i++)
+    {
+        UserData.buttonsPrioritiesNames.push_back(btnListPriorities->cButtonList_.at(i)->text().toStdString());
+        UserData.buttonsPrioritiesColours.push_back(btnListPriorities->cButtonList_.at(i)->colour.toStdString());
+    }
+
+
+    UserData.buttonsPeopleNames.clear();
+    UserData.buttonsPeopleColours.clear();
+
+    for (int i = 0; i < btnListPeople->cButtonList_.size(); i++)
+    {
+        UserData.buttonsPeopleNames.push_back(btnListPeople->cButtonList_.at(i)->text().toStdString());
+        UserData.buttonsPeopleColours.push_back(btnListPeople->cButtonList_.at(i)->colour.toStdString());
+    }
+
+
+    UserData.buttonsStrengthsNames.clear();
+    UserData.buttonsStrengthsColours.clear();
+
+    for (int i = 0; i < btnListStrengths->cButtonList_.size(); i++)
+    {
+        UserData.buttonsStrengthsNames.push_back(btnListStrengths->cButtonList_.at(i)->text().toStdString());
+        UserData.buttonsStrengthsColours.push_back(btnListStrengths->cButtonList_.at(i)->colour.toStdString());
+    }
+
+
+    UserData.buttonsLifeKeysNames.clear();
+    UserData.buttonsLifeKeysColours.clear();
+
+    for (int i = 0; i < btnListLifeKeys->cButtonList_.size(); i++)
+    {
+        UserData.buttonsLifeKeysNames.push_back(btnListLifeKeys->cButtonList_.at(i)->text().toStdString());
+        UserData.buttonsLifeKeysColours.push_back(btnListLifeKeys->cButtonList_.at(i)->colour.toStdString());
     }
 
 }
@@ -511,9 +592,14 @@ void MainWindow::SaveUserData() {
     UserData.lifeKeys.clear();
 
     // Assign the new new life keys
-    UserData.lifeKeys.push_back(ui->txtLifeKey1->text().toStdString());
-    UserData.lifeKeys.push_back(ui->txtLifeKey2->text().toStdString());
-    UserData.lifeKeys.push_back(ui->txtLifeKey3->text().toStdString());
+    if (ui->txtLifeKey1->text() != "")
+        UserData.lifeKeys.push_back(ui->txtLifeKey1->text().toStdString());
+
+    if (ui->txtLifeKey2->text() != "")
+        UserData.lifeKeys.push_back(ui->txtLifeKey2->text().toStdString());
+
+    if (ui->txtLifeKey3->text() != "")
+        UserData.lifeKeys.push_back(ui->txtLifeKey3->text().toStdString());
 
     // ======================
     // Interests START
@@ -1086,6 +1172,11 @@ void MainWindow::on_tabWidget_tabBarClicked(int index)
     if (index == 3)
     {
         btnListRoles->update();
+        btnListSkills->update();
+        btnListPriorities->update();
+        btnListPeople->update();
+        btnListStrengths->update();
+        btnListLifeKeys->update();
 
     }
 }
