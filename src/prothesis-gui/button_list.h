@@ -11,10 +11,9 @@ using namespace std;
 class button_list
 {
 
-private:
+public:
     QList<ColouredButton*> cButtonList_;
 
-public:
     button_list(void);
 
     button_list(QVBoxLayout *layout, vector<std::string> *sourceNames);
@@ -32,6 +31,7 @@ public:
     void update();
     int exists(string name);
     void applyColour();
+    int getIndexFromName(string name);
 
 };
 

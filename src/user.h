@@ -38,6 +38,9 @@ class User
      * 6. Add code to tests.cpp, set_user_data
     */
 
+    std::vector<std::string> buttonsRoleNames;
+    std::vector<std::string> buttonsRoleColours;
+
     // Analysis
     // c - Colour
     std::string theme1;

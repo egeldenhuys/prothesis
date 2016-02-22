@@ -26,12 +26,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
 }
 
-void MainWindow::linkButton(QPushButton *btn)
-{
-    connect(btn, SIGNAL (clicked()),this, SLOT (applyColour()));
-
-}
-
 button_list *btnListRoles;
 
 /*
@@ -47,20 +41,24 @@ void MainWindow::loadButtons()
  // Create a button for each Role that has been loaded
 
     btnListRoles = new button_list(ui->vlRoles, &UserData.roles);
+
+    for (uint i = 0; i < UserData.buttonsRoleNames.size(); i++)
+        btnListRoles->change_colour(UserData.buttonsRoleNames[i], UserData.buttonsRoleColours[i]);
+
 }
 
-void MainWindow::applyColour()
+void MainWindow::saveButtons()
 {
+    UserData.buttonsRoleNames.clear();
+    UserData.buttonsRoleColours.clear();
 
-    QPushButton *theButton = qobject_cast<QPushButton*>(sender());
-       if (!theButton)
-          return;
-
-    //theButton->setText("YOU CLICKED ME!");
-    theButton->setStyleSheet("background-color: rgb(" + colour + ");");
+    for (int i = 0; i < btnListRoles->cButtonList_.size(); i++)
+    {
+        UserData.buttonsRoleNames.push_back(btnListRoles->cButtonList_.at(i)->text().toStdString());
+        UserData.buttonsRoleColours.push_back(btnListRoles->cButtonList_.at(i)->colour.toStdString());
+    }
 
 }
-
 
 MainWindow::~MainWindow()
 {
@@ -856,6 +854,8 @@ void MainWindow::SaveUserData() {
     UserData.theme4 = ui->txtTheme_4->document()->toPlainText().toStdString();
 
     // Colours are directly set
+
+    saveButtons();
 
     // ====================
     // END

@@ -2439,13 +2439,28 @@
        <rect>
         <x>630</x>
         <y>50</y>
-        <width>181</width>
+        <width>171</width>
         <height>161</height>
        </rect>
       </property>
       <property name="title">
        <string>7 Life Skills</string>
       </property>
+      <widget class="QWidget" name="verticalLayoutWidget_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>151</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="vlSkills">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
      </widget>
      <widget class="QGroupBox" name="groupBox_31">
       <property name="geometry">
@@ -2709,7 +2724,7 @@
      <x>0</x>
      <y>0</y>
      <width>1353</width>
-     <height>27</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuSomething">

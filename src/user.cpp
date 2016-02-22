@@ -338,6 +338,14 @@ int User::save()
     outf << "[theme4c]" << std::endl;
     outf << encode(theme4c) << std::endl;
 
+    outf << "[buttonsRoleNames]" << std::endl;
+    for (unsigned int i = 0; i < buttonsRoleNames.size(); i++)
+        outf << encode(buttonsRoleNames[i]) << std::endl;
+
+    outf << "[buttonsRoleColours]" << std::endl;
+    for (unsigned int i = 0; i < buttonsRoleColours.size(); i++)
+        outf << encode(buttonsRoleColours[i]) << std::endl;
+
     outf.close();
 
     return -1;
@@ -359,7 +367,7 @@ Returns:
 */
 int User::_addToVar(std::string varName, std::string value)
 {
-    //std::cout << varName << "=" << value << std::endl;
+    std::cout << varName << "=" << value << std::endl;
 
     if (varName == "[name]")
         name = decode(value);
@@ -445,8 +453,12 @@ int User::_addToVar(std::string varName, std::string value)
         theme4 = decode(value);
     else if (varName == "[theme4c]")
         theme4c = decode(value);
+    else if (varName == "[buttonsRoleNames]")
+        buttonsRoleNames.push_back(decode(value));
+    else if (varName == "[buttonsRoleColours]")
+        buttonsRoleColours.push_back(decode(value));
 
-    return -1;
+    return 0;
 }
 
 /*
@@ -472,8 +484,10 @@ bool User::_matchesVar(std::string varName)
 
     bool value = false;
 
-    // Change this value at 2 locations
-    std::string varNames [48] = {
+    // Change this!
+    const int COUNT = 45;
+
+    std::string varNames [COUNT] = {
     "[name]", "[surname]", "[mbti]",
     "[lifeKeys]", "[interests]", "[interestsPerc]",
     "[subInterests]", "[subInterestsPerc]", "[roles]", "[skills]", "[passionsMovie]",
@@ -486,17 +500,20 @@ bool User::_matchesVar(std::string varName)
     "[workIdeal]", "[workCreative]", "[workStructure]",
     "[workUndefined]", "[workSummary]", "[strengths]",
     "[theme1]", "[theme1c]", "[theme2]", "[theme2c]",
-    "[theme3]", "[theme3c]", "[theme4]", "[theme4c]"
+    "[theme3]", "[theme3c]", "[theme4]", "[theme4c]", "[buttonsRoleColours]", "[buttonsRoleNames]"
     };
 
     //print_vector(varNames);
 
-    for (int i = 0; i < 48; i++)
+    for (int i = 0; i < COUNT; i++)
     {
         //std::cout << varNames[i] << std::endl;
 
         if (varNames[i] == varName)
+        {
             value = true;
+
+        }
     }
 
     std::cout << value << "\n";

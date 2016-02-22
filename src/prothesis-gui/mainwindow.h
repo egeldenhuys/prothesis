@@ -24,6 +24,7 @@ public:
     void loadButtons();
     void linkButton(QPushButton *btn);
     void linkButtons(button_list * buttonList);
+    void saveButtons();
 
 private slots:
 
@@ -53,9 +54,6 @@ private slots:
     void on_btnYellow_clicked();
 
     void on_btnWhite_clicked();
-
-    void applyColour();
-
 
     void on_tabWidget_tabBarClicked(int index);
 
