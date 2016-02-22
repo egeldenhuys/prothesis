@@ -13,7 +13,17 @@ Prothesis
 6. Open the Qt Project in Qt Creator (src/prothesis-gui/prothesis-gui.pro)
 
 ### Deploying (Windows 7 x64 Professional running in VirtualBox)
-1. Run the Windows Deployment Tool. See [Qt for Windows - Deployment](http://doc.qt.io/qt-5/windows-deployment.html)
+1. Run the Windows Deployment Tool. See [Qt for Windows - Deployment](http://doc.qt.io/qt-5/windows-deployment.html#the-windows-deployment-tool)
 2. Copy the following .dll files from `Qt/Qt5.5.0/Tools/mingw492_32/bin`: `libgcc_s_dw2-1.dll, linwinpthread-1.dll, libstdc++-6.dll` into the `prothesis-gui.exe` working directory
 3. Confirm that everything works.
 4. Test software on clean system without no development enviornment installed.
+5. Place `prothesis.gui.exe` and the required dependencies in a folder named `prothesis`
+6. Create `RUN.cmd` with the following line: `start "" prothesis\prothesis-gui.exe`. Place it outside the `prothesis` directory.
+```
+Example:
+|-- RUN.cmd
+|-- prothesis/
+|   |-- prothesis-gui.exe
+|   |-- Qt5Core.dll
+|   |-- ...etc
+```
