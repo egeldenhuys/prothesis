@@ -127,6 +127,30 @@ int button_list::exists(string name)
     return result;
 }
 
+int button_list::getIndexFromName(string name)
+{
+    int result = -1;
+
+    for (int i = 0; i < cButtonList_.size(); i++)
+    {
+        if (cButtonList_.at(i)->text() == QString::fromStdString(name))
+        {
+            result = i;
+            return result;
+        }
+    }
+}
+
+int button_list::change_colour(string name, string colour)
+{
+    int index = getIndexFromName(name);
+
+    if (index != -1)
+        cButtonList_.at(index)->ApplyColour(QString::fromStdString(colour));
+
+
+}
+
 /* button_list
  *
  * This class manages a list of buttons.

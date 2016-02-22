@@ -338,6 +338,54 @@ int User::save()
     outf << "[theme4c]" << std::endl;
     outf << encode(theme4c) << std::endl;
 
+    outf << "[buttonsRoleNames]" << std::endl;
+    for (unsigned int i = 0; i < buttonsRoleNames.size(); i++)
+        outf << encode(buttonsRoleNames[i]) << std::endl;
+
+    outf << "[buttonsRoleColours]" << std::endl;
+    for (unsigned int i = 0; i < buttonsRoleColours.size(); i++)
+        outf << encode(buttonsRoleColours[i]) << std::endl;
+
+    outf << "[buttonsSkillsNames]" << std::endl;
+    for (unsigned int i = 0; i < buttonsSkillsNames.size(); i++)
+        outf << encode(buttonsSkillsNames[i]) << std::endl;
+
+    outf << "[buttonsSkillsColours]" << std::endl;
+    for (unsigned int i = 0; i < buttonsSkillsColours.size(); i++)
+        outf << encode(buttonsSkillsColours[i]) << std::endl;
+
+    outf << "[buttonsPrioritiesNames]" << std::endl;
+    for (unsigned int i = 0; i < buttonsPrioritiesNames.size(); i++)
+        outf << encode(buttonsPrioritiesNames[i]) << std::endl;
+
+    outf << "[buttonsPrioritiesColours]" << std::endl;
+    for (unsigned int i = 0; i < buttonsPrioritiesColours.size(); i++)
+        outf << encode(buttonsPrioritiesColours[i]) << std::endl;
+
+    outf << "[buttonsPeopleNames]" << std::endl;
+    for (unsigned int i = 0; i < buttonsPeopleNames.size(); i++)
+        outf << encode(buttonsPeopleNames[i]) << std::endl;
+
+    outf << "[buttonsPeopleColours]" << std::endl;
+    for (unsigned int i = 0; i < buttonsPeopleColours.size(); i++)
+        outf << encode(buttonsPeopleColours[i]) << std::endl;
+
+    outf << "[buttonsStrengthsNames]" << std::endl;
+    for (unsigned int i = 0; i < buttonsStrengthsNames.size(); i++)
+        outf << encode(buttonsStrengthsNames[i]) << std::endl;
+
+    outf << "[buttonsStrengthsColours]" << std::endl;
+    for (unsigned int i = 0; i < buttonsStrengthsColours.size(); i++)
+        outf << encode(buttonsStrengthsColours[i]) << std::endl;
+
+    outf << "[buttonsLifeKeysNames]" << std::endl;
+    for (unsigned int i = 0; i < buttonsLifeKeysNames.size(); i++)
+        outf << encode(buttonsLifeKeysNames[i]) << std::endl;
+
+    outf << "[buttonsLifeKeysColours]" << std::endl;
+    for (unsigned int i = 0; i < buttonsLifeKeysColours.size(); i++)
+        outf << encode(buttonsLifeKeysColours[i]) << std::endl;
+
     outf.close();
 
     return -1;
@@ -359,7 +407,7 @@ Returns:
 */
 int User::_addToVar(std::string varName, std::string value)
 {
-    //std::cout << varName << "=" << value << std::endl;
+    std::cout << varName << "=" << value << std::endl;
 
     if (varName == "[name]")
         name = decode(value);
@@ -445,8 +493,32 @@ int User::_addToVar(std::string varName, std::string value)
         theme4 = decode(value);
     else if (varName == "[theme4c]")
         theme4c = decode(value);
+    else if (varName == "[buttonsRoleNames]")
+        buttonsRoleNames.push_back(decode(value));
+    else if (varName == "[buttonsRoleColours]")
+        buttonsRoleColours.push_back(decode(value));
+    else if (varName == "[buttonsSkillsNames]")
+        buttonsSkillsNames.push_back(decode(value));
+    else if (varName == "[buttonsSkillsColours]")
+        buttonsSkillsColours.push_back(decode(value));
+    else if (varName == "[buttonsPrioritiesNames]")
+        buttonsPrioritiesNames.push_back(decode(value));
+    else if (varName == "[buttonsPrioritiesColours]")
+        buttonsPrioritiesColours.push_back(decode(value));
+    else if (varName == "[buttonsPeopleNames]")
+        buttonsPeopleNames.push_back(decode(value));
+    else if (varName == "[buttonsPeopleColours]")
+        buttonsPeopleColours.push_back(decode(value));
+    else if (varName == "[buttonsStrengthsNames]")
+        buttonsStrengthsNames.push_back(decode(value));
+    else if (varName == "[buttonsStrengthsColours]")
+        buttonsStrengthsColours.push_back(decode(value));
+    else if (varName == "[buttonsLifeKeysNames]")
+        buttonsLifeKeysNames.push_back(decode(value));
+    else if (varName == "[buttonsLifeKeysColours]")
+        buttonsLifeKeysColours.push_back(decode(value));
 
-    return -1;
+    return 0;
 }
 
 /*
@@ -472,8 +544,10 @@ bool User::_matchesVar(std::string varName)
 
     bool value = false;
 
-    // Change this value at 2 locations
-    std::string varNames [48] = {
+    // Change this!
+    const int COUNT = 55;
+
+    std::string varNames [COUNT] = {
     "[name]", "[surname]", "[mbti]",
     "[lifeKeys]", "[interests]", "[interestsPerc]",
     "[subInterests]", "[subInterestsPerc]", "[roles]", "[skills]", "[passionsMovie]",
@@ -486,17 +560,27 @@ bool User::_matchesVar(std::string varName)
     "[workIdeal]", "[workCreative]", "[workStructure]",
     "[workUndefined]", "[workSummary]", "[strengths]",
     "[theme1]", "[theme1c]", "[theme2]", "[theme2c]",
-    "[theme3]", "[theme3c]", "[theme4]", "[theme4c]"
+    "[theme3]", "[theme3c]", "[theme4]", "[theme4c]",
+        "[buttonsRoleColours]", "[buttonsRoleNames]", "[buttonsSkillsNames]",
+        "[buttonsSkillsColours]", "[buttonsPrioritiesNames]",
+        "[buttonsPrioritiesColours]", "[buttonsPeopleNames]",
+        "[buttonsPeopleColours]", "[buttonsStrengthsNames]",
+        "[buttonsStrengthsColours]", "[buttonsLifeKeysNames]",
+        "[buttonsLifeKeysColours]"
+
     };
 
     //print_vector(varNames);
 
-    for (int i = 0; i < 48; i++)
+    for (int i = 0; i < COUNT; i++)
     {
         //std::cout << varNames[i] << std::endl;
 
         if (varNames[i] == varName)
+        {
             value = true;
+
+        }
     }
 
     std::cout << value << "\n";

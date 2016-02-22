@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1353</width>
-    <height>943</height>
+    <width>1292</width>
+    <height>825</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Prothesis</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QTabWidget" name="tabWidget">
@@ -19,8 +19,8 @@
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>1241</width>
-      <height>871</height>
+      <width>1261</width>
+      <height>761</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -461,7 +461,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
@@ -2354,116 +2354,38 @@
        </property>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox_24">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>330</y>
-        <width>181</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Priorities</string>
-      </property>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_25">
-      <property name="geometry">
-       <rect>
-        <x>220</x>
-        <y>330</y>
-        <width>201</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>People</string>
-      </property>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_26">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>450</y>
-        <width>181</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Work</string>
-      </property>
-     </widget>
      <widget class="QGroupBox" name="groupBox_27">
       <property name="geometry">
        <rect>
-        <x>220</x>
-        <y>450</y>
-        <width>201</width>
-        <height>111</height>
+        <x>750</x>
+        <y>240</y>
+        <width>161</width>
+        <height>191</height>
        </rect>
       </property>
       <property name="title">
        <string>Life Keys</string>
       </property>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_28">
-      <property name="geometry">
-       <rect>
-        <x>440</x>
-        <y>50</y>
-        <width>171</width>
-        <height>191</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>7 Roles</string>
-      </property>
-      <widget class="QWidget" name="verticalLayoutWidget_9">
+      <widget class="QWidget" name="verticalLayoutWidget_14">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>151</width>
+         <width>141</width>
          <height>161</height>
         </rect>
        </property>
-       <layout class="QVBoxLayout" name="vlRoles">
+       <layout class="QVBoxLayout" name="vlLifeKeys">
         <property name="spacing">
          <number>0</number>
         </property>
        </layout>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox_29">
-      <property name="geometry">
-       <rect>
-        <x>630</x>
-        <y>50</y>
-        <width>181</width>
-        <height>161</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>7 Life Skills</string>
-      </property>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_31">
-      <property name="geometry">
-       <rect>
-        <x>640</x>
-        <y>220</y>
-        <width>181</width>
-        <height>181</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Strengths</string>
-      </property>
-     </widget>
      <widget class="QGroupBox" name="groupBox_32">
       <property name="geometry">
        <rect>
-        <x>830</x>
+        <x>910</x>
         <y>50</y>
         <width>341</width>
         <height>491</height>
@@ -2638,67 +2560,293 @@
      <widget class="QGroupBox" name="groupBox_37">
       <property name="geometry">
        <rect>
-        <x>450</x>
-        <y>520</y>
-        <width>291</width>
-        <height>101</height>
+        <x>810</x>
+        <y>560</y>
+        <width>411</width>
+        <height>131</height>
        </rect>
       </property>
       <property name="title">
        <string>Recomendation</string>
       </property>
+      <widget class="QPlainTextEdit" name="plainTextEdit_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>391</width>
+         <height>101</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_28">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>50</y>
+        <width>161</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>7 Roles</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>141</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="vlRoles">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_29">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>50</y>
+        <width>161</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>7 Life Skills</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>141</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="vlSkills">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_31">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>240</y>
+        <width>161</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Strengths</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>141</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="vlStrengths">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_40">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>450</y>
+        <width>271</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Passions</string>
+      </property>
+      <widget class="QPlainTextEdit" name="plainTextEdit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>251</width>
+         <height>101</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_42">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>590</y>
+        <width>271</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Dreams</string>
+      </property>
+      <widget class="QPlainTextEdit" name="plainTextEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>251</width>
+         <height>101</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_43">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>590</y>
+        <width>271</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>People ID</string>
+      </property>
+      <widget class="QPlainTextEdit" name="plainTextEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>251</width>
+         <height>101</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_41">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>450</y>
+        <width>271</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Spoken Words</string>
+      </property>
+      <widget class="QPlainTextEdit" name="plainTextEdit_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>251</width>
+         <height>101</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_24">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>50</y>
+        <width>161</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Priorities</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_13">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>141</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="vlPriorities">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
      </widget>
      <widget class="QGroupBox" name="groupBox_38">
       <property name="geometry">
        <rect>
-        <x>450</x>
-        <y>330</y>
-        <width>181</width>
-        <height>181</height>
+        <x>560</x>
+        <y>460</y>
+        <width>211</width>
+        <height>191</height>
        </rect>
       </property>
       <property name="title">
        <string>Interests                       %</string>
       </property>
      </widget>
-     <widget class="QGroupBox" name="groupBox_40">
+     <widget class="QGroupBox" name="groupBox_25">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>240</y>
+        <width>161</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>People</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>141</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="vlPeople">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_26">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>570</y>
-        <width>181</width>
-        <height>111</height>
+        <y>320</y>
+        <width>271</width>
+        <height>131</height>
        </rect>
       </property>
       <property name="title">
-       <string>Passions</string>
+       <string>Work</string>
       </property>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_41">
-      <property name="geometry">
-       <rect>
-        <x>220</x>
-        <y>570</y>
-        <width>181</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Words</string>
-      </property>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_42">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>690</y>
-        <width>181</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Dreams</string>
-      </property>
+      <widget class="QPlainTextEdit" name="plainTextEdit_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>251</width>
+         <height>101</height>
+        </rect>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>
@@ -2708,13 +2856,13 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1353</width>
-     <height>27</height>
+     <width>1292</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuSomething">
     <property name="title">
-     <string>Something</string>
+     <string>About</string>
     </property>
    </widget>
    <addaction name="menuSomething"/>
