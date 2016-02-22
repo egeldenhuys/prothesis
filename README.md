@@ -1,7 +1,9 @@
 Prothesis
 =========
 
-[Target Life](http://www.targetlife.co.za/) Prothesis Software
+The [Target Life](http://www.targetlife.co.za/) Prothesis Software allows students to enter data regarding their career aptitude. Leaders can then analyse the data from the student using this same program and write them a career recommendation.
+
+----
 
 ### Setting up Development Environment (Windows 7 x64 Professional running in VirtualBox)
 
