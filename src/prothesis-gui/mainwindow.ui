@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1292</width>
-    <height>825</height>
+    <width>1260</width>
+    <height>619</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>1261</width>
-      <height>761</height>
+      <width>1241</width>
+      <height>561</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -457,11 +457,11 @@
         <x>0</x>
         <y>10</y>
         <width>941</width>
-        <height>611</height>
+        <height>515</height>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>6</number>
       </property>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
@@ -1485,7 +1485,7 @@
           <x>10</x>
           <y>10</y>
           <width>841</width>
-          <height>91</height>
+          <height>81</height>
          </rect>
         </property>
         <property name="title">
@@ -1495,7 +1495,7 @@
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>30</y>
+           <y>20</y>
            <width>811</width>
            <height>51</height>
           </rect>
@@ -1506,9 +1506,9 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>120</y>
+          <y>100</y>
           <width>841</width>
-          <height>91</height>
+          <height>81</height>
          </rect>
         </property>
         <property name="title">
@@ -1518,7 +1518,7 @@
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>30</y>
+           <y>20</y>
            <width>811</width>
            <height>51</height>
           </rect>
@@ -1529,9 +1529,9 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>230</y>
+          <y>190</y>
           <width>841</width>
-          <height>91</height>
+          <height>81</height>
          </rect>
         </property>
         <property name="title">
@@ -1541,7 +1541,7 @@
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>30</y>
+           <y>20</y>
            <width>811</width>
            <height>51</height>
           </rect>
@@ -1552,9 +1552,9 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>340</y>
+          <y>280</y>
           <width>841</width>
-          <height>91</height>
+          <height>81</height>
          </rect>
         </property>
         <property name="title">
@@ -1564,7 +1564,7 @@
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>30</y>
+           <y>20</y>
            <width>811</width>
            <height>51</height>
           </rect>
@@ -1575,9 +1575,9 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>440</y>
+          <y>370</y>
           <width>841</width>
-          <height>131</height>
+          <height>111</height>
          </rect>
         </property>
         <property name="title">
@@ -1587,9 +1587,9 @@
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>30</y>
+           <y>20</y>
            <width>821</width>
-           <height>91</height>
+           <height>81</height>
           </rect>
          </property>
         </widget>
@@ -1671,7 +1671,7 @@
         <x>0</x>
         <y>10</y>
         <width>881</width>
-        <height>541</height>
+        <height>511</height>
        </rect>
       </property>
       <property name="currentIndex">
@@ -2139,228 +2139,13 @@
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QGroupBox" name="groupBox_23">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>50</y>
-        <width>421</width>
-        <height>261</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>MBTI</string>
-      </property>
-      <widget class="QLineEdit" name="txtMBTI_1">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>30</y>
-         <width>21</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>I</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="txtMBTI_2">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>90</y>
-         <width>21</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>S</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="txtMBTI_3">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>150</y>
-         <width>21</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>T</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="txtMBTI_4">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>220</y>
-         <width>21</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>J</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblMBTI_1">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>10</y>
-         <width>151</width>
-         <height>51</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>lblMBTI_1</string>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblMBTI_B_1">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>10</y>
-         <width>191</width>
-         <height>51</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>lblMBTI_B_1</string>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblMBTI_2">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>80</y>
-         <width>151</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>lblMBTI_2</string>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblMBTI_B_2">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>69</y>
-         <width>191</width>
-         <height>121</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>lblMBTI_B_2</string>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblMBTI_3">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>140</y>
-         <width>151</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>lblMBTI_3</string>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblMBTI_4">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>210</y>
-         <width>151</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>lblMBTI_4</string>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblMBTI_B_3">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>210</y>
-         <width>191</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>lblMBTI_B_3</string>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
-      <widget class="Line" name="line">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>60</y>
-         <width>391</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-      <widget class="Line" name="line_2">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>190</y>
-         <width>391</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </widget>
      <widget class="QGroupBox" name="groupBox_27">
       <property name="geometry">
        <rect>
-        <x>750</x>
-        <y>240</y>
-        <width>161</width>
-        <height>191</height>
+        <x>730</x>
+        <y>180</y>
+        <width>151</width>
+        <height>181</height>
        </rect>
       </property>
       <property name="title">
@@ -2371,8 +2156,8 @@
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>141</width>
-         <height>161</height>
+         <width>131</width>
+         <height>151</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="vlLifeKeys">
@@ -2385,10 +2170,10 @@
      <widget class="QGroupBox" name="groupBox_32">
       <property name="geometry">
        <rect>
-        <x>910</x>
-        <y>50</y>
+        <x>890</x>
+        <y>0</y>
         <width>341</width>
-        <height>491</height>
+        <height>401</height>
        </rect>
       </property>
       <property name="title">
@@ -2398,9 +2183,9 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>30</y>
+         <y>20</y>
          <width>311</width>
-         <height>101</height>
+         <height>91</height>
         </rect>
        </property>
        <property name="title">
@@ -2412,7 +2197,7 @@
           <x>13</x>
           <y>20</y>
           <width>261</width>
-          <height>71</height>
+          <height>61</height>
          </rect>
         </property>
        </widget>
@@ -2422,7 +2207,7 @@
           <x>280</x>
           <y>20</y>
           <width>21</width>
-          <height>71</height>
+          <height>61</height>
          </rect>
         </property>
         <property name="toolTip">
@@ -2440,9 +2225,9 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>140</y>
+         <y>110</y>
          <width>311</width>
-         <height>101</height>
+         <height>91</height>
         </rect>
        </property>
        <property name="title">
@@ -2454,7 +2239,7 @@
           <x>10</x>
           <y>20</y>
           <width>261</width>
-          <height>71</height>
+          <height>61</height>
          </rect>
         </property>
        </widget>
@@ -2464,7 +2249,7 @@
           <x>280</x>
           <y>20</y>
           <width>21</width>
-          <height>71</height>
+          <height>61</height>
          </rect>
         </property>
         <property name="whatsThis">
@@ -2482,9 +2267,9 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>250</y>
+         <y>200</y>
          <width>311</width>
-         <height>101</height>
+         <height>91</height>
         </rect>
        </property>
        <property name="title">
@@ -2496,7 +2281,7 @@
           <x>10</x>
           <y>20</y>
           <width>261</width>
-          <height>71</height>
+          <height>61</height>
          </rect>
         </property>
        </widget>
@@ -2506,7 +2291,7 @@
           <x>280</x>
           <y>20</y>
           <width>21</width>
-          <height>71</height>
+          <height>61</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -2521,9 +2306,9 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>360</y>
+         <y>290</y>
          <width>311</width>
-         <height>101</height>
+         <height>91</height>
         </rect>
        </property>
        <property name="title">
@@ -2535,7 +2320,7 @@
           <x>10</x>
           <y>20</y>
           <width>261</width>
-          <height>71</height>
+          <height>61</height>
          </rect>
         </property>
        </widget>
@@ -2545,7 +2330,7 @@
           <x>280</x>
           <y>20</y>
           <width>21</width>
-          <height>71</height>
+          <height>61</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -2560,8 +2345,8 @@
      <widget class="QGroupBox" name="groupBox_37">
       <property name="geometry">
        <rect>
-        <x>810</x>
-        <y>560</y>
+        <x>450</x>
+        <y>370</y>
         <width>411</width>
         <height>131</height>
        </rect>
@@ -2584,9 +2369,9 @@
       <property name="geometry">
        <rect>
         <x>430</x>
-        <y>50</y>
-        <width>161</width>
-        <height>191</height>
+        <y>0</y>
+        <width>151</width>
+        <height>181</height>
        </rect>
       </property>
       <property name="title">
@@ -2597,8 +2382,8 @@
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>141</width>
-         <height>161</height>
+         <width>131</width>
+         <height>151</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="vlRoles">
@@ -2611,10 +2396,10 @@
      <widget class="QGroupBox" name="groupBox_29">
       <property name="geometry">
        <rect>
-        <x>590</x>
-        <y>50</y>
-        <width>161</width>
-        <height>191</height>
+        <x>580</x>
+        <y>0</y>
+        <width>151</width>
+        <height>181</height>
        </rect>
       </property>
       <property name="title">
@@ -2625,8 +2410,8 @@
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>141</width>
-         <height>161</height>
+         <width>131</width>
+         <height>151</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="vlSkills">
@@ -2639,10 +2424,10 @@
      <widget class="QGroupBox" name="groupBox_31">
       <property name="geometry">
        <rect>
-        <x>590</x>
-        <y>240</y>
-        <width>161</width>
-        <height>191</height>
+        <x>580</x>
+        <y>180</y>
+        <width>151</width>
+        <height>181</height>
        </rect>
       </property>
       <property name="title">
@@ -2653,8 +2438,8 @@
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>141</width>
-         <height>161</height>
+         <width>131</width>
+         <height>151</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="vlStrengths">
@@ -2664,105 +2449,13 @@
        </layout>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox_40">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>450</y>
-        <width>271</width>
-        <height>131</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Passions</string>
-      </property>
-      <widget class="QPlainTextEdit" name="plainTextEdit">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>251</width>
-         <height>101</height>
-        </rect>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_42">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>590</y>
-        <width>271</width>
-        <height>131</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Dreams</string>
-      </property>
-      <widget class="QPlainTextEdit" name="plainTextEdit_2">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>251</width>
-         <height>101</height>
-        </rect>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_43">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>590</y>
-        <width>271</width>
-        <height>131</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>People ID</string>
-      </property>
-      <widget class="QPlainTextEdit" name="plainTextEdit_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>251</width>
-         <height>101</height>
-        </rect>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_41">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>450</y>
-        <width>271</width>
-        <height>131</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Spoken Words</string>
-      </property>
-      <widget class="QPlainTextEdit" name="plainTextEdit_4">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>251</width>
-         <height>101</height>
-        </rect>
-       </property>
-      </widget>
-     </widget>
      <widget class="QGroupBox" name="groupBox_24">
       <property name="geometry">
        <rect>
-        <x>750</x>
-        <y>50</y>
-        <width>161</width>
-        <height>191</height>
+        <x>730</x>
+        <y>0</y>
+        <width>151</width>
+        <height>181</height>
        </rect>
       </property>
       <property name="title">
@@ -2773,8 +2466,8 @@
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>141</width>
-         <height>161</height>
+         <width>131</width>
+         <height>151</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="vlPriorities">
@@ -2784,26 +2477,13 @@
        </layout>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox_38">
-      <property name="geometry">
-       <rect>
-        <x>560</x>
-        <y>460</y>
-        <width>211</width>
-        <height>191</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Interests                       %</string>
-      </property>
-     </widget>
      <widget class="QGroupBox" name="groupBox_25">
       <property name="geometry">
        <rect>
         <x>430</x>
-        <y>240</y>
-        <width>161</width>
-        <height>191</height>
+        <y>180</y>
+        <width>151</width>
+        <height>181</height>
        </rect>
       </property>
       <property name="title">
@@ -2814,8 +2494,8 @@
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>141</width>
-         <height>161</height>
+         <width>131</width>
+         <height>151</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="vlPeople">
@@ -2825,27 +2505,375 @@
        </layout>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox_26">
+     <widget class="QTabWidget" name="tabWidget_4">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>320</y>
-        <width>271</width>
-        <height>131</height>
+        <x>0</x>
+        <y>50</y>
+        <width>421</width>
+        <height>481</height>
        </rect>
       </property>
-      <property name="title">
-       <string>Work</string>
+      <property name="currentIndex">
+       <number>0</number>
       </property>
-      <widget class="QPlainTextEdit" name="plainTextEdit_5">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>251</width>
-         <height>101</height>
-        </rect>
-       </property>
+      <widget class="QWidget" name="tab_17">
+       <attribute name="title">
+        <string>MBTI</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_23">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>421</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>MBTI</string>
+        </property>
+        <widget class="QLineEdit" name="txtMBTI_1">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>21</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>I</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtMBTI_2">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>21</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>S</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtMBTI_3">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>150</y>
+           <width>21</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>T</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtMBTI_4">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>220</y>
+           <width>21</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>J</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lblMBTI_1">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>10</y>
+           <width>151</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>lblMBTI_1</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lblMBTI_B_1">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>10</y>
+           <width>191</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>lblMBTI_B_1</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lblMBTI_2">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>80</y>
+           <width>151</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>lblMBTI_2</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lblMBTI_B_2">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>69</y>
+           <width>191</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>lblMBTI_B_2</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lblMBTI_3">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>140</y>
+           <width>151</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>lblMBTI_3</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lblMBTI_4">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>210</y>
+           <width>151</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>lblMBTI_4</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lblMBTI_B_3">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>210</y>
+           <width>191</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>lblMBTI_B_3</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="Line" name="line">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>391</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>190</y>
+           <width>391</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_15">
+       <attribute name="title">
+        <string>Mission</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_41">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>220</y>
+          <width>271</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Spoken Words</string>
+        </property>
+        <widget class="QPlainTextEdit" name="plainTextEdit_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>251</width>
+           <height>81</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_40">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>271</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Passions</string>
+        </property>
+        <widget class="QPlainTextEdit" name="plainTextEdit">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>251</width>
+           <height>81</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_42">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>110</y>
+          <width>271</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Dreams</string>
+        </property>
+        <widget class="QPlainTextEdit" name="plainTextEdit_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>251</width>
+           <height>81</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_43">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>330</y>
+          <width>271</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>People ID</string>
+        </property>
+        <widget class="QPlainTextEdit" name="plainTextEdit_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>251</width>
+           <height>81</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_16">
+       <attribute name="title">
+        <string>Career</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_26">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>271</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Work</string>
+        </property>
+        <widget class="QPlainTextEdit" name="plainTextEdit_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>251</width>
+           <height>81</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_38">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>110</y>
+          <width>271</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Interests                       %</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </widget>
@@ -2856,7 +2884,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1292</width>
+     <width>1260</width>
      <height>21</height>
     </rect>
    </property>
