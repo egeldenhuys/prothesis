@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -461,7 +461,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>6</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
@@ -477,8 +477,23 @@
          </rect>
         </property>
         <layout class="QVBoxLayout" name="vlRoles_1">
+         <property name="spacing">
+          <number>0</number>
+         </property>
          <item>
           <widget class="QCheckBox" name="chkbRoles_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Analyzer</string>
            </property>
@@ -486,6 +501,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Artist</string>
            </property>
@@ -493,6 +520,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Clarifier</string>
            </property>
@@ -500,6 +539,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_15">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Collector</string>
            </property>
@@ -507,6 +558,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Competitor</string>
            </property>
@@ -514,6 +577,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_16">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Creator of Order</string>
            </property>
@@ -521,6 +596,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Decision maker</string>
            </property>
@@ -528,6 +615,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_13">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Diplomat</string>
            </property>
@@ -535,6 +634,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Encourager</string>
            </property>
@@ -542,6 +653,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_17">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Entrepeneur</string>
            </property>
@@ -549,6 +672,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_11">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Facilitator</string>
            </property>
@@ -556,6 +691,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Follower/Supporter</string>
            </property>
@@ -563,6 +710,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_10">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Friend</string>
            </property>
@@ -570,6 +729,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_12">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Giver</string>
            </property>
@@ -577,6 +748,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_9">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Harmoniser</string>
            </property>
@@ -584,6 +767,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_14">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Influencer/Inspire</string>
            </property>
@@ -591,6 +786,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Inventor</string>
            </property>
@@ -608,8 +815,23 @@
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
          <item>
           <widget class="QCheckBox" name="chkbRoles_18">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Investigator</string>
            </property>
@@ -617,6 +839,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_20">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Leader</string>
            </property>
@@ -624,6 +858,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_21">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Listener</string>
            </property>
@@ -631,6 +877,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_23">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Marketer</string>
            </property>
@@ -638,6 +896,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_24">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Mentor</string>
            </property>
@@ -645,6 +915,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_25">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Negotiator</string>
            </property>
@@ -652,6 +934,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_26">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Organizer</string>
            </property>
@@ -659,6 +953,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_34">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Peacemaker</string>
            </property>
@@ -666,6 +972,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_33">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Pioneer</string>
            </property>
@@ -673,6 +991,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_32">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Protector</string>
            </property>
@@ -680,6 +1010,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_31">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Reality Tester</string>
            </property>
@@ -687,6 +1029,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_30">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Standard Setter</string>
            </property>
@@ -694,6 +1048,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_29">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Student</string>
            </property>
@@ -701,6 +1067,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_28">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Teacher</string>
            </property>
@@ -708,6 +1086,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_27">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Team Builder</string>
            </property>
@@ -715,6 +1105,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_19">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Trend Setter</string>
            </property>
@@ -722,6 +1124,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbRoles_22">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Worker</string>
            </property>
@@ -744,8 +1158,26 @@
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
          <item>
           <widget class="QCheckBox" name="chkbSkills_16">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Administartion</string>
            </property>
@@ -753,6 +1185,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Analyse</string>
            </property>
@@ -760,6 +1204,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_17">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Artistic</string>
            </property>
@@ -767,6 +1223,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Communicate</string>
            </property>
@@ -774,6 +1242,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Computers</string>
            </property>
@@ -781,6 +1261,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Control</string>
            </property>
@@ -788,6 +1280,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Counselling</string>
            </property>
@@ -795,6 +1299,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Creative</string>
            </property>
@@ -802,6 +1318,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_13">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Decision Making</string>
            </property>
@@ -809,6 +1337,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_9">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Empathy</string>
            </property>
@@ -816,6 +1356,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_12">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Entertaining</string>
            </property>
@@ -823,6 +1375,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_14">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Handwork</string>
            </property>
@@ -830,6 +1394,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_15">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Marketing</string>
            </property>
@@ -837,6 +1413,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_11">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Negotiate</string>
            </property>
@@ -844,6 +1432,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_10">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Numeracy</string>
            </property>
@@ -851,6 +1451,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Objectivity</string>
            </property>
@@ -858,6 +1470,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Organise</string>
            </property>
@@ -871,15 +1495,30 @@
           <x>170</x>
           <y>0</y>
           <width>199</width>
-          <height>459</height>
+          <height>361</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>0</number>
+         </property>
          <property name="bottomMargin">
-          <number>100</number>
+          <number>0</number>
          </property>
          <item>
           <widget class="QCheckBox" name="chkbSkills_18">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Planning</string>
            </property>
@@ -887,6 +1526,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_19">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Playing Musical instruments</string>
            </property>
@@ -894,6 +1545,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_20">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Practical</string>
            </property>
@@ -901,6 +1564,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_21">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Public speaking</string>
            </property>
@@ -908,6 +1583,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_25">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Reading</string>
            </property>
@@ -915,6 +1602,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_24">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Receptive for people</string>
            </property>
@@ -922,6 +1621,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_23">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Sharing</string>
            </property>
@@ -929,6 +1640,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_30">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Sport</string>
            </property>
@@ -936,6 +1659,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_29">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Strategic planning</string>
            </property>
@@ -943,6 +1678,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_28">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Study</string>
            </property>
@@ -950,6 +1697,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_27">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Taking the lead</string>
            </property>
@@ -957,6 +1716,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_26">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Teaching</string>
            </property>
@@ -964,6 +1735,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbSkills_22">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Writing</string>
            </property>
@@ -986,8 +1769,32 @@
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_7">
+         <property name="spacing">
+          <number>0</number>
+         </property>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::StrongFocus</enum>
+           </property>
+           <property name="statusTip">
+            <string>Ideate new ways to solve problems.</string>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Idealate</string>
            </property>
@@ -995,6 +1802,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Believe and doing the 'right thing'.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Believe</string>
            </property>
@@ -1002,6 +1824,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_9">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Get Recognition and be in front of others.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Significant</string>
            </property>
@@ -1009,6 +1846,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_10">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Envision a better Future.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Futurist</string>
            </property>
@@ -1016,6 +1868,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_11">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Develop People's Potential.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Develop</string>
            </property>
@@ -1023,6 +1890,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_12">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Learn to do things to reduce time to performance</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Learn</string>
            </property>
@@ -1030,6 +1912,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_14">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Include left out people to generate Social Improvement.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Include</string>
            </property>
@@ -1037,6 +1934,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_15">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Be Empathic to people emotions to help solve them.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Empathize</string>
            </property>
@@ -1044,6 +1956,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_13">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Relate in order to integrate groups.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Relate</string>
            </property>
@@ -1051,6 +1978,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_16">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Restoration and troubleshooting to solve problems.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Restore</string>
            </property>
@@ -1058,6 +2000,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_17">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Activate new Projects.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Activate</string>
            </property>
@@ -1065,6 +2022,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Individualize people to understand their differences.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Individualize</string>
            </property>
@@ -1072,6 +2044,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Intellect and think to filter information.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Intellect</string>
            </property>
@@ -1079,6 +2066,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Communicate (messages) information.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Communicate</string>
            </property>
@@ -1086,6 +2088,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>To dig and validate information.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Information Input</string>
            </property>
@@ -1093,6 +2110,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Self-Confidence to lead or create new ways.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Self-Confident</string>
            </property>
@@ -1100,6 +2132,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Commanding and direct (people).</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Commanding</string>
            </property>
@@ -1113,15 +2160,33 @@
           <x>170</x>
           <y>0</y>
           <width>160</width>
-          <height>457</height>
+          <height>441</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_8">
+         <property name="spacing">
+          <number>0</number>
+         </property>
          <property name="bottomMargin">
-          <number>14</number>
+          <number>0</number>
          </property>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_18">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Strategize; Plan and identify relevant obstacles (to avoid them).</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Strategize</string>
            </property>
@@ -1129,6 +2194,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_19">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Connect and unite people &amp; things.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Connect</string>
            </property>
@@ -1136,6 +2216,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_20">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Arrange and Optimize resources.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Arrange</string>
            </property>
@@ -1143,6 +2238,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_21">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Contextualize Situations in order to not repeat the same mistakes.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Contextualize</string>
            </property>
@@ -1150,6 +2260,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_22">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Maximize performance by Focusing on People Potentials.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Maximize</string>
            </property>
@@ -1157,6 +2282,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_23">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Focusing on important things.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Focusing</string>
            </property>
@@ -1164,6 +2304,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_24">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Achieve results.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Achieve</string>
            </property>
@@ -1171,6 +2326,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_25">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Harmonize in order to solve conflicts.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Harmonize</string>
            </property>
@@ -1178,13 +2348,65 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_26">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>be Fair and treat people the same.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
-            <string>Fair</string>
+            <string>Be fair</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="chkbStrengths_34">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Compete with others to win.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
+           <property name="text">
+            <string>Compete</string>
            </property>
           </widget>
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_27">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Be Responsible in order to complete activities.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Responsible</string>
            </property>
@@ -1192,6 +2414,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_28">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Analyze to find root causes.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Analyze</string>
            </property>
@@ -1199,6 +2436,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_29">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Meet People to get new relations.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Meet People</string>
            </property>
@@ -1206,6 +2458,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_30">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Be Disciplined and create routines to avoid rework.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Disciplined</string>
            </property>
@@ -1213,6 +2480,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_31">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Positive attitude and motivation to move people.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Positive</string>
            </property>
@@ -1220,6 +2502,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_32">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Adapt in chaotic environments.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Adapt</string>
            </property>
@@ -1227,6 +2524,21 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbStrengths_33">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="statusTip">
+            <string>Deliberate carefully to find a safe solution.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Deliberate</string>
            </property>
@@ -1675,7 +2987,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_11">
        <attribute name="title">
@@ -1691,8 +3003,23 @@
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="spacing">
+          <number>0</number>
+         </property>
          <item>
           <widget class="QCheckBox" name="chkbPeople_1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Babies</string>
            </property>
@@ -1700,6 +3027,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Toddlers</string>
            </property>
@@ -1707,6 +3046,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Primary school children</string>
            </property>
@@ -1714,6 +3065,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>High school children</string>
            </property>
@@ -1721,6 +3084,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Students</string>
            </property>
@@ -1728,6 +3103,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_12">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Teenagers</string>
            </property>
@@ -1735,6 +3122,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>People in need</string>
            </property>
@@ -1742,6 +3141,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_15">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Working people</string>
            </property>
@@ -1749,6 +3160,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_11">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Married people</string>
            </property>
@@ -1756,6 +3179,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_10">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Older people</string>
            </property>
@@ -1763,6 +3198,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_9">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>The handicapped</string>
            </property>
@@ -1770,6 +3217,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Addicted people</string>
            </property>
@@ -1777,6 +3236,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>The homeless</string>
            </property>
@@ -1784,6 +3255,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_13">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Men</string>
            </property>
@@ -1791,6 +3274,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_16">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Women</string>
            </property>
@@ -1798,6 +3293,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPeople_14">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>To be on my own</string>
            </property>
@@ -1820,8 +3327,23 @@
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_6">
+         <property name="spacing">
+          <number>0</number>
+         </property>
          <item>
           <widget class="QCheckBox" name="chkbPriorities_1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Self actualization</string>
            </property>
@@ -1829,6 +3351,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPriorities_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Creative Work</string>
            </property>
@@ -1836,6 +3370,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPriorities_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Money</string>
            </property>
@@ -1843,6 +3389,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPriorities_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Work security</string>
            </property>
@@ -1850,6 +3408,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPriorities_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Post school training</string>
            </property>
@@ -1857,6 +3427,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPriorities_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Working with people</string>
            </property>
@@ -1864,6 +3446,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPriorities_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Changing of routine</string>
            </property>
@@ -1871,6 +3465,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPriorities_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Leading</string>
            </property>
@@ -1878,6 +3484,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPriorities_10">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Concepts rather than people</string>
            </property>
@@ -1885,6 +3503,18 @@
          </item>
          <item>
           <widget class="QCheckBox" name="chkbPriorities_9">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox:hover:!pressed
+{
+background-color: rgba(186, 0, 3, 75);
+}</string>
+           </property>
            <property name="text">
             <string>Recognition and status</string>
            </property>
@@ -3025,7 +4655,6 @@
   <tabstop>chkbStrengths_24</tabstop>
   <tabstop>chkbStrengths_25</tabstop>
   <tabstop>chkbStrengths_26</tabstop>
-  <tabstop>chkbStrengths_27</tabstop>
   <tabstop>chkbStrengths_28</tabstop>
   <tabstop>chkbStrengths_29</tabstop>
   <tabstop>chkbStrengths_30</tabstop>
