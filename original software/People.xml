@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<main name="Babies" explain="You like to interact with babies between the newborn stage and the age of 2.">	
+	</main>
+	<main name="Toddlers" explain="You like to interact with children between the ages of 2 and 5.">	
+	</main>
+	<main name="Primary school children" explain="You like to interact with children between the ages of 6 and 13.">	
+	</main>
+	<main name="High school children" explain="You like to interact with children between the ages of 13 and 19.">	
+	</main>
+	<main name="Students" explain="You like to interact young adults that are between the ages of 19 and 24.">	
+	</main>
+	<main name="Teenagers" explain="You like to interact with children between the ages of 13 and 19.">	
+	</main>
+	<main name="People in need" explain="You like to interact with people who have some or other need.">	
+	</main>
+	<main name="Working people" explain="You like to interact with people who are currently in a career.">	
+	</main>
+	<main name="Married people" explain="You like to interact with people who are currently married.">	
+	</main>
+	<main name="Older people" explain="You like to interact with senior citizens.">	
+	</main>
+	<main name="The handicapped" explain="You like to interact with people who are physically and/or mentally handicapped.">	
+	</main>
+	<main name="Addicted people" explain="You like to interact with people who are addicted to a substance.">	
+	</main>
+	<main name="The homeless" explain="You like to interact with people who have no refuge.">	
+	</main>
+	<main name="Men" explain="You like to interact with males.">	
+	</main>
+	<main name="Women" explain="You like to interact with females.">	
+	</main>
+	<main name="To be on my own" explain="You do not like to interact with people in general.">	
+	</main>
+</data>

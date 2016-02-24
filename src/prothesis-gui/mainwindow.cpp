@@ -398,7 +398,7 @@ void MainWindow::LoadUserData() {
     strengthBoxes.push_back(ui->chkbStrengths_31);
     strengthBoxes.push_back(ui->chkbStrengths_32);
     strengthBoxes.push_back(ui->chkbStrengths_33);
-
+    strengthBoxes.push_back(ui->chkbStrengths_34);
 
     // Loop through loaded box names and check those that exist
 
@@ -799,7 +799,7 @@ void MainWindow::SaveUserData() {
     strengthBoxes.push_back(ui->chkbStrengths_31);
     strengthBoxes.push_back(ui->chkbStrengths_32);
     strengthBoxes.push_back(ui->chkbStrengths_33);
-
+    strengthBoxes.push_back(ui->chkbStrengths_34);
 
     // Loop through all the boxes and save the checked names
 

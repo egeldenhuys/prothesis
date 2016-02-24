@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<main name="MBTI">
+		<data type="E" position="1">Outward focus, communication, energy</data>
+		<data type="I" position="1">Thinkers, concepts, writing, alone time</data>
+		<data type="S" position="2">Practical and detail orientated</data>
+		<data type="N" position="2">Innovative, holistic, see new possibilities</data>
+		<data type="T" position="3">Objective, analytical, logical</data>
+		<data type="F" position="3">People oriented, sympathetic, personal</data>
+		<data type="J" position="4">Order, control, structure</data>
+		<data type="P" position="4">Flexible, spontaneous, philosophical</data>
+	</main>
+	<main name="I-O">
+		<data type="NF">You will be innovative in the development of people on a more personal basis</data>
+		<data type="NT">You will be innovative in some of the following: development of systems, patents, organizations, management or people on a less personal level</data>
+		<data type="SF">You will want to help people by working hands on and in a practical manner with them</data>
+		<data type="ST">You will want to manage or bring practical solutions to systems, organizations, management or people on a less personal level</data>
+	</main>
+	<main name="MBTI2">
+		<data type="E" position="1">Direct involvement and implementation</data>
+		<data type="I" position="1">Direct or indirect involvement and implementation with enough time alone</data>
+		<data type="P" position="4">Spontaneous and flexible environment</data>
+		<data type="J" position="4">Organized, structured and conclusive environment</data>
+	</main>	
+</data>
