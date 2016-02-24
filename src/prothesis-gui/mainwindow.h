@@ -57,6 +57,8 @@ private slots:
 
     void on_tabWidget_tabBarClicked(int index);
 
+    void on_actionAbout_this_software_triggered();
+
 private:
     Ui::MainWindow *ui;
 

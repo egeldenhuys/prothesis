@@ -9,6 +9,7 @@
 #include <QCoreApplication>
 #include <stdio.h>
 #include "button_list.h"
+#include <QMessageBox>
 
 QString colour;
 
@@ -1179,4 +1180,16 @@ void MainWindow::on_tabWidget_tabBarClicked(int index)
         btnListLifeKeys->update();
 
     }
+}
+
+void MainWindow::on_actionAbout_this_software_triggered()
+{
+    QMessageBox msgBox;
+    msgBox.setText("Prothesis - v1.0.0\n"
+                   "Uses the Qt framework.\n"
+                   "Developed by: Evert Geldenhuys.\n\n"
+                   ""
+                   "Source Code is available on GitHub:\n"
+                   "https://github.com/egeldenhuys/prothesis");
+    msgBox.exec();
 }

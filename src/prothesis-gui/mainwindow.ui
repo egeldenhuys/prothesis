@@ -489,10 +489,10 @@
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You are good at resolving anything complex and like to pull it apart to make it simple. Concentrate on the detail.</string>
+            <string>You are good at resolving anything complex and like to pull it apart to make it simple. Concentrate on the detail.</string>
            </property>
            <property name="autoFillBackground">
-            <bool>true</bool>
+            <bool>false</bool>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -514,7 +514,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You are good at expressing yourself in one of the art forms, fine arts, literature, music, performing arts, etc</string>
+            <string>You are good at expressing yourself in one of the art forms, fine arts, literature, music, performing arts, etc</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -536,7 +536,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>Someone who has an easy explanation for things. Wants everyone to understand.</string>
+            <string>Someone who has an easy explanation for things. Wants everyone to understand.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -558,7 +558,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>Someone who loves to collect things, information, memories, etc.</string>
+            <string>Someone who loves to collect things, information, memories, etc.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -580,7 +580,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>Someone who is positively stimulated by competition. Thrives on challenges.</string>
+            <string>Someone who is positively stimulated by competition. Thrives on challenges.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -602,7 +602,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You like to invent systems to establish order out of chaos or disorder. </string>
+            <string>You like to invent systems to establish order out of chaos or disorder. </string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -624,7 +624,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You are a person with great assertiveness, you are willing to make decisions and bear the consequences. If you make a decision you easily stick to it. </string>
+            <string>You are a person with great assertiveness, you are willing to make decisions and bear the consequences. If you make a decision you easily stick to it. </string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -646,7 +646,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You have a special skill to handle a situation in such a way that no one is offended, you are tactful.</string>
+            <string>You have a special skill to handle a situation in such a way that no one is offended, you are tactful.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -668,7 +668,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You find it easy to support your friends in any difficult situation adding positive energy to complete the task.</string>
+            <string>You find it easy to support your friends in any difficult situation adding positive energy to complete the task.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -690,7 +690,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You see the business potential in any situation. </string>
+            <string>You see the business potential in any situation. </string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -712,7 +712,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You create a situation or environment where things can happen, you make progress easier. Launch pad.</string>
+            <string>You create a situation or environment where things can happen, you make progress easier. Launch pad.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -734,7 +734,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You are an enthusiast. Backer, ally, loyal</string>
+            <string>You are an enthusiast. Backer, ally, loyal</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -756,7 +756,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You are extremely loyal, trustworthy and committed.</string>
+            <string>You are extremely loyal, trustworthy and committed.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -778,7 +778,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You are fond of sharing your resources (money, time, etc)</string>
+            <string>You are fond of sharing your resources (money, time, etc)</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -800,7 +800,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You like to see that things and people are working or blending together. You are a mediator who brings one thing into harmonious agreement with another.</string>
+            <string>You like to see that things and people are working or blending together. You are a mediator who brings one thing into harmonious agreement with another.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -822,7 +822,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You have an inner drive to challenge people. You easily affect other people by what you say.</string>
+            <string>You have an inner drive to challenge people. You easily affect other people by what you say.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -844,7 +844,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You like to think about new ideas, you are innovative.</string>
+            <string>You like to think about new ideas, you are innovative.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -881,7 +881,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You always want to know the truth behind every situation.</string>
+            <string>You always want to know the truth behind every situation.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -903,7 +903,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>People find it easy to follow your lead.</string>
+            <string>People find it easy to follow your lead.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -925,7 +925,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You find it easy to be focused on what people say when they talk to you. Soundboard.</string>
+            <string>You find it easy to be focused on what people say when they talk to you. Soundboard.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -947,7 +947,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You know how to persuade people to believe in anything that youre selling: products, ideas etc. </string>
+            <string>You know how to persuade people to believe in anything that youre selling: products, ideas etc. </string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -969,7 +969,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You like coaching people in one on one relationships. You are considered a wise and trusted counsellor or teacher.</string>
+            <string>You like coaching people in one on one relationships. You are considered a wise and trusted counsellor or teacher.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -991,7 +991,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You like to bargain, like to find a common ground. You are good at arranging or settling a matter by discussion and mutual agreement.</string>
+            <string>You like to bargain, like to find a common ground. You are good at arranging or settling a matter by discussion and mutual agreement.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -1013,7 +1013,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You are good at bringing together all the components. </string>
+            <string>You are good at bringing together all the components. </string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -1035,7 +1035,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You like to see that conflict situations are resolved.</string>
+            <string>You like to see that conflict situations are resolved.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -1057,7 +1057,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You are not afraid to start something new. You plant the seed.</string>
+            <string>You are not afraid to start something new. You plant the seed.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -1079,7 +1079,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You tend fight for the underdog. You are considered a guardian, place of safety or a defender.</string>
+            <string>You tend fight for the underdog. You are considered a guardian, place of safety or a defender.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -1101,7 +1101,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You always think about the practical workability of a task. Ask daring but necessary questions.</string>
+            <string>You always think about the practical workability of a task. Ask daring but necessary questions.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -1123,7 +1123,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You will always challenge a group to excellence.</string>
+            <string>You will always challenge a group to excellence.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -1145,7 +1145,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>Lifelong self learner, you enjoy to learn new things, read up.</string>
+            <string>Lifelong self learner, you enjoy to learn new things, read up.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -1167,7 +1167,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You have the ability to explain something.</string>
+            <string>You have the ability to explain something.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -1189,7 +1189,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You bring a team together to accomplish a goal and motivate them. </string>
+            <string>You bring a team together to accomplish a goal and motivate them. </string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -1211,7 +1211,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You like to start something new (like a pioneer) but people tend to follow you.</string>
+            <string>You like to start something new (like a pioneer) but people tend to follow you.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -1233,7 +1233,7 @@ background-color: rgba(186, 0, 3, 75);
             </sizepolicy>
            </property>
            <property name="statusTip">
-            <string>You like get do the things done. You like working hard to achieve your goals.</string>
+            <string>You like get do the things done. You like working hard to achieve your goals.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QCheckBox:hover:!pressed
@@ -4792,9 +4792,13 @@ background-color: rgba(186, 0, 3, 75);
     </rect>
    </property>
    <widget class="QMenu" name="menuSomething">
-    <property name="title">
-     <string>About</string>
+    <property name="tearOffEnabled">
+     <bool>false</bool>
     </property>
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout_this_software"/>
    </widget>
    <addaction name="menuSomething"/>
   </widget>
@@ -4810,6 +4814,11 @@ background-color: rgba(186, 0, 3, 75);
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAbout_this_software">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <tabstops>
