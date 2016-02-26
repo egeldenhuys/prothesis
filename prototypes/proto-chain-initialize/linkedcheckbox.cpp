@@ -15,10 +15,13 @@
  * - The "accessibleDescription" is used for the number of checkboxes that can be ticked
  *      before the rest are disabled
  *
+ * You need to call initialize() on any one of the checkboxes after they have all been created
+ *
  * EXAMPLE:
  * 1. Create some normal QCheckBox using the designer.
  * 2. Promote the QCheckBoxes to LinkedCheckBoxes
  * 3. Set the group names and max values using the information provided in the USAGE.
+ * 4. Call ui->checkBox->initialize();
  *
  * let group = "A"
  * let max = 3
