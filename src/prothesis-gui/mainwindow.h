@@ -25,6 +25,7 @@ public:
     void linkButton(QPushButton *btn);
     void linkButtons(button_list * buttonList);
     void saveButtons();
+    void SetAnalysisTextboxes();
 
 private slots:
 
@@ -55,9 +56,9 @@ private slots:
 
     void on_btnWhite_clicked();
 
-    void on_tabWidget_tabBarClicked(int index);
-
     void on_actionAbout_this_software_triggered();
+
+    void on_tabWidget_currentChanged(int index);
 
 private:
     Ui::MainWindow *ui;

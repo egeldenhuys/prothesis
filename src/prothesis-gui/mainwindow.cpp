@@ -26,6 +26,8 @@ MainWindow::MainWindow(QWidget *parent) :
     SetMBTI();
 
     loadButtons();
+    SetAnalysisTextboxes();
+
 
 }
 
@@ -1169,21 +1171,6 @@ void MainWindow::on_btnWhite_clicked()
  * - Farmer, 99
 */
 
-void MainWindow::on_tabWidget_tabBarClicked(int index)
-{
-    SaveUserData();
-    if (index == 3)
-    {
-        btnListRoles->update();
-        btnListSkills->update();
-        btnListPriorities->update();
-        btnListPeople->update();
-        btnListStrengths->update();
-        btnListLifeKeys->update();
-
-    }
-}
-
 void MainWindow::on_actionAbout_this_software_triggered()
 {
     QMessageBox msgBox;
@@ -1195,3 +1182,35 @@ void MainWindow::on_actionAbout_this_software_triggered()
                    "https://github.com/egeldenhuys/prothesis");
     msgBox.exec();
 }
+
+void MainWindow::on_tabWidget_currentChanged(int index)
+{
+    SaveUserData();
+
+    if (index == 3)
+    {
+        btnListRoles->update();
+        btnListSkills->update();
+        btnListPriorities->update();
+        btnListPeople->update();
+        btnListStrengths->update();
+        btnListLifeKeys->update();
+
+        SetAnalysisTextboxes();
+
+    }
+
+
+}
+
+void MainWindow::SetAnalysisTextboxes()
+{
+    ui->txtPassionsAnalysis->document()->setPlainText(ui->txtPassionsSummary->document()->toPlainText());
+    ui->txtPeopleAnalysis->document()->setPlainText(ui->txtPeopleSummary->document()->toPlainText());
+    ui->txtDreamsAnalysis->document()->setPlainText(ui->txtDreamSummary->document()->toPlainText());
+    ui->txtWordsAnalysis->document()->setPlainText(ui->ptxtSpokenSummary->document()->toPlainText());
+    ui->txtWorkAnalysis->document()->setPlainText(ui->ptxtWorkSummary->document()->toPlainText());
+
+
+}
+

@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -461,7 +461,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>6</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
@@ -4905,7 +4905,7 @@ background-color: rgba(186, 0, 3, 75);
       <property name="title">
        <string>Recomendation</string>
       </property>
-      <widget class="QPlainTextEdit" name="plainTextEdit_6">
+      <widget class="QPlainTextEdit" name="txtRecomendation">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -5297,21 +5297,24 @@ background-color: rgba(186, 0, 3, 75);
          <rect>
           <x>0</x>
           <y>220</y>
-          <width>271</width>
+          <width>411</width>
           <height>111</height>
          </rect>
         </property>
         <property name="title">
          <string>Spoken Words</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_4">
+        <widget class="QPlainTextEdit" name="txtWordsAnalysis">
          <property name="geometry">
           <rect>
            <x>10</x>
            <y>20</y>
-           <width>251</width>
+           <width>391</width>
            <height>81</height>
           </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
          </property>
         </widget>
        </widget>
@@ -5320,21 +5323,24 @@ background-color: rgba(186, 0, 3, 75);
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>271</width>
+          <width>411</width>
           <height>111</height>
          </rect>
         </property>
         <property name="title">
          <string>Passions</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit">
+        <widget class="QPlainTextEdit" name="txtPassionsAnalysis">
          <property name="geometry">
           <rect>
            <x>10</x>
            <y>20</y>
-           <width>251</width>
+           <width>391</width>
            <height>81</height>
           </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
          </property>
         </widget>
        </widget>
@@ -5343,21 +5349,24 @@ background-color: rgba(186, 0, 3, 75);
          <rect>
           <x>0</x>
           <y>110</y>
-          <width>271</width>
+          <width>411</width>
           <height>111</height>
          </rect>
         </property>
         <property name="title">
          <string>Dreams</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_2">
+        <widget class="QPlainTextEdit" name="txtDreamsAnalysis">
          <property name="geometry">
           <rect>
            <x>10</x>
            <y>20</y>
-           <width>251</width>
+           <width>391</width>
            <height>81</height>
           </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
          </property>
         </widget>
        </widget>
@@ -5366,21 +5375,24 @@ background-color: rgba(186, 0, 3, 75);
          <rect>
           <x>0</x>
           <y>330</y>
-          <width>271</width>
+          <width>411</width>
           <height>111</height>
          </rect>
         </property>
         <property name="title">
          <string>People ID</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_3">
+        <widget class="QPlainTextEdit" name="txtPeopleAnalysis">
          <property name="geometry">
           <rect>
            <x>10</x>
            <y>20</y>
-           <width>251</width>
+           <width>391</width>
            <height>81</height>
           </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
          </property>
         </widget>
        </widget>
@@ -5394,21 +5406,24 @@ background-color: rgba(186, 0, 3, 75);
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>271</width>
+          <width>411</width>
           <height>111</height>
          </rect>
         </property>
         <property name="title">
          <string>Work</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_5">
+        <widget class="QPlainTextEdit" name="txtWorkAnalysis">
          <property name="geometry">
           <rect>
            <x>10</x>
            <y>20</y>
-           <width>251</width>
+           <width>391</width>
            <height>81</height>
           </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
          </property>
         </widget>
        </widget>
@@ -5417,7 +5432,7 @@ background-color: rgba(186, 0, 3, 75);
          <rect>
           <x>0</x>
           <y>110</y>
-          <width>271</width>
+          <width>411</width>
           <height>191</height>
          </rect>
         </property>
