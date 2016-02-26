@@ -1,12 +1,10 @@
 Documentation
 =============
 
-- [Original GUI](original-gui)
-- [Requested GUI Changes](Requested-GUI-Changes)
-- [Strength Description Tooltips](strength-descriptions-tooltips)
-- [Modules](modules)
-- [Algorithms](algorithms)
-- [Requirements](requirements)
+- [Original GUI](Original-GUI.md)
+- [Requested GUI Changes](Requested-GUI-Changes.md)
+- [Strength Descriptions Tooltips](Strength-Descriptions-Tooltips.md)
+- [Requirements](Requirements.md)
 - **Variable Names**
- - [varNames](variable-names/varnames)
- - [roles](variable-names/roles)
+ - [varNames](variable-names/varNames.md)
+ - [roles](variable-names/Roles.md)
