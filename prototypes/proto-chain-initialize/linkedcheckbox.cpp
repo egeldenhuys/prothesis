@@ -1,3 +1,33 @@
+/* LinkedCheckBox.cpp
+ * ================
+ *
+ * NOTE:
+ * This is a quick hack to solve a problem that has not been planned for
+ * from the start. It is quicker to use this solution than to redesign
+ * large parts of the original program.
+ *
+ * DESCRIPTION:
+ * This provides a CheckBox object that will disable itself when the maximum
+ * number of check boxes in its group has been checked.
+ *
+ * USAGE:
+ * - The "accessibleName" property is used for the group name.
+ * - The "accessibleDescription" is used for the number of checkboxes that can be ticked
+ *      before the rest are disabled
+ *
+ * EXAMPLE:
+ * 1. Create some normal QCheckBox using the designer.
+ * 2. Promote the QCheckBoxes to LinkedCheckBoxes
+ * 3. Set the group names and max values using the information provided in the USAGE.
+ *
+ * let group = "A"
+ * let max = 3
+ *
+ * When the 3rd checkbox in group A is checked,
+ * all other checkboxes in the group that are not checked will
+ * be disabled
+*/
+
 #include "linkedcheckbox.h"
 
 std::vector<LinkedCheckBox*> LinkedCheckBox::linkVector;
@@ -63,7 +93,6 @@ LinkedCheckBox::LinkedCheckBox(QWidget* parent)
     connect(this, &LinkedCheckBox::stateChanged, this, &LinkedCheckBox::handleCheckedChange);
 
 }
-
 
 void LinkedCheckBox::handleCheckedChange(int newCheckState)
 {

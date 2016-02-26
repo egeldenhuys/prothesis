@@ -12,17 +12,16 @@ class LinkedCheckBox : public QCheckBox
 
 public:
     LinkedCheckBox(QWidget *parent);
+
     void printIndex();
 
+private:
+    static std::vector<LinkedCheckBox*> linkVector;
     int groupCount;
     int groupMax;
     int myIndex;
 
     int *hostGroupCount;
-
-
-private:
-    static std::vector<LinkedCheckBox*> linkVector;
 
 signals:
     startInitialize();
@@ -33,7 +32,6 @@ signals:
 
 public slots:
     void handleCheckedChange(int newCheckState);
-
     void setCheckable(bool checkable);
     void initialize();
 
