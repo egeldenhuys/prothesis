@@ -1179,7 +1179,9 @@ void MainWindow::on_actionAbout_this_software_triggered()
 {
     QMessageBox msgBox;
     msgBox.setText("Prothesis - v1.0.0\n"
-                   "Uses the Qt framework.\n"
+                   "\n"
+                   "Please see the included README.txt for more information."
+                   "\n"
                    "Developed by: Evert Geldenhuys.\n\n"
                    ""
                    "Source Code is available on GitHub:\n"
