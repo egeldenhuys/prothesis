@@ -23,17 +23,25 @@ The software stores the user data in `prothesis_files/User_Data.dat`
 3. Download and install [qt-opensource-windows-x86-mingw492-5.5.0.exe](http://download.qt.io/archive/qt/5.5/5.5.0/)
 4. [Set Up Git](https://help.github.com/articles/set-up-git/)
 5. Clone this repository
-6. Open the Qt Project in Qt Creator (src/prothesis-gui/prothesis-gui.pro)
+6. Open the Qt Project in Qt Creator (`src/prothesis-gui/prothesis-gui.pro`)
 
 ### Deploying (Windows 7 x64 Professional running in VirtualBox)
 1. Use the skeleton in `deploy`
 2. Place the release version of `prothesis-gui.exe` in the `prothesis_files` folder
 3. Run the Windows Deployment Tool. See [Qt for Windows - Deployment](http://doc.qt.io/qt-5/windows-deployment.html#the-windows-deployment-tool)
 
-`windeployqt --release --compiler-runtime prothesis-gui.exe`
+`windeployqt --release prothesis-gui.exe`
 
-4. Confirm that everything works.
-5. Test software on clean system without no development enviornment installed.
+4. Copy the following files from `Qt/Qt5.5.0/Tools/mingw492_32/bin` to `prothesis_files`
+
+```
+libgcc_s_dw2-1.dll
+linwinpthread-1.dll
+libstdc++-6.dll
+```
+
+5. Confirm that everything works.
+6. Test software on clean system without no development enviornment installed.
 
 ```
 Example directory structure:
