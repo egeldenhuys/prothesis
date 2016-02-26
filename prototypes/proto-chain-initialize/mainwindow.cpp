@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->checkBox->printIndex();
 
-    ui->checkBox->initialize();
+    ui->checkBox->startInitialize();
 
 }
 

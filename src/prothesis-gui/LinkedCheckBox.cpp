@@ -15,8 +15,8 @@
  * - The "accessibleDescription" is used for the number of checkboxes that can be ticked
  *      before the rest are disabled
  *
- * You need to call startInitialize() on any one of the checkboxes after they have all been created.
- * This will cause all the LinkedCheckBoxes to become initialized.
+ * You need to call startInitialize() on any one of the checkboxes after they have all been created
+ * This will cause all LinkedCheckBoxes to become initialized.
  *
  * EXAMPLE:
  * 1. Create some normal QCheckBox using the designer.
