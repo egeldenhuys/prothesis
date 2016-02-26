@@ -166,6 +166,8 @@ void MainWindow::LoadUserData() {
 
     UserData.load();
 
+    ui->txtRecommendation->setPlainText(QString::fromStdString(UserData.recommendation));
+
     // ======================
     // Name And Surname START
     // ======================
@@ -567,6 +569,8 @@ void MainWindow::LoadUserData() {
  *      Overwrites the existing data
 */
 void MainWindow::SaveUserData() {
+
+    UserData.recommendation = ui->txtRecommendation->document()->toPlainText().toStdString();
 
     // ======================
     // Name And Surname START
