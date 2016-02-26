@@ -410,7 +410,8 @@ Returns:
 */
 int User::_addToVar(std::string varName, std::string value)
 {
-    std::cout << varName << "=" << value << std::endl;
+    // DEBUG
+    //std::cout << varName << "=" << value << std::endl;
 
     if (varName == "[name]")
         name = decode(value);
@@ -545,7 +546,8 @@ Returns:
 
 bool User::_matchesVar(std::string varName)
 {
-    std::cout << "Matching: " << varName << " : ";
+    // DEBUG
+    //std::cout << "Matching: " << varName << " : ";
 
     bool value = false;
 
@@ -579,6 +581,7 @@ bool User::_matchesVar(std::string varName)
 
     for (int i = 0; i < COUNT; i++)
     {
+        // DEBUG
         //std::cout << varNames[i] << std::endl;
 
         if (varNames[i] == varName)
@@ -587,8 +590,8 @@ bool User::_matchesVar(std::string varName)
 
         }
     }
-
-    std::cout << value << "\n";
+    // DEBUG
+    //std::cout << value << "\n";
 
     return value;
 }
@@ -662,7 +665,8 @@ int User::load()
         if (varName != "NULL" && line != varName)
         {
             _addToVar(varName, line);
-            std::cout << "Loading: " << varName << " <--- " << line << "\n";
+            // DEBUG
+            // std::cout << "Loading: " << varName << " <--- " << line << "\n";
         }
 
     }
