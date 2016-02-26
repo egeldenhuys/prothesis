@@ -1,7 +1,10 @@
 #ifndef LINKEDCHECKBOX_H
 #define LINKEDCHECKBOX_H
+
 #include <QCheckBox>
 #include <vector>
+#include <iostream>
+#include <iomanip>
 
 class LinkedCheckBox : public QCheckBox
 {
@@ -9,23 +12,30 @@ class LinkedCheckBox : public QCheckBox
 
 public:
     LinkedCheckBox(QWidget *parent);
+    void printIndex();
+
+    int groupCount;
+    int groupMax;
+    int myIndex;
+
+    int *hostGroupCount;
+
 
 private:
-    std::vector<LinkedCheckBox*> linkedCheckBoxVector;
+    static std::vector<LinkedCheckBox*> linkVector;
 
 signals:
-    startInitialize_Chain();
-    contInitialize_Chain();
+    startInitialize();
+    contInitialize();
 
-    startChangeCheckable_Chain(bool checkable);
-    changeCheckable_Chain(bool checkable);
+    startSetCheckable(bool checkable);
+    contSetCheckable(bool checkable);
 
 public slots:
     void handleCheckedChange(int newCheckState);
 
-    void setCheckable_Chain(bool checkable);
-    void initialize_Chain();
-
+    void setCheckable(bool checkable);
+    void initialize();
 
 };
 

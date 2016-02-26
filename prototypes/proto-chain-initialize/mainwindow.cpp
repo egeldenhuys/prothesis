@@ -6,6 +6,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    ui->checkBox->printIndex();
+
+    ui->checkBox->initialize();
+
 }
 
 MainWindow::~MainWindow()
