@@ -23,6 +23,40 @@
 *.lib
 
 # Executables
-*.exe
+#*.exe
 *.out
 *.app
+
+# Prothesis Files
+User_Data.dat
+user.info
+user.info.bak
+
+# Qt-es
+
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+Makefile*
+build-*-Debug
+build-*-Release
+
+# QtCreator
+
+*.autosave
+
+# QtCtreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
+
+# Code::Blocks
+bin/
+*.layout
+*.depend

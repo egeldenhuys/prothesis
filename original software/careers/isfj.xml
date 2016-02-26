@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<main name="Interior decorator" explain="">	
+	</main>
+	<main name="Designer" explain="">	
+	</main>
+	<main name="Nurses" explain="">	
+	</main>
+	<main name="Administrator/manager" explain="">	
+	</main>
+	<main name="Administrative assistant" explain="">	
+	</main>
+	<main name="Child care/early childhood development" explain="">	
+	</main>
+	<main name="Social worker/counselor" explain="">	
+	</main>
+	<main name="Paralegal" explain="">	
+	</main>
+	<main name="Clergy/religious work" explain="">	
+	</main>
+	<main name="Office manager" explain="">	
+	</main>
+	<main name="Shopkeeper/bookkeeper" explain="">	
+	</main>
+	<main name="Home economics/gardeners" explain="">	
+	</main>
+	<main name="Clerical supervisor" explain="">	
+	</main>
+	<main name="Curator/librarian" explain="">	
+	</main>
+	<main name="Family practice physician/health service worker/medical technologist" explain="">	
+	</main>
+	<main name="Typist" explain="">	
+	</main>
+</data>

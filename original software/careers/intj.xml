@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<main name="Scientist" explain="">	
+	</main>
+	<main name="Engineer" explain="">	
+	</main>
+	<main name="Professor/teacher" explain="">	
+	</main>
+	<main name="Medical doctor/dentist" explain="">	
+	</main>
+	<main name="Corporate strategist/organization builder" explain="">	
+	</main>
+	<main name="Business administrator/manager" explain="">	
+	</main>
+	<main name="Military leader" explain="">	
+	</main>
+	<main name="Lawyer/attorney" explain="">	
+	</main>
+	<main name="Judge" explain="">	
+	</main>
+	<main name="Computer programmer/specialist, systems analyst" explain="">	
+	</main>
+	<main name="Psychologist" explain="">	
+	</main>
+	<main name="Photographer" explain="">	
+	</main>
+	<main name="Research department manager" explain="">	
+	</main>
+	<main name="Researcher" explain="">	
+	</main>
+	<main name="University instructor" explain="">	
+	</main>
+</data>

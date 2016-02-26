@@ -5,6 +5,17 @@ The [Target Life](http://www.targetlife.co.za/) Prothesis Software allows studen
 
 ----
 
+## Users
+### Instructions
+1. Download the latest release (v1.0.0) from the [releases](https://github.com/egeldenhuys/prothesis/releases)
+2. Extract the archive
+3. Run the program using the `Prothesis.cmd` file, 
+or run `prothesis-gui.exe` in the `prothesis_files` folder
+
+### User Data
+The software stores the user data in `prothesis_files/User_Data.dat`
+
+## Developers
 ### Setting up Development Environment (Windows 7 x64 Professional running in VirtualBox)
 
 1. Install the VirtualBox Guest Additions including experimental Direct3D support. See [Qt Creator FAQ](http://doc.qt.io/qtcreator/creator-faq.html)
@@ -12,19 +23,32 @@ The [Target Life](http://www.targetlife.co.za/) Prothesis Software allows studen
 3. Download and install [qt-opensource-windows-x86-mingw492-5.5.0.exe](http://download.qt.io/archive/qt/5.5/5.5.0/)
 4. [Set Up Git](https://help.github.com/articles/set-up-git/)
 5. Clone this repository
-6. Open the Qt Project in Qt Creator (src/prothesis-gui/prothesis-gui.pro)
+6. Open the Qt Project in Qt Creator (`src/prothesis-gui/prothesis-gui.pro`)
 
 ### Deploying (Windows 7 x64 Professional running in VirtualBox)
-1. Run the Windows Deployment Tool. See [Qt for Windows - Deployment](http://doc.qt.io/qt-5/windows-deployment.html#the-windows-deployment-tool)
-2. Copy the following .dll files from `Qt/Qt5.5.0/Tools/mingw492_32/bin`: `libgcc_s_dw2-1.dll, linwinpthread-1.dll, libstdc++-6.dll` into the `prothesis-gui.exe` working directory
-3. Confirm that everything works.
-4. Test software on clean system without no development enviornment installed.
-5. Place `prothesis.gui.exe` and the required dependencies in a folder named `prothesis`
-6. Create `RUN.cmd` with the following line: `start "" prothesis\prothesis-gui.exe`. Place it outside the `prothesis` directory.
+1. Use the skeleton in `deploy`
+2. Place the release version of `prothesis-gui.exe` in the `prothesis_files` folder
+3. Run the Windows Deployment Tool. See [Qt for Windows - Deployment](http://doc.qt.io/qt-5/windows-deployment.html#the-windows-deployment-tool)
+
+`windeployqt --release prothesis-gui.exe`
+
+4. Copy the following files from `Qt/Qt5.5.0/Tools/mingw492_32/bin` to `prothesis_files`
+
 ```
-Example:
-|-- RUN.cmd
-|-- prothesis/
+libgcc_s_dw2-1.dll
+linwinpthread-1.dll
+libstdc++-6.dll
+```
+
+5. Confirm that everything works.
+6. Test software on clean system without no development enviornment installed.
+
+```
+Example directory structure:
+|-- Prothsis.cmd
+|-- README.txt
+|-- LICENSE
+|-- prothesis_files/
 |   |-- prothesis-gui.exe
 |   |-- Qt5Core.dll
 |   |-- ...etc
