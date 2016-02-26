@@ -386,6 +386,9 @@ int User::save()
     for (unsigned int i = 0; i < buttonsLifeKeysColours.size(); i++)
         outf << encode(buttonsLifeKeysColours[i]) << std::endl;
 
+    outf << "[recommendation]" << std::endl;
+    outf << encode(recommendation) << std::endl;
+
     outf.close();
 
     return -1;
@@ -517,6 +520,8 @@ int User::_addToVar(std::string varName, std::string value)
         buttonsLifeKeysNames.push_back(decode(value));
     else if (varName == "[buttonsLifeKeysColours]")
         buttonsLifeKeysColours.push_back(decode(value));
+    else if (varName == "[recommendation]")
+        recommendation = decode(value);
 
     return 0;
 }
@@ -545,7 +550,7 @@ bool User::_matchesVar(std::string varName)
     bool value = false;
 
     // Change this!
-    const int COUNT = 55;
+    const int COUNT = 56;
 
     std::string varNames [COUNT] = {
     "[name]", "[surname]", "[mbti]",
@@ -566,7 +571,7 @@ bool User::_matchesVar(std::string varName)
         "[buttonsPrioritiesColours]", "[buttonsPeopleNames]",
         "[buttonsPeopleColours]", "[buttonsStrengthsNames]",
         "[buttonsStrengthsColours]", "[buttonsLifeKeysNames]",
-        "[buttonsLifeKeysColours]"
+        "[buttonsLifeKeysColours]", "[recommendation]"
 
     };
 

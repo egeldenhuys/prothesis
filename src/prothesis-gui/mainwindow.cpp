@@ -26,6 +26,8 @@ MainWindow::MainWindow(QWidget *parent) :
     SetMBTI();
 
     loadButtons();
+    SetAnalysisTextboxes();
+
 
 }
 
@@ -163,6 +165,8 @@ MainWindow::~MainWindow()
 void MainWindow::LoadUserData() {
 
     UserData.load();
+
+    ui->txtRecommendation->setPlainText(QString::fromStdString(UserData.recommendation));
 
     // ======================
     // Name And Surname START
@@ -565,6 +569,8 @@ void MainWindow::LoadUserData() {
  *      Overwrites the existing data
 */
 void MainWindow::SaveUserData() {
+
+    UserData.recommendation = ui->txtRecommendation->document()->toPlainText().toStdString();
 
     // ======================
     // Name And Surname START
@@ -1169,21 +1175,6 @@ void MainWindow::on_btnWhite_clicked()
  * - Farmer, 99
 */
 
-void MainWindow::on_tabWidget_tabBarClicked(int index)
-{
-    SaveUserData();
-    if (index == 3)
-    {
-        btnListRoles->update();
-        btnListSkills->update();
-        btnListPriorities->update();
-        btnListPeople->update();
-        btnListStrengths->update();
-        btnListLifeKeys->update();
-
-    }
-}
-
 void MainWindow::on_actionAbout_this_software_triggered()
 {
     QMessageBox msgBox;
@@ -1195,3 +1186,53 @@ void MainWindow::on_actionAbout_this_software_triggered()
                    "https://github.com/egeldenhuys/prothesis");
     msgBox.exec();
 }
+
+void MainWindow::on_tabWidget_currentChanged(int index)
+{
+    SaveUserData();
+
+    if (index == 3)
+    {
+        btnListRoles->update();
+        btnListSkills->update();
+        btnListPriorities->update();
+        btnListPeople->update();
+        btnListStrengths->update();
+        btnListLifeKeys->update();
+
+        SetAnalysisTextboxes();
+
+    }
+
+
+}
+
+void MainWindow::SetAnalysisTextboxes()
+{
+    ui->txtPassionsAnalysis->document()->setPlainText(ui->txtPassionsSummary->document()->toPlainText());
+    ui->txtPeopleAnalysis->document()->setPlainText(ui->txtPeopleSummary->document()->toPlainText());
+    ui->txtDreamsAnalysis->document()->setPlainText(ui->txtDreamSummary->document()->toPlainText());
+    ui->txtWordsAnalysis->document()->setPlainText(ui->ptxtSpokenSummary->document()->toPlainText());
+    ui->txtWorkAnalysis->document()->setPlainText(ui->ptxtWorkSummary->document()->toPlainText());
+
+    ui->txtInterestAnalysis_1->setText(ui->txtInterest1->text());
+    ui->txtInterestAnalysis_2->setText(ui->txtInterest2->text());
+    ui->txtInterestAnalysis_3->setText(ui->txtInterest3->text());
+    ui->txtInterestAnalysis_4->setText(ui->txtInterest4->text());
+
+    ui->txtSubInterestAnalysis_1->setText(ui->txtSubInterest1->text());
+    ui->txtSubInterestAnalysis_2->setText(ui->txtSubInterest2->text());
+    ui->txtSubInterestAnalysis_3->setText(ui->txtSubInterest3->text());
+
+    ui->txtIntPercAnalysis_1->setText(ui->spnbInternest1->text() + " %");
+    ui->txtIntPercAnalysis_2->setText(ui->spnbInternest2->text() + " %");
+    ui->txtIntPercAnalysis_3->setText(ui->spnbInternest3->text() + " %");
+    ui->txtIntPercAnalysis_4->setText(ui->spnbInternest4->text() + " %");
+
+    ui->txtSubIntPercAnalysis_1->setText(ui->spnbSubIntertest1->text() + " %");
+    ui->txtSubIntPercAnalysis_2->setText(ui->spnbSubIntertest2->text() + " %");
+    ui->txtSubIntPercAnalysis_3->setText(ui->spnbSubIntertest3->text() + " %");
+
+
+}
+

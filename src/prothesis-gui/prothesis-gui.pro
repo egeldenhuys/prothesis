@@ -31,3 +31,5 @@ HEADERS  += mainwindow.h \
 FORMS    += mainwindow.ui
 
 CONFIG += c++11
+
+RC_FILE = prothesis.rc

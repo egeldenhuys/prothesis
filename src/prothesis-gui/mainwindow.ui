@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -188,7 +188,7 @@
        </rect>
       </property>
       <property name="title">
-       <string>Interests                                                              %</string>
+       <string>Interests                                                                                %</string>
       </property>
       <widget class="QLineEdit" name="txtInterest1">
        <property name="geometry">
@@ -303,8 +303,11 @@
          <height>24</height>
         </rect>
        </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
        <property name="suffix">
-        <string>%</string>
+        <string/>
        </property>
        <property name="maximum">
         <number>100</number>
@@ -320,7 +323,7 @@
         </rect>
        </property>
        <property name="suffix">
-        <string>%</string>
+        <string/>
        </property>
        <property name="maximum">
         <number>100</number>
@@ -336,7 +339,7 @@
         </rect>
        </property>
        <property name="suffix">
-        <string>%</string>
+        <string/>
        </property>
        <property name="maximum">
         <number>100</number>
@@ -352,7 +355,7 @@
         </rect>
        </property>
        <property name="suffix">
-        <string>%</string>
+        <string/>
        </property>
        <property name="maximum">
         <number>100</number>
@@ -368,7 +371,7 @@
         </rect>
        </property>
        <property name="suffix">
-        <string>%</string>
+        <string/>
        </property>
        <property name="maximum">
         <number>100</number>
@@ -384,7 +387,7 @@
         </rect>
        </property>
        <property name="suffix">
-        <string>%</string>
+        <string/>
        </property>
        <property name="maximum">
         <number>100</number>
@@ -400,7 +403,7 @@
         </rect>
        </property>
        <property name="suffix">
-        <string>%</string>
+        <string/>
        </property>
        <property name="maximum">
         <number>100</number>
@@ -461,7 +464,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>6</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
@@ -4903,9 +4906,9 @@ background-color: rgba(186, 0, 3, 75);
        </rect>
       </property>
       <property name="title">
-       <string>Recomendation</string>
+       <string>Recommendation</string>
       </property>
-      <widget class="QPlainTextEdit" name="plainTextEdit_6">
+      <widget class="QPlainTextEdit" name="txtRecommendation">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -5292,49 +5295,29 @@ background-color: rgba(186, 0, 3, 75);
        <attribute name="title">
         <string>Mission</string>
        </attribute>
-       <widget class="QGroupBox" name="groupBox_41">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>220</y>
-          <width>271</width>
-          <height>111</height>
-         </rect>
-        </property>
-        <property name="title">
-         <string>Spoken Words</string>
-        </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_4">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>20</y>
-           <width>251</width>
-           <height>81</height>
-          </rect>
-         </property>
-        </widget>
-       </widget>
        <widget class="QGroupBox" name="groupBox_40">
         <property name="geometry">
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>271</width>
+          <width>411</width>
           <height>111</height>
          </rect>
         </property>
         <property name="title">
          <string>Passions</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit">
+        <widget class="QPlainTextEdit" name="txtPassionsAnalysis">
          <property name="geometry">
           <rect>
            <x>10</x>
            <y>20</y>
-           <width>251</width>
+           <width>391</width>
            <height>81</height>
           </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
          </property>
         </widget>
        </widget>
@@ -5343,21 +5326,24 @@ background-color: rgba(186, 0, 3, 75);
          <rect>
           <x>0</x>
           <y>110</y>
-          <width>271</width>
+          <width>411</width>
           <height>111</height>
          </rect>
         </property>
         <property name="title">
          <string>Dreams</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_2">
+        <widget class="QPlainTextEdit" name="txtDreamsAnalysis">
          <property name="geometry">
           <rect>
            <x>10</x>
            <y>20</y>
-           <width>251</width>
+           <width>391</width>
            <height>81</height>
           </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
          </property>
         </widget>
        </widget>
@@ -5365,22 +5351,51 @@ background-color: rgba(186, 0, 3, 75);
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>330</y>
-          <width>271</width>
+          <y>220</y>
+          <width>411</width>
           <height>111</height>
          </rect>
         </property>
         <property name="title">
          <string>People ID</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_3">
+        <widget class="QPlainTextEdit" name="txtPeopleAnalysis">
          <property name="geometry">
           <rect>
            <x>10</x>
            <y>20</y>
-           <width>251</width>
+           <width>391</width>
            <height>81</height>
           </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_41">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>330</y>
+          <width>411</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Spoken Words</string>
+        </property>
+        <widget class="QPlainTextEdit" name="txtWordsAnalysis">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>391</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
          </property>
         </widget>
        </widget>
@@ -5394,36 +5409,276 @@ background-color: rgba(186, 0, 3, 75);
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>271</width>
+          <width>411</width>
           <height>111</height>
          </rect>
         </property>
         <property name="title">
          <string>Work</string>
         </property>
-        <widget class="QPlainTextEdit" name="plainTextEdit_5">
+        <widget class="QPlainTextEdit" name="txtWorkAnalysis">
          <property name="geometry">
           <rect>
            <x>10</x>
            <y>20</y>
-           <width>251</width>
+           <width>391</width>
            <height>81</height>
           </rect>
          </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
         </widget>
        </widget>
-       <widget class="QGroupBox" name="groupBox_38">
+       <widget class="QGroupBox" name="groupBox_30">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>110</y>
-          <width>271</width>
-          <height>191</height>
+          <x>30</x>
+          <y>120</y>
+          <width>331</width>
+          <height>261</height>
          </rect>
         </property>
         <property name="title">
-         <string>Interests                       %</string>
+         <string>Interests                                                                                %</string>
         </property>
+        <widget class="QLineEdit" name="txtInterestAnalysis_1">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>261</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Interest 1</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtInterestAnalysis_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>261</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Interest 2</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtInterestAnalysis_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>261</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Interest 3</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtInterestAnalysis_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>261</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Interest 4</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="lblSubInterests_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>150</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Sub Interests</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSubInterestAnalysis_1">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>170</y>
+           <width>261</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Sub Interest 1</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSubInterestAnalysis_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>200</y>
+           <width>261</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Sub Interest 2</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSubInterestAnalysis_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>230</y>
+           <width>261</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Sub Interest 3</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtIntPercAnalysis_1">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>30</y>
+           <width>41</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtIntPercAnalysis_2">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>60</y>
+           <width>41</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtIntPercAnalysis_3">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>90</y>
+           <width>41</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtIntPercAnalysis_4">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>120</y>
+           <width>41</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSubIntPercAnalysis_1">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>170</y>
+           <width>41</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSubIntPercAnalysis_2">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>200</y>
+           <width>41</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSubIntPercAnalysis_3">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>230</y>
+           <width>41</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
        </widget>
       </widget>
      </widget>
