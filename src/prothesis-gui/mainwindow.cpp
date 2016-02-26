@@ -19,6 +19,8 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    ui->chkbRoles_1->startInitialize();
+
     //run_tests();
     LoadUserData();
     SetMBTI();
