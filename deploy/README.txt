@@ -1,4 +1,4 @@
-Prothesis v1.0.0 - README
+Prothesis v1.0.2 - README
 =========================
 
 Contents:

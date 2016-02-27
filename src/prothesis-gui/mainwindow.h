@@ -5,7 +5,7 @@
 #include <QPushButton>
 #include "button_list.h"
 
-const QString VERSION = "v1.0.1";
+const QString VERSION = "v1.0.2";
 
 namespace Ui {
 class MainWindow;
