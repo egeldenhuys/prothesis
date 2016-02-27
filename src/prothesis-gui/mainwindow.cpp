@@ -27,8 +27,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
     loadButtons();
     SetAnalysisTextboxes();
-
-
 }
 
 button_list *btnListRoles;
@@ -1178,7 +1176,7 @@ void MainWindow::on_btnWhite_clicked()
 void MainWindow::on_actionAbout_this_software_triggered()
 {
     QMessageBox msgBox;
-    msgBox.setText("Prothesis - v1.0.0\n"
+    msgBox.setText("Prothesis - " + VERSION + "\n"
                    "\n"
                    "Please see the included README.txt for more information."
                    "\n"
