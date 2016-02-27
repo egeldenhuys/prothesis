@@ -1,14 +1,17 @@
 Prothesis
 =========
 
-The [Target Life](http://www.targetlife.co.za/) Prothesis Software allows students to enter data regarding their career aptitude. Leaders can then analyse the data from the student using this same program and write them a career recommendation.
+The [Target Life](http://www.targetlife.co.za/) Prothesis Software allows students to enter data regarding from their personality, strengths, career tests etc. Provides a page for leaders to analyse the results.
+
+![start](docs/images/preview/start.png)
+![analysis](docs/images/preview/analysis.png)
 
 ----
 
 ## Users
 ### Instructions
-1. Download the latest release (v1.0.0) from the [releases](https://github.com/egeldenhuys/prothesis/releases)
-2. Extract the archive
+1. Download the latest release from the [releases](https://github.com/egeldenhuys/prothesis/releases)
+2. Extract the .zip archive
 3. Run the program using the `Prothesis.cmd` file, 
 or run `prothesis-gui.exe` in the `prothesis_files` folder
 
