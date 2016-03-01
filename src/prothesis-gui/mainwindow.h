@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include "button_list.h"
+#include <QDesktopServices>
 
 const QString VERSION = "v1.0.2";
 
@@ -28,6 +29,7 @@ public:
     void linkButtons(button_list * buttonList);
     void saveButtons();
     void SetAnalysisTextboxes();
+    void openUrl(QString url);
 
 private slots:
 
@@ -61,6 +63,12 @@ private slots:
     void on_actionAbout_this_software_triggered();
 
     void on_tabWidget_currentChanged(int index);
+
+    void on_btnCareerTest_clicked();
+
+    void on_btnCareerTest_2_clicked();
+
+    void on_btnCareerTest_3_clicked();
 
 private:
     Ui::MainWindow *ui;
