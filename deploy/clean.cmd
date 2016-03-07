@@ -1,0 +1,1 @@
+rmdir /S /Q prothesis-release\prothesis_files
