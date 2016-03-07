@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Prothesis - v1.0.2</string>
+   <string>Prothesis - v1.1.0</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -96,7 +96,7 @@
               <x>20</x>
               <y>80</y>
               <width>251</width>
-              <height>81</height>
+              <height>71</height>
              </rect>
             </property>
             <property name="title">
@@ -106,7 +106,7 @@
              <property name="geometry">
               <rect>
                <x>20</x>
-               <y>40</y>
+               <y>30</y>
                <width>41</width>
                <height>23</height>
               </rect>
@@ -129,7 +129,7 @@
              <property name="geometry">
               <rect>
                <x>70</x>
-               <y>40</y>
+               <y>30</y>
                <width>41</width>
                <height>23</height>
               </rect>
@@ -149,7 +149,7 @@
              <property name="geometry">
               <rect>
                <x>120</x>
-               <y>40</y>
+               <y>30</y>
                <width>41</width>
                <height>23</height>
               </rect>
@@ -169,7 +169,7 @@
              <property name="geometry">
               <rect>
                <x>170</x>
-               <y>40</y>
+               <y>30</y>
                <width>41</width>
                <height>23</height>
               </rect>
@@ -189,8 +189,8 @@
            <widget class="QGroupBox" name="grpLifeKeys">
             <property name="geometry">
              <rect>
-              <x>20</x>
-              <y>200</y>
+              <x>60</x>
+              <y>180</y>
               <width>191</width>
               <height>131</height>
              </rect>
@@ -203,7 +203,7 @@
               <rect>
                <x>10</x>
                <y>30</y>
-               <width>151</width>
+               <width>161</width>
                <height>23</height>
               </rect>
              </property>
@@ -216,7 +216,7 @@
               <rect>
                <x>10</x>
                <y>90</y>
-               <width>151</width>
+               <width>161</width>
                <height>23</height>
               </rect>
              </property>
@@ -229,7 +229,7 @@
               <rect>
                <x>10</x>
                <y>60</y>
-               <width>151</width>
+               <width>161</width>
                <height>23</height>
               </rect>
              </property>
@@ -241,8 +241,8 @@
            <widget class="QGroupBox" name="groupBox">
             <property name="geometry">
              <rect>
-              <x>320</x>
-              <y>100</y>
+              <x>310</x>
+              <y>90</y>
               <width>331</width>
               <height>261</height>
              </rect>
@@ -508,6 +508,108 @@
               <string>Surname</string>
              </property>
             </widget>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_38">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>390</y>
+              <width>221</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string>Links to Internet</string>
+            </property>
+            <widget class="QPushButton" name="btnCareerTest_3">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>80</y>
+               <width>201</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="statusTip">
+              <string>http://www.personalitypage.com/</string>
+             </property>
+             <property name="text">
+              <string>Personality Page</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="btnCareerTest_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>50</y>
+               <width>201</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="statusTip">
+              <string>http://freestrengthstest.workuno.com/free-strengths-test.html</string>
+             </property>
+             <property name="text">
+              <string>Strengths Test</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="btnCareerTest">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>201</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="contextMenuPolicy">
+              <enum>Qt::DefaultContextMenu</enum>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="statusTip">
+              <string>http://www.yourfreecareertest.com/</string>
+             </property>
+             <property name="text">
+              <string>Career Test</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QLabel" name="lblLogo">
+            <property name="geometry">
+             <rect>
+              <x>980</x>
+              <y>400</y>
+              <width>241</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="resources.qrc">:/images/logo.bmp</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>990</x>
+              <y>500</y>
+              <width>161</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Copyright © 2016 Abel Loedolff</string>
+            </property>
            </widget>
           </widget>
           <widget class="QWidget" name="tab_2">
@@ -5821,7 +5923,6 @@ background-color: rgba(186, 0, 3, 75);
   <tabstop>spnbSubIntertest2</tabstop>
   <tabstop>txtSubInterest3</tabstop>
   <tabstop>spnbSubIntertest3</tabstop>
-  <tabstop>tabWidget</tabstop>
   <tabstop>tabWidget_2</tabstop>
   <tabstop>chkbRoles_2</tabstop>
   <tabstop>chkbRoles_3</tabstop>
@@ -5975,6 +6076,8 @@ background-color: rgba(186, 0, 3, 75);
   <tabstop>btnRed</tabstop>
   <tabstop>txtDreamsCurrent</tabstop>
  </tabstops>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

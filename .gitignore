@@ -60,3 +60,6 @@ build-*-Release
 bin/
 *.layout
 *.depend
+
+# Deploy files
+deploy/prothesis-release/prothesis_files/*

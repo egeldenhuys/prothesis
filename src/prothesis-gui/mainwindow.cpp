@@ -27,6 +27,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     loadButtons();
     SetAnalysisTextboxes();
+
 }
 
 button_list *btnListRoles;
@@ -1236,3 +1237,26 @@ void MainWindow::SetAnalysisTextboxes()
 
 }
 
+
+void MainWindow::on_btnCareerTest_clicked()
+{
+    //QDesktopServices::openUrl(QUrl("http://www.yourfreecareertest.com/", QUrl::TolerantMode));
+
+    openUrl("http://www.yourfreecareertest.com/");
+}
+
+void MainWindow::on_btnCareerTest_2_clicked()
+{
+    openUrl("http://freestrengthstest.workuno.com/free-strengths-test.html");
+}
+
+
+void MainWindow::on_btnCareerTest_3_clicked()
+{
+   openUrl("http://www.personalitypage.com/");
+}
+
+void MainWindow::openUrl(QString url)
+{
+    QDesktopServices::openUrl(QUrl(url, QUrl::TolerantMode));
+}
