@@ -27,6 +27,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     loadButtons();
     SetAnalysisTextboxes();
+
 }
 
 button_list *btnListRoles;
