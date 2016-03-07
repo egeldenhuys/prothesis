@@ -62,4 +62,4 @@ bin/
 *.depend
 
 # Deploy files
-deploy/prothesis_files/*
+deploy/prothesis-release/prothesis_files/*
