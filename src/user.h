@@ -22,6 +22,7 @@ Example:
 #include <string>
 #include <fstream>
 #include <iostream>
+#include <sstream>
 
 //=================================
 // the actual class

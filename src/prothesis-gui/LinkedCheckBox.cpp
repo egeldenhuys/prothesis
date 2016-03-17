@@ -32,7 +32,7 @@
  * be disabled
 */
 
-#include "linkedcheckbox.h"
+#include "LinkedCheckBox.h"
 
 std::vector<LinkedCheckBox*> LinkedCheckBox::linkVector;
 
