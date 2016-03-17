@@ -24,11 +24,11 @@ private:
     int *hostGroupCount;
 
 signals:
-    startInitialize();
-    contInitialize();
+    void startInitialize();
+    void contInitialize();
 
-    startSetCheckable(bool checkable);
-    contSetCheckable(bool checkable);
+    void startSetCheckable(bool checkable);
+    void contSetCheckable(bool checkable);
 
 public slots:
     void handleCheckedChange(int newCheckState);
