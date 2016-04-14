@@ -77,6 +77,7 @@ void MainWindow::loadButtons()
 
     btnListLifeKeys = new button_list(ui->vlLifeKeys, &UserData.lifeKeys);
 
+
     for (uint i = 0; i < UserData.buttonsLifeKeysNames.size(); i++)
         btnListLifeKeys->change_colour(UserData.buttonsLifeKeysNames[i], UserData.buttonsLifeKeysColours[i]);
 
@@ -84,6 +85,8 @@ void MainWindow::loadButtons()
 
 void MainWindow::saveButtons()
 {
+    updateButtonLists();
+
     UserData.buttonsRoleNames.clear();
     UserData.buttonsRoleColours.clear();
 
@@ -1188,19 +1191,25 @@ void MainWindow::on_actionAbout_this_software_triggered()
     msgBox.exec();
 }
 
+void MainWindow::updateButtonLists()
+{
+
+    btnListRoles->update();
+    btnListSkills->update();
+    btnListPriorities->update();
+    btnListPeople->update();
+    btnListStrengths->update();
+    btnListLifeKeys->update();
+
+}
 void MainWindow::on_tabWidget_currentChanged(int index)
 {
     SaveUserData();
 
     if (index == 3)
     {
-        btnListRoles->update();
-        btnListSkills->update();
-        btnListPriorities->update();
-        btnListPeople->update();
-        btnListStrengths->update();
-        btnListLifeKeys->update();
 
+        updateButtonLists();
         SetAnalysisTextboxes();
 
     }

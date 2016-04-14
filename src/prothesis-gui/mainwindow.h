@@ -30,7 +30,7 @@ public:
     void saveButtons();
     void SetAnalysisTextboxes();
     void openUrl(QString url);
-
+    void updateButtonLists();
 private slots:
 
 
