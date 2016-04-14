@@ -84,7 +84,7 @@
            </size>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tab">
            <attribute name="title">
@@ -626,7 +626,7 @@
              </rect>
             </property>
             <property name="currentIndex">
-             <number>4</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="tab_4">
              <attribute name="title">
@@ -4038,7 +4038,7 @@ background-color: rgba(186, 0, 3, 75);
 }</string>
                  </property>
                  <property name="text">
-                  <string>High school children</string>
+                  <string>Peers</string>
                  </property>
                 </widget>
                </item>
