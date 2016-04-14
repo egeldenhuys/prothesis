@@ -67,8 +67,9 @@ LinkedCheckBox::LinkedCheckBox(QWidget* parent)
         bool connectStatus;
         connectStatus = connect(this, &LinkedCheckBox::startInitialize, this, &LinkedCheckBox::initialize);
 
-        // DEBUG
+        /* DEBUG START
         std::cout << "startInitialize: [" << myIndex << "]  -> [" << myIndex << "] = " << connectStatus << "\n";
+        DEBUG END */
 
     }
     else
@@ -77,8 +78,9 @@ LinkedCheckBox::LinkedCheckBox(QWidget* parent)
 
         connectStatus = connect(this, &LinkedCheckBox::startInitialize, linkVector.at(0), &LinkedCheckBox::initialize);
 
-        // DEBUG
+        /* DEBUG START
         std::cout << "startInitialize: [" << myIndex << "]  -> [" << "0" << "] = " << connectStatus << "\n";
+        DEBUG END */
     }
 
     // Connect the contInitialize signal
@@ -86,12 +88,15 @@ LinkedCheckBox::LinkedCheckBox(QWidget* parent)
     {
         bool connectStatus;
         connectStatus = connect(linkVector.at(myIndex - 1), &LinkedCheckBox::contInitialize, this, &LinkedCheckBox::initialize);
-        // DEBUG
+
+        /* DEBUG START
         std::cout << "contInitialize: [" << (myIndex - 1 )<< "]  -> [" << myIndex << "] = " << connectStatus << "\n";
+        DEBUG END */
     }
 
-    // DEBUG
+    /* DEBUG START
     std::cout << myIndex << ": Created.\n";
+    DEBUG END */
 
     // Connect the CheckStateChanged signal to itself
     connect(this, &LinkedCheckBox::stateChanged, this, &LinkedCheckBox::handleCheckedChange);
@@ -100,8 +105,9 @@ LinkedCheckBox::LinkedCheckBox(QWidget* parent)
 
 void LinkedCheckBox::handleCheckedChange(int newCheckState)
 {
-    // DEBUG
+    /* DEBUG START
     std::cout << myIndex << ": newCheckState = " << newCheckState << "\n";
+    DEBUG END */
 
 
     // If two boxes are already selected and this on ahs just been checked
@@ -116,15 +122,17 @@ void LinkedCheckBox::handleCheckedChange(int newCheckState)
     // Enable/Disable checkboxes
     if ((*hostGroupCount == groupMax - 1) && (newCheckState == 2))
     {
-        // DEBUG
-        std::cout << myIndex << ": max (" << groupMax << ") reached. emit startSetCheckable(0)\n";
+        /* DEBUG START
+        std:: << myIndex << ": max (" << groupMax << ") reached. emit startSetCheckable(0)\n";
+        DEBUG END */
 
         emit startSetCheckable(0);
     }
     else if ((*hostGroupCount == groupMax) && (newCheckState == 0))
     {
-        // DEBUG
-        std::cout << myIndex << ": max (" << groupMax << ") reached. emit startSetCheckable(1)\n";
+        /* DEBUG START
+        std:: << myIndex << ": max (" << groupMax << ") reached. emit startSetCheckable(1)\n";
+        DEBUG END */
 
         emit startSetCheckable(1);
     }
@@ -136,8 +144,9 @@ void LinkedCheckBox::handleCheckedChange(int newCheckState)
        *hostGroupCount = *hostGroupCount + 1;
 
 
-    // DEBUG
+    /* DEBUG START
     std::cout << "\tcount = " << *hostGroupCount << "\n";
+    DEBUG END */
 
 }
 
@@ -145,8 +154,9 @@ void LinkedCheckBox::handleCheckedChange(int newCheckState)
 void LinkedCheckBox::setCheckable(bool checkable)
 {
 
-    // DEBUG
+    /* DEBUG START
     std::cout << myIndex << ": checkable = " << checkable << "\n";
+    DEBUG END */
 
     // Only do something if it is not checked
     if (this->checkState() == 0)
@@ -154,8 +164,10 @@ void LinkedCheckBox::setCheckable(bool checkable)
         this->setDisabled(!checkable);
     }
 
-    // DEBUG
+    /* DEBUG START
     std::cout << myIndex << ": emit contSetCheckable(" << checkable << ")\n";
+    DEBUG END */
+
     emit contSetCheckable(checkable);
 
 }
@@ -167,10 +179,11 @@ void LinkedCheckBox::initialize()
 
     groupMax = this->accessibleDescription().toInt();
 
-    // DEBUG
+    /* DEBUG START
     std::cout << myIndex << ": initialize():\n";
     std::cout << "\taccessibleName (Group) = " << this->accessibleName().toStdString() << "\n";
     std::cout << "\taccessibleDescription (Max) = " << groupMax << " (" << convertStatus << "\n";
+    DEBUG END */
 
 
     /* Index: 0, 1, 2, 3, 4, 5, 6
@@ -226,8 +239,9 @@ void LinkedCheckBox::initialize()
                 bool connectStatus;
                 connectStatus = connect(this, &LinkedCheckBox::startSetCheckable, this, &LinkedCheckBox::setCheckable);
 
-                // DEBUG
+                /* DEBUG START
                 std::cout << "startSetCheckable: [" << myIndex << "]  -> [" << myIndex << "] = " << connectStatus << "\n";
+                DEBUG END */
 
                 // groupCount
                 hostGroupCount = &groupCount;
@@ -239,8 +253,9 @@ void LinkedCheckBox::initialize()
                 bool connectStatus;
                 connectStatus = connect(this, &LinkedCheckBox::startSetCheckable, linkVector.at(i), &LinkedCheckBox::setCheckable);
 
-                // DEBUG
+                /* DEBUG START
                 std::cout << "startSetCheckable: [" << myIndex << "]  -> [" << i << "] = " << connectStatus << "\n";
+                DEBUG END */
 
                 // groupCount
                 hostGroupCount = &linkVector.at(i)->groupCount;
@@ -262,8 +277,9 @@ void LinkedCheckBox::initialize()
                 bool connectStatus;
                 connectStatus = connect(linkVector.at(i), &LinkedCheckBox::contSetCheckable, this, &LinkedCheckBox::setCheckable);
 
-                // DEBUG
+                /* DEBUG START
                 std::cout << "contSetCheckable: [" << i << "]  -> [" << myIndex << "] = " << connectStatus << "\n";
+                DEBUG END */
 
                 foundFirst = true;
             }
@@ -271,8 +287,10 @@ void LinkedCheckBox::initialize()
 
     }
 
-    // DEBUG
+    /* DEBUG START
     std::cout << myIndex << ": emit contInitialize\n";
+    DEBUG END */
+
     emit contInitialize();
 
 }
