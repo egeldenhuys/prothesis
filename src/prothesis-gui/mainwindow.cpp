@@ -431,7 +431,7 @@ void MainWindow::LoadUserData() {
     ui->txtPassionsChange->setText(QString::fromStdString(UserData.passionsChange));
     ui->txtPassionsGiveUp->setText(QString::fromStdString(UserData.passionsGiveUp));
     ui->txtPassionsMovie->setText(QString::fromStdString(UserData.passionsMovie));
-    ui->txtPassionsOneThing->setText(QString::fromStdString(UserData.passionsMovie));
+    ui->txtPassionsOneThing->setText(QString::fromStdString(UserData.passionsOneThing));
     ui->txtPassionsSummary->setPlainText(QString::fromStdString(UserData.passionsSummary));
 
     // ======================

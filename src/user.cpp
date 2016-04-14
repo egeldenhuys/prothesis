@@ -256,6 +256,8 @@ int User::save()
     writeBuffer << encode(passionsMovie) << std::endl;
     writeBuffer << "[passionsChange]" << std::endl;
     writeBuffer << encode(passionsChange) << std::endl;
+    writeBuffer << "[passionsOneThing]" << std::endl;
+    writeBuffer << encode(passionsOneThing) << std::endl;
     writeBuffer << "[passionsAlive]" << std::endl;
     writeBuffer << encode(passionsAlive) << std::endl;
     writeBuffer << "[passionsGiveUp]" << std::endl;
@@ -442,6 +444,8 @@ int User::_addToVar(std::string varName, std::string value)
         strengths.push_back(decode(value));
     else if (varName == "[passionsMovie]")
         passionsMovie = decode(value);
+    else if (varName == "[passionsOneThing]")
+        passionsOneThing = decode(value);
     else if (varName == "[passionsChange]")
         passionsChange = decode(value);
     else if (varName == "[passionsAlive]")
