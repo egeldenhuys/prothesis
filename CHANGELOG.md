@@ -3,8 +3,6 @@
 ## [Unreleased]
 
 ## [1.1.1] - 2016-04-27
-### Added
-
 ### Changed
 - Rename "High school children" to "Peers" in People Orientation. #151
 - Improve performance when saving User Data. #138
