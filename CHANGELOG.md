@@ -1,6 +1,6 @@
 # Change Log
 
-[Unreleased]
+## [Unreleased]
 
 ## [1.1.1] - 2016-04-27
 ### Added
@@ -29,7 +29,7 @@
 ### Added
 - Add scrollbars
 
-## [1.0.0] - 2016-02-27
+## 1.0.0 - 2016-02-27
 This release has all the functionality of [0.0.0] (Original software)
 with some additional features and bugfixes
 
@@ -48,3 +48,4 @@ with some additional features and bugfixes
 [1.1.0]: https://github.com/egeldenhuys/prothesis/compare/v1.0.2...v1.1.0
 [1.0.2]: https://github.com/egeldenhuys/prothesis/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/egeldenhuys/prothesis/compare/v1.0.0...v1.0.1
+[0.0.0]: https://github.com/egeldenhuys/prothesis/releases/tag/v0.0.0
