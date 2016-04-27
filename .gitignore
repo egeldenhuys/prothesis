@@ -63,3 +63,4 @@ bin/
 
 # Deploy files
 deploy/prothesis-release/prothesis_files/*
+deploy/prothesis-release/CHANGELOG.md

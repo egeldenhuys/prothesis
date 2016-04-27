@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Prothesis - v1.1.0</string>
+   <string>Prothesis</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -4038,7 +4038,7 @@ background-color: rgba(186, 0, 3, 75);
 }</string>
                  </property>
                  <property name="text">
-                  <string>High school children</string>
+                  <string>Peers</string>
                  </property>
                 </widget>
                </item>
@@ -5900,9 +5900,9 @@ background-color: rgba(186, 0, 3, 75);
   </customwidget>
  </customwidgets>
  <tabstops>
+  <tabstop>txtName</tabstop>
   <tabstop>txtSurname</tabstop>
   <tabstop>cmbMBTI1</tabstop>
-  <tabstop>txtDreamsChild</tabstop>
   <tabstop>cmbMBTI2</tabstop>
   <tabstop>cmbMBTI3</tabstop>
   <tabstop>cmbMBTI4</tabstop>
@@ -6027,9 +6027,9 @@ background-color: rgba(186, 0, 3, 75);
   <tabstop>txtPassionsGiveUp</tabstop>
   <tabstop>txtPassionsSummary</tabstop>
   <tabstop>txtDreamsPasttime</tabstop>
-  <tabstop>txtName</tabstop>
+  <tabstop>txtDreamsChild</tabstop>
+  <tabstop>txtDreamsCurrent</tabstop>
   <tabstop>txtDreamSummary</tabstop>
-  <tabstop>txtPeopleHero</tabstop>
   <tabstop>txtpeopleInfluence</tabstop>
   <tabstop>txtPeopleIdentify</tabstop>
   <tabstop>txtPeopleCharacter</tabstop>
@@ -6074,7 +6074,47 @@ background-color: rgba(186, 0, 3, 75);
   <tabstop>btnWhite</tabstop>
   <tabstop>btnColour</tabstop>
   <tabstop>btnRed</tabstop>
-  <tabstop>txtDreamsCurrent</tabstop>
+  <tabstop>txtPeopleHero</tabstop>
+  <tabstop>scrollArea</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>btnCareerTest_3</tabstop>
+  <tabstop>btnCareerTest_2</tabstop>
+  <tabstop>btnCareerTest</tabstop>
+  <tabstop>chkbStrengths_34</tabstop>
+  <tabstop>chkbStrengths_27</tabstop>
+  <tabstop>txtTheme_1</tabstop>
+  <tabstop>btnColTheme_1</tabstop>
+  <tabstop>txtTheme_2</tabstop>
+  <tabstop>btnColTheme_2</tabstop>
+  <tabstop>txtTheme_3</tabstop>
+  <tabstop>btnColTheme_3</tabstop>
+  <tabstop>txtTheme_4</tabstop>
+  <tabstop>btnColTheme_4</tabstop>
+  <tabstop>txtRecommendation</tabstop>
+  <tabstop>tabWidget_4</tabstop>
+  <tabstop>txtMBTI_1</tabstop>
+  <tabstop>txtMBTI_2</tabstop>
+  <tabstop>txtMBTI_3</tabstop>
+  <tabstop>txtMBTI_4</tabstop>
+  <tabstop>txtPassionsAnalysis</tabstop>
+  <tabstop>txtDreamsAnalysis</tabstop>
+  <tabstop>txtPeopleAnalysis</tabstop>
+  <tabstop>txtWordsAnalysis</tabstop>
+  <tabstop>txtWorkAnalysis</tabstop>
+  <tabstop>txtInterestAnalysis_1</tabstop>
+  <tabstop>txtInterestAnalysis_2</tabstop>
+  <tabstop>txtInterestAnalysis_3</tabstop>
+  <tabstop>txtInterestAnalysis_4</tabstop>
+  <tabstop>txtSubInterestAnalysis_1</tabstop>
+  <tabstop>txtSubInterestAnalysis_2</tabstop>
+  <tabstop>txtSubInterestAnalysis_3</tabstop>
+  <tabstop>txtIntPercAnalysis_1</tabstop>
+  <tabstop>txtIntPercAnalysis_2</tabstop>
+  <tabstop>txtIntPercAnalysis_3</tabstop>
+  <tabstop>txtIntPercAnalysis_4</tabstop>
+  <tabstop>txtSubIntPercAnalysis_1</tabstop>
+  <tabstop>txtSubIntPercAnalysis_2</tabstop>
+  <tabstop>txtSubIntPercAnalysis_3</tabstop>
  </tabstops>
  <resources>
   <include location="resources.qrc"/>

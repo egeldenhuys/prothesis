@@ -1,4 +1,4 @@
-Prothesis v1.1.0 - README
+Prothesis v1.1.1 - README
 =========================
 
 Contents:
@@ -15,9 +15,7 @@ Running Prothesis
 -----------------
 
 To start the Prothesis software run the "Prothesis.cmd" file
-	OR
-Double click the "Prothesis" shortcut
-	OR
+OR
 Run "prothesis-gui.exe" that is located in the "prothesis_files" folder
 
 User Data

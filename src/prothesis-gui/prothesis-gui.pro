@@ -35,3 +35,5 @@ CONFIG += c++11
 RC_FILE = prothesis.rc
 
 RESOURCES = resources.qrc
+
+QMAKE_CXXFLAGS += -Wall -ansi

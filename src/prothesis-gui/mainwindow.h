@@ -6,7 +6,7 @@
 #include "button_list.h"
 #include <QDesktopServices>
 
-const QString VERSION = "v1.1.0";
+const QString VERSION = "v1.1.1";
 
 namespace Ui {
 class MainWindow;
@@ -30,7 +30,7 @@ public:
     void saveButtons();
     void SetAnalysisTextboxes();
     void openUrl(QString url);
-
+    void updateButtonLists();
 private slots:
 
 

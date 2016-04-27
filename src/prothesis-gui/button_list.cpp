@@ -136,9 +136,11 @@ int button_list::getIndexFromName(string name)
         if (cButtonList_.at(i)->text() == QString::fromStdString(name))
         {
             result = i;
-            return result;
+            break;
         }
     }
+
+    return result;
 }
 
 int button_list::change_colour(string name, string colour)
