@@ -16,8 +16,6 @@ Running Prothesis
 
 To start the Prothesis software run the "Prothesis.cmd" file
 OR
-Double click the "Prothesis" shortcut
-OR
 Run "prothesis-gui.exe" that is located in the "prothesis_files" folder
 
 User Data
