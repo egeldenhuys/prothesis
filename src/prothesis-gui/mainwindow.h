@@ -6,7 +6,7 @@
 #include "button_list.h"
 #include <QDesktopServices>
 
-const QString VERSION = "v1.1.0";
+const QString VERSION = "v1.1.1";
 
 namespace Ui {
 class MainWindow;

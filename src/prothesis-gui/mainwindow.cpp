@@ -28,6 +28,7 @@ MainWindow::MainWindow(QWidget *parent) :
     loadButtons();
     SetAnalysisTextboxes();
 
+   this->setWindowTitle("Prothesis - " + VERSION);
 }
 
 button_list *btnListRoles;

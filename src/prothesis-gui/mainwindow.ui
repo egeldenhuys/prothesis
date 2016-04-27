@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Prothesis - v1.1.0</string>
+   <string>Prothesis</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -5859,7 +5859,7 @@ background-color: rgba(186, 0, 3, 75);
      <x>0</x>
      <y>0</y>
      <width>1261</width>
-     <height>27</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuSomething">
