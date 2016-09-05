@@ -398,6 +398,7 @@ int User::save()
 
     outf.close();
 
+    // TODO: Why return -1?
     return -1;
 }
 

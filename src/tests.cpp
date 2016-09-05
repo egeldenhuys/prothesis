@@ -8,8 +8,8 @@ Description:
 */
 void print_vector(std::vector<std::string> vecToPrint)
 {
-    for (unsigned int i = 0; i < vecToPrint.size(); i++)
-        std::cout << "[" << i << "]: " << vecToPrint[i] << std::endl;
+    //NDEBUG for (unsigned int i = 0; i < vecToPrint.size(); i++)
+        //NDEBUG std::cout << "[" << i << "]: " << vecToPrint[i] << std::endl;
 }
 
 /*
@@ -226,11 +226,11 @@ User set_user_data()
 
 void compareSafe(User a, User b){
 
-    std::cout << a.lifeKeys[0] << "\n";
-    std::cout << b.lifeKeys[0] << "\n";
+    //NDEBUG std::cout << a.lifeKeys[0] << "\n";
+    //NDEBUG std::cout << b.lifeKeys[0] << "\n";
 
-    if (a.lifeKeys[0] != b.lifeKeys[0])
-        std::cout << a.lifeKeys[0] << " != " << b.lifeKeys[0] << "\n";
+    //NDEBUG if (a.lifeKeys[0] != b.lifeKeys[0])
+    //NDEBUG     std::cout << a.lifeKeys[0] << " != " << b.lifeKeys[0] << "\n";
 
 }
 /*
@@ -252,7 +252,7 @@ Returns:
 */
 int compare(User a, User b)
 {
-    std::cout << "compare()..." << "\n";
+    //NDEBUG std::cout << "compare()..." << "\n";
 
     int failed = 0;
 
@@ -262,7 +262,7 @@ int compare(User a, User b)
     aStrings = get_strings(a);
     bStrings = get_strings(b);
 
-    std::cout << aStrings.size() << std::endl;
+    //NDEBUG std::cout << aStrings.size() << std::endl;
     // If they are not the same length there is an error
     // Disabled to give more information
     /*
@@ -270,15 +270,15 @@ int compare(User a, User b)
         return 1;
     */
 
-    std::cout << "Strings size: " << aStrings.size() << "," << bStrings.size() << std::endl;
+    //NDEBUG std::cout << "Strings size: " << aStrings.size() << "," << bStrings.size() << std::endl;
 
     // Loop through all the string elements in the vector
     for (unsigned int i = 0; i < aStrings.size(); i++)
     {
-        std::cout << "String | - " << i << ": " << aStrings[i] << " = " << bStrings[i] << std::endl;
+        //NDEBUG std::cout << "String | - " << i << ": " << aStrings[i] << " = " << bStrings[i] << std::endl;
         if (aStrings[i] != bStrings[i])
         {
-            std::cout << "| - " << i << ": " << aStrings[i] << " != " << bStrings[i] << std::endl;
+            //NDEBUG std::cout << "| - " << i << ": " << aStrings[i] << " != " << bStrings[i] << std::endl;
             failed = 1;
         }
     }
@@ -295,7 +295,7 @@ int compare(User a, User b)
         return 1;
     */
 
-    std::cout << "Vectors size= " << aVectors.size() << "," << bVectors.size() << std::endl;
+    //NDEBUG std::cout << "Vectors size= " << aVectors.size() << "," << bVectors.size() << std::endl;
 
 
     // Loop through all the elements in the vector
@@ -304,29 +304,29 @@ int compare(User a, User b)
         // Loop through all the elements in the selected vector i
         for (unsigned int j = 0; j < aVectors[i].size(); j++)
         {
-            std::cout << aVectors.size() << "," << bVectors.size() << "\n";
-            std::cout << aVectors[i].size() << "," << bVectors[i].size() << "\n";
+            //NDEBUG std::cout << aVectors.size() << "," << bVectors.size() << "\n";
+            //NDEBUG std::cout << aVectors[i].size() << "," << bVectors[i].size() << "\n";
 
             // Same size, bot accessible
             if (j < aVectors[i].size() && j < bVectors[i].size()) {
-                std::cout << "Vector | - " << i << ": " << aVectors[i][j] << " = " << bVectors[i][j] << std::endl;
+                //NDEBUG std::cout << "Vector | - " << i << ": " << aVectors[i][j] << " = " << bVectors[i][j] << std::endl;
                 if (aVectors[i][j] != bVectors[i][j])
                 {
-                    std::cout << "| - " << i << "," << j << ": " << aVectors[i][j] << " != " << bVectors[i][j] << std::endl;
+                    //NDEBUG std::cout << "| - " << i << "," << j << ": " << aVectors[i][j] << " != " << bVectors[i][j] << std::endl;
                     failed = 1;
                 }
             }
 
             // One of them not accisible
             if (aVectors[i].size() != bVectors[i].size()) {
-                std::cout << "Vector Missmatch! " << aVectors[i].size() << "," << bVectors[i].size() << "\n";
+                //NDEBUG std::cout << "Vector Missmatch! " << aVectors[i].size() << "," << bVectors[i].size() << "\n";
 
 
-                if (j <= aVectors[i].size())
-                    std::cout << aVectors[i][j] << "\n";
+                //NDEBUG if (j <= aVectors[i].size())
+                    //NDEBUG std::cout << aVectors[i][j] << "\n";
 
-                if (j <= bVectors[i].size())
-                    std::cout << bVectors[i][j] << "\n";
+                //NDEBUG if (j <= bVectors[i].size())
+                    //NDEBUG std::cout << bVectors[i][j] << "\n";
             }
 
 
@@ -410,5 +410,3 @@ int run_tests()
 
     return failed;
 }
-
-
