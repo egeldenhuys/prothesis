@@ -1,4 +1,7 @@
 #include "tests.h"
+#include <chrono>
+
+using namespace std::chrono;
 
 /*
 print_vector(vector<string> vecToPrint)
@@ -366,18 +369,38 @@ Returns:
 */
 int save_and_load()
 {
+    // http://stackoverflow.com/questions/22387586/measuring-execution-time-of-a-function-in-c
+    high_resolution_clock::time_point t1;
+    high_resolution_clock::time_point t2;
+    ulong duration;
+    int passes = 2000;
+
     int failed = 0;
-
-
     // Generate data and save it
     User UserDataSave;
 
     UserDataSave = set_user_data();
-    UserDataSave.save();
+
+    // Save time
+    t1 = high_resolution_clock::now();
+    for (int i = 0; i < passes; i++)
+        UserDataSave.save();
+
+    t2 = high_resolution_clock::now();
+    duration = duration_cast<microseconds>( (t2 - t1) / passes ).count();
+    std::cout << "save(): " << duration << " microseconds\n";
 
     // Load the generated data
     User UserDataLoad;
-    UserDataLoad.load();
+
+    //t1 = high_resolution_clock::now();
+    //for (int i = 0; i < passes; i++)
+        UserDataLoad.load();
+
+    //t2 = high_resolution_clock::now();
+    //duration = duration_cast<microseconds>( (t2 - t1) / passes ).count();
+    //std::cout << "load(): " << duration << " microseconds\n";
+
     //UserDataLoad.name = "Fail";
 
     // Compare if both sets still hold the same data
