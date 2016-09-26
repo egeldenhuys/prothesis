@@ -128,7 +128,7 @@ class User
         bool dirtyData; // Flag indicating if the data has changed and needs to be saved
 
 
-        int save();
+        int save(bool useBuffer = true);
         int load();
         bool _matchesVar(std::string VarName);
         int _addToVar(std::string varName, std::string value);

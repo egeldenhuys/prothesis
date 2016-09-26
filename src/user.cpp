@@ -1,5 +1,7 @@
 #include "user.h"
 
+#include <sstream>
+
 #define LIFE_KEYS_MAX 7
 #define ROLES_MAX 7
 
@@ -184,7 +186,7 @@ User::save()
 Description:
     Save the user data to file
 */
-int User::save()
+int User::save(bool useBuffer)
 {
 
     /*
@@ -197,11 +199,14 @@ int User::save()
     Value 2
     */
 
-    std::stringstream writeBuffer;
 
+    std::stringstream tmp("EMPTY");
+
+    std::ostream output(tmp.rdbuf());
+
+    std::ostringstream writeBuffer;
 
     std::ofstream outf;
-
     outf.open("User_Data.dat");
 
     // If we could not open file for writing
@@ -211,194 +216,220 @@ int User::save()
         return 1;
     }
 
+    if (useBuffer)
+    {
+
+        output.rdbuf(writeBuffer.rdbuf());
+    }
+    else
+    {
+        output.rdbuf(outf.rdbuf());
+    }
+
     // START replace writeBuffer with outf
 
-    outf << "[name]" << std::endl;
-    outf << encode(name) << std::endl;
-    outf << "[surname]" << std::endl;
-    outf << encode(surname) << std::endl;
-    outf << "[mbti]" << std::endl;
-    outf << encode(mbti) << std::endl;
+    output << "[name]" << std::endl;
+    output << encode(name) << std::endl;
+    output << "[surname]" << std::endl;
+    output << encode(surname) << std::endl;
+    output << "[mbti]" << std::endl;
+    output << encode(mbti) << std::endl;
 
-    outf << "[lifeKeys]" << std::endl;
+    output << "[lifeKeys]" << std::endl;
     for (unsigned int i = 0; i < lifeKeys.size(); i++)
-        outf << encode(lifeKeys[i]) << std::endl;
+        output << encode(lifeKeys[i]) << std::endl;
 
-    outf << "[interests]" << std::endl;
+    output << "[interests]" << std::endl;
     for (unsigned int i = 0; i < interests.size(); i++)
-        outf << encode(interests[i]) << std::endl;
+        output << encode(interests[i]) << std::endl;
 
-    outf << "[interestsPerc]" << std::endl;
+    output << "[interestsPerc]" << std::endl;
     for (unsigned int i = 0; i < interestsPerc.size(); i++)
-        outf << encode(interestsPerc[i]) << std::endl;
+        output << encode(interestsPerc[i]) << std::endl;
 
-    outf << "[subInterests]" << std::endl;
+    output << "[subInterests]" << std::endl;
     for (unsigned int i = 0; i < subInterests.size(); i++)
-        outf << encode(subInterests[i]) << std::endl;
+        output << encode(subInterests[i]) << std::endl;
 
-    outf << "[subInterestsPerc]" << std::endl;
+    output << "[subInterestsPerc]" << std::endl;
     for (unsigned int i = 0; i < subInterestsPerc.size(); i++)
-        outf << encode(subInterestsPerc[i]) << std::endl;
+        output << encode(subInterestsPerc[i]) << std::endl;
 
-    outf << "[roles]" << std::endl;
+    output << "[roles]" << std::endl;
         for (unsigned int i = 0; i < roles.size(); i++)
-        outf << encode(roles[i]) << std::endl;
+        output << encode(roles[i]) << std::endl;
 
-    outf << "[skills]" << std::endl;
+    output << "[skills]" << std::endl;
     for (unsigned int i = 0; i < skills.size(); i++)
-        outf << encode(skills[i]) << std::endl;
+        output << encode(skills[i]) << std::endl;
 
-    outf << "[strengths]" << std::endl;
+    output << "[strengths]" << std::endl;
     for (unsigned int i = 0; i < strengths.size(); i++)
-        outf << encode(strengths[i]) << std::endl;
+        output << encode(strengths[i]) << std::endl;
 
     // Passions
     // ========
-    outf << "[passionsMovie]" << std::endl;
-    outf << encode(passionsMovie) << std::endl;
-    outf << "[passionsChange]" << std::endl;
-    outf << encode(passionsChange) << std::endl;
-    outf << "[passionsOneThing]" << std::endl;
-    outf << encode(passionsOneThing) << std::endl;
-    outf << "[passionsAlive]" << std::endl;
-    outf << encode(passionsAlive) << std::endl;
-    outf << "[passionsGiveUp]" << std::endl;
-    outf << encode(passionsGiveUp) << std::endl;
-    outf << "[passionsSummary]" << std::endl;
-    outf << encode(passionsSummary) << std::endl;
+    output << "[passionsMovie]" << std::endl;
+    output << encode(passionsMovie) << std::endl;
+    output << "[passionsChange]" << std::endl;
+    output << encode(passionsChange) << std::endl;
+    output << "[passionsOneThing]" << std::endl;
+    output << encode(passionsOneThing) << std::endl;
+    output << "[passionsAlive]" << std::endl;
+    output << encode(passionsAlive) << std::endl;
+    output << "[passionsGiveUp]" << std::endl;
+    output << encode(passionsGiveUp) << std::endl;
+    output << "[passionsSummary]" << std::endl;
+    output << encode(passionsSummary) << std::endl;
 
     // Dreams
     // ======
-    outf << "[dreamsPasttime]" << std::endl;
-    outf << encode(dreamsPasttime) << std::endl;
-    outf << "[dreamsChild]" << std::endl;
-    outf << encode(dreamsChild) << std::endl;
-    outf << "[dreamsCurrent]" << std::endl;
-    outf << encode(dreamsCurrent) << std::endl;
-    outf << "[dreamsSummary]" << std::endl;
-    outf << encode(dreamsSummary) << std::endl;
+    output << "[dreamsPasttime]" << std::endl;
+    output << encode(dreamsPasttime) << std::endl;
+    output << "[dreamsChild]" << std::endl;
+    output << encode(dreamsChild) << std::endl;
+    output << "[dreamsCurrent]" << std::endl;
+    output << encode(dreamsCurrent) << std::endl;
+    output << "[dreamsSummary]" << std::endl;
+    output << encode(dreamsSummary) << std::endl;
 
     // People
     // ======
-    outf << "[peopleHero]" << std::endl;
-    outf << encode(peopleHero) << std::endl;
-    outf << "[peopleInfluence]" << std::endl;
-    outf << encode(peopleInfluence) << std::endl;
-    outf << "[peopleIdentify]" << std::endl;
-    outf << encode(peopleIdentify) << std::endl;
-    outf << "[peopleCharacter]" << std::endl;
-    outf << encode(peopleCharacter) << std::endl;
-    outf << "[peopleSummary]" << std::endl;
-    outf << encode(peopleSummary) << std::endl;
+    output << "[peopleHero]" << std::endl;
+    output << encode(peopleHero) << std::endl;
+    output << "[peopleInfluence]" << std::endl;
+    output << encode(peopleInfluence) << std::endl;
+    output << "[peopleIdentify]" << std::endl;
+    output << encode(peopleIdentify) << std::endl;
+    output << "[peopleCharacter]" << std::endl;
+    output << encode(peopleCharacter) << std::endl;
+    output << "[peopleSummary]" << std::endl;
+    output << encode(peopleSummary) << std::endl;
 
 
     // Spoken Words
     // ============
-    outf << "[spokenWords]" << std::endl;
-    outf << encode(spokenWords) << std::endl;
-    outf << "[spokenSummary]" << std::endl;
-    outf << encode(spokenSummary) << std::endl;
+    output << "[spokenWords]" << std::endl;
+    output << encode(spokenWords) << std::endl;
+    output << "[spokenSummary]" << std::endl;
+    output << encode(spokenSummary) << std::endl;
 
     // Career
     // ======
-    outf << "[people]" << std::endl;
+    output << "[people]" << std::endl;
     for (unsigned int i = 0; i < people.size(); i++)
-        outf << encode(people[i]) << std::endl;
+        output << encode(people[i]) << std::endl;
 
-    outf << "[priorities]" << std::endl;
+    output << "[priorities]" << std::endl;
     for (unsigned int i = 0; i < priorities.size(); i++)
-        outf << encode(priorities[i]) << std::endl;
+        output << encode(priorities[i]) << std::endl;
 
-    outf << "[workIdeal]" << std::endl;
-    outf << encode(workIdeal) << std::endl;
-    outf << "[workCreative]" << std::endl;
-    outf << encode(workCreative) << std::endl;
-    outf << "[workStructure]" << std::endl;
-    outf << encode(workStructure) << std::endl;
-    outf << "[workUndefined]" << std::endl;
-    outf << encode(workUndefined) << std::endl;
-    outf << "[workSummary]" << std::endl;
-    outf << encode(workSummary) << std::endl;
+    output << "[workIdeal]" << std::endl;
+    output << encode(workIdeal) << std::endl;
+    output << "[workCreative]" << std::endl;
+    output << encode(workCreative) << std::endl;
+    output << "[workStructure]" << std::endl;
+    output << encode(workStructure) << std::endl;
+    output << "[workUndefined]" << std::endl;
+    output << encode(workUndefined) << std::endl;
+    output << "[workSummary]" << std::endl;
+    output << encode(workSummary) << std::endl;
 
     // Analysis
-    outf << "[theme1]" << std::endl;
-    outf << encode(theme1) << std::endl;
+    output << "[theme1]" << std::endl;
+    output << encode(theme1) << std::endl;
 
-    outf << "[theme1c]" << std::endl;
-    outf << encode(theme1c) << std::endl;
+    output << "[theme1c]" << std::endl;
+    output << encode(theme1c) << std::endl;
 
-    outf << "[theme2]" << std::endl;
-    outf << encode(theme2) << std::endl;
+    output << "[theme2]" << std::endl;
+    output << encode(theme2) << std::endl;
 
-    outf << "[theme2c]" << std::endl;
-    outf << encode(theme2c) << std::endl;
+    output << "[theme2c]" << std::endl;
+    output << encode(theme2c) << std::endl;
 
-    outf << "[theme3]" << std::endl;
-    outf << encode(theme3) << std::endl;
+    output << "[theme3]" << std::endl;
+    output << encode(theme3) << std::endl;
 
-    outf << "[theme3c]" << std::endl;
-    outf << encode(theme3c) << std::endl;
+    output << "[theme3c]" << std::endl;
+    output << encode(theme3c) << std::endl;
 
-    outf << "[theme4]" << std::endl;
-    outf << encode(theme4) << std::endl;
+    output << "[theme4]" << std::endl;
+    output << encode(theme4) << std::endl;
 
-    outf << "[theme4c]" << std::endl;
-    outf << encode(theme4c) << std::endl;
+    output << "[theme4c]" << std::endl;
+    output << encode(theme4c) << std::endl;
 
-    outf << "[buttonsRoleNames]" << std::endl;
+    output << "[buttonsRoleNames]" << std::endl;
     for (unsigned int i = 0; i < buttonsRoleNames.size(); i++)
-        outf << encode(buttonsRoleNames[i]) << std::endl;
+        output << encode(buttonsRoleNames[i]) << std::endl;
 
-    outf << "[buttonsRoleColours]" << std::endl;
+    output << "[buttonsRoleColours]" << std::endl;
     for (unsigned int i = 0; i < buttonsRoleColours.size(); i++)
-        outf << encode(buttonsRoleColours[i]) << std::endl;
+        output << encode(buttonsRoleColours[i]) << std::endl;
 
-    outf << "[buttonsSkillsNames]" << std::endl;
+    output << "[buttonsSkillsNames]" << std::endl;
     for (unsigned int i = 0; i < buttonsSkillsNames.size(); i++)
-        outf << encode(buttonsSkillsNames[i]) << std::endl;
+        output << encode(buttonsSkillsNames[i]) << std::endl;
 
-    outf << "[buttonsSkillsColours]" << std::endl;
+    output << "[buttonsSkillsColours]" << std::endl;
     for (unsigned int i = 0; i < buttonsSkillsColours.size(); i++)
-        outf << encode(buttonsSkillsColours[i]) << std::endl;
+        output << encode(buttonsSkillsColours[i]) << std::endl;
 
-    outf << "[buttonsPrioritiesNames]" << std::endl;
+    output << "[buttonsPrioritiesNames]" << std::endl;
     for (unsigned int i = 0; i < buttonsPrioritiesNames.size(); i++)
-        outf << encode(buttonsPrioritiesNames[i]) << std::endl;
+        output << encode(buttonsPrioritiesNames[i]) << std::endl;
 
-    outf << "[buttonsPrioritiesColours]" << std::endl;
+    output << "[buttonsPrioritiesColours]" << std::endl;
     for (unsigned int i = 0; i < buttonsPrioritiesColours.size(); i++)
-        outf << encode(buttonsPrioritiesColours[i]) << std::endl;
+        output << encode(buttonsPrioritiesColours[i]) << std::endl;
 
-    outf << "[buttonsPeopleNames]" << std::endl;
+    output << "[buttonsPeopleNames]" << std::endl;
     for (unsigned int i = 0; i < buttonsPeopleNames.size(); i++)
-        outf << encode(buttonsPeopleNames[i]) << std::endl;
+        output << encode(buttonsPeopleNames[i]) << std::endl;
 
-    outf << "[buttonsPeopleColours]" << std::endl;
+    output << "[buttonsPeopleColours]" << std::endl;
     for (unsigned int i = 0; i < buttonsPeopleColours.size(); i++)
-        outf << encode(buttonsPeopleColours[i]) << std::endl;
+        output << encode(buttonsPeopleColours[i]) << std::endl;
 
-    outf << "[buttonsStrengthsNames]" << std::endl;
+    output << "[buttonsStrengthsNames]" << std::endl;
     for (unsigned int i = 0; i < buttonsStrengthsNames.size(); i++)
-        outf << encode(buttonsStrengthsNames[i]) << std::endl;
+        output << encode(buttonsStrengthsNames[i]) << std::endl;
 
-    outf << "[buttonsStrengthsColours]" << std::endl;
+    output << "[buttonsStrengthsColours]" << std::endl;
     for (unsigned int i = 0; i < buttonsStrengthsColours.size(); i++)
-        outf << encode(buttonsStrengthsColours[i]) << std::endl;
+        output << encode(buttonsStrengthsColours[i]) << std::endl;
 
-    outf << "[buttonsLifeKeysNames]" << std::endl;
+    output << "[buttonsLifeKeysNames]" << std::endl;
     for (unsigned int i = 0; i < buttonsLifeKeysNames.size(); i++)
-        outf << encode(buttonsLifeKeysNames[i]) << std::endl;
+        output << encode(buttonsLifeKeysNames[i]) << std::endl;
 
-    outf << "[buttonsLifeKeysColours]" << std::endl;
+    output << "[buttonsLifeKeysColours]" << std::endl;
     for (unsigned int i = 0; i < buttonsLifeKeysColours.size(); i++)
-        outf << encode(buttonsLifeKeysColours[i]) << std::endl;
+        output << encode(buttonsLifeKeysColours[i]) << std::endl;
 
-    outf << "[recommendation]" << std::endl;
-    outf << encode(recommendation) << std::endl;
+    output << "[recommendation]" << std::endl;
+    output << encode(recommendation) << std::endl;
 
     // END replace writeBuffer with outf
     //outf << writeBuffer.rdbuf();
 
+    // output now contains our contents
+    // If buffer was used, it is in writeBuffer
+    // If no buffer was used it is in the file?
+
+    if (tmp.str() != "EMPTY")
+    {
+        std::cout << "Buffer redirection failed!" << std::endl;
+        return 1;
+    }
+
+    if (useBuffer)
+    {
+        outf << writeBuffer.str();
+    }
+
+    outf.flush();
     outf.close();
 
     // TODO: Why return -1?
