@@ -1,4 +1,5 @@
 #include "tests.h"
+#include <unistd.h>
 #include <chrono>
 
 using namespace std::chrono;
@@ -369,11 +370,12 @@ Returns:
 */
 int save_and_load(bool useBuffer = true)
 {
+
     // http://stackoverflow.com/questions/22387586/measuring-execution-time-of-a-function-in-c
     high_resolution_clock::time_point t1;
     high_resolution_clock::time_point t2;
     ulong duration;
-    int passes = 10;
+    int passes = 20;
 
     int failed = 0;
     // Generate data and save it
@@ -388,6 +390,7 @@ int save_and_load(bool useBuffer = true)
 
     t2 = high_resolution_clock::now();
     duration = duration_cast<microseconds>( (t2 - t1) / passes ).count();
+
     std::cout << "-------\n";
     std::cout << "useBuffer = " << useBuffer << std::endl;
     std::cout << "Average of " << passes << " passes: \n";
@@ -429,6 +432,7 @@ int run_tests()
     int failed = 0;
 
     save_and_load(true);
+    sleep(1);
     save_and_load(false);
 
     return failed;
