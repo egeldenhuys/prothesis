@@ -1,0 +1,11 @@
+<p>checkbox-panel works!</p>
+
+<form>
+<div *ngFor="let option of options; let i=index;">
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck{{i}}">
+            <label class="form-check-label" for="exampleCheck{{i}}" placement="right" ngbTooltip="Tooltip on right">{{option}}</label>
+
+        </div>
+</div>
+</form>
